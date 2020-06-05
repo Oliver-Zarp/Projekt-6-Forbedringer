@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+	<meta charset="UTF-8">
+  <link rel="stylesheet" href="../alle-sider/style.css">
+  <title>STYLEGUIDE PROJEKT 6</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body class="login-body">
+  <div class="login-wrapper">
+    <div class="login-content-boks">
+      <div class="login-content-boks-inputs">
+        <div class="boks-logo">
+          <img src="../img/trendlog-io.png" alt="">
+        </div>
+				<form onsubmit="return validate()" class="login-form">
+        <div class="username">
+          Username:
+          <input id="uname" type="text" name="username" placeholder="Username...">
+        </div>
+        <div class="password">
+          Password:
+          <input id="pass" type="password" name="password" placeholder="Password...">
+        </div>
+        <div class="login-knap">
+          <button type="submit" name="button">Login</button>
+        </div>
+				</form>
+        <div class="boks-hjelptekst">
+          <a href="#">Sign up</a>
+          <a href="#">Forgot your password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+	<script src="../js/login.js"></script>
+</body>
+</html>

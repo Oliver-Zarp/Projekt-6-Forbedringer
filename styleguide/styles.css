@@ -1,0 +1,1683 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body{
+  background: #F1F1F1;;
+}
+
+
+.header-styleguide{
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.wrapper-styleguide{
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.wrapper-styleguide .sidebar{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+  background-color: #000000;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper-styleguide .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper-styleguide .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.wrapper-styleguide .sidebar ul li a{
+  color: #ffffff;
+  display: block;
+}
+
+.wrapper-styleguide .sidebar ul li:hover{
+  background-color: #717171;
+}
+
+.wrapper-styleguide .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper-styleguide .sidebar ul li:hover a{
+  color: #fff;
+}
+
+.wrapper-styleguide .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper-styleguide .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper-styleguide .main-content-styleguide{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper-styleguide .main-content-styleguide .header{
+  padding: 20px;
+  background-color: lightgrey;
+  color: #000000;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper-styleguide .main-content-styleguide .info{
+  margin: 20px;
+  line-height: 25px;
+}
+
+.wrapper-styleguide .main-content-styleguide .info div{
+  margin-bottom: 20px;
+}
+
+/*Farver */
+.xx-swatches {
+  padding: 0;
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.xx-swatch {
+  float: left;
+  width: 15em;
+  margin-right: 1em;
+  list-style-type: none;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+  background-color: #fff;
+  height: 13em;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  border: solid grey 2px;
+}
+
+.xx-swatch-preview {
+  height: 5em;
+  width: 103%;
+  display: table-cell;
+  margin-bottom: 0.5em;
+  border-radius: 3px 3px 0 0;
+  padding: 0;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.1;
+  vertical-align: middle;
+  overflow: hidden;
+  float: none;
+  position: absolute;
+  top: -0.25em;
+  left: -1.5%;
+  right: -1.5%;
+  background-color: black;
+  color: white;
+}
+
+.xx-swatch-details {
+  padding: 0.7em 5% 0;
+  margin-bottom: 0.5em;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 90%;
+  color: #999;
+}
+
+/*Farver Slut */
+
+
+
+/*UI PATTERNS START*/
+/*NAME PLACEHOLDER*/
+input[type=text]{
+  width:50%;
+  border:2px solid #aaa;
+  border-radius:4px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 8px;
+  transition:.3s;
+}
+
+input[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+
+/* Calender picker */
+
+.ui-datepicker-trigger{
+    width: auto;
+    height: 30px;
+    margin-bottom: -10px;
+}
+
+#datepicker{
+    border-radius: 8px;
+    margin-left: 20px;
+    width: 150px;
+}
+
+
+/*til alt content på styleguiden*/
+.content-wrapper-styleguide{
+  width: auto;
+  background-color:#7a7a7a;
+  margin-left: 200px;
+  padding: 20px;
+}
+
+
+.forklaring p{
+  margin-left: 210px;
+}
+
+/*TOGGLE KNAP DESIGN*/
+.toggleknap-styleguide[type="checkbox"] {
+  position: relative;
+  width: 70px;
+  height: 25px;
+  background: #bdc3c7;
+  -webkit-appearance: none;
+  border-radius: 20px;
+  outline: none;
+  transition: .4s;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/*EFTER KLIK TOGGLE KNAP*/
+.toggleknap-styleguide:checked[type="checkbox"] {
+  background: #00ff00;
+}
+
+/*KNAPPEN INDEN CLICK.*/
+.toggleknap-styleguide[type="checkbox"]::before {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 50%;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: .4s;
+} */
+
+/*Styrer hvor langt toggleknapper rykker*/
+.toggleknap-styleguide:checked[type="checkbox"]::before {
+  left: 44px;
+}
+
+/*knappen*/
+.toggle-sg {
+  position: relative;
+  display: inline;
+}
+
+/*Label i toggle knappen*/
+.toogle label {
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  pointer-events: none;
+} */
+
+/*TÆNDT KNAP*/
+.onbtn1 {
+  bottom: 10px;
+  left: 10px;
+}
+
+/*SLUKKET KNAP*/
+.ofbtn1 {
+  bottom: 10px;
+  right: 10px;
+  color: #34495e;
+}
+/*toggle switch -done*/
+
+/*Brugermenu*/
+.burger-nav{
+  width: 50px;
+  height: 50px;
+}
+.styleguidewheel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.wheelsg{
+  width: 60%;
+  height: auto;
+}
+
+
+/* Navigationsbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background: #333;
+}
+
+.navelement1 {
+  display: flex;
+  align-items: center;
+}
+
+.navelement1 .logo {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navelement1 .navmenu {
+  display: flex;
+  list-style: none
+}
+
+.navelement1 .navmenu li a{
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px 15px 15px 15px;
+}
+.navelement1 .navmenu li a:hover {
+  background-color: #666;
+}
+
+.navelement2 {
+  display: flex;
+  align-items: center;
+}
+
+.navikoner {
+  display: flex;
+  list-style: none;
+}
+
+.navikoner li a {
+  color: #fff;
+  padding: 20px 15px 17px 15px;
+}
+
+.navikoner li a:hover {
+  background: #666;
+}
+
+.plugandlog {
+height: 30px;
+border-radius: 5px;
+border-style: none;
+margin-right: 15px;
+}
+
+.navprofildropdown {
+  display: flex;
+  flex-direction: column;
+  margin-top: 79px;
+}
+
+.navprofildropdown a {
+  color: white;
+  font-family: segoe ui;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navprofildropdown ul li {
+  list-style: none;
+  color: white;
+  width: 100%;
+  height: 30px;
+  background: #333;
+  padding-top: 10px;
+}
+
+.navprofildropdown li:hover {
+  background-color: #666;
+}
+
+.navprofil {
+  padding: 13px 15px 17px 15px;
+}
+
+.navprofil:hover {
+  background-color: #666;
+}
+
+.navprofil a{
+  font-family: segoe ui;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.navprofil a i {
+  color: #0f0;
+  padding-left: 70px;
+}
+
+#dropdown {
+  opacity: 0;
+}
+
+#dropdown.active {
+  opacity: 1;
+}
+
+.navelement2 .burger a {
+  display: none;
+  color: #fff;
+  margin: 0px 20px 0px 20px;
+  text-decoration: none;
+}
+
+
+
+/* ------------------ TIL RESSOURCEN NÅR DEN ER SELECTED - MOBIL ------------------ */
+/* ------------------ HEADER - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
+/* HEADER BOX STYLE */
+.header-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #222222;
+  z-index: 5;
+}
+/* ------------------ SLUT HEADER - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
+
+
+/* ------------------ CHECKLIST UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER ------------------*/
+/* CHECKLIST BOX STYLE */
+#mobile-checkliste-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F1F1;
+  height: auto;
+}
+
+/* Infomationens box - "name", "service date planned" & "description" */
+.info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  /* background: royalblue; */
+}
+
+.info-text-categori {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 80px;
+line-height: 25px;
+}
+
+.info-text-categori h4 {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+}
+
+.info-text-categori p {
+font-size: 15px;
+font-family: 'Segoe UI';
+}
+
+/* ------------------ Checklisten boxen som indenholder de forskellige "todo's" ------------------ */
+.todo-list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 325px;
+  /* background: sandybrown; */
+}
+
+.checkboxes {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 90%;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+padding-top: 12px;
+}
+
+.todo-list-wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+height: 60px;
+width: 90%;
+background: white;
+border-radius: 5px;
+margin-bottom: 12px;
+}
+
+.item-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-end;
+cursor: pointer;
+font-size: 22px;
+user-select: none;
+background: white;
+border-radius: 5px;
+height: 50px;
+width: 50%;
+}
+
+.todo-item {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+cursor: pointer;
+user-select: none;
+background: none;
+border-radius: 5px;
+height: 75px;
+width: 50%;
+}
+
+.todo-item p {
+margin: 15px;
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+}
+
+/* Gem browserens default checkbox, så jeg kan lave en custom */
+.item-container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Her laver jeg en custom checkbox */
+.checkmark-in-box {
+margin-right: 15px;
+height: 35px;
+width: 35px;
+border-radius: 5px;
+background-color: #eee;
+}
+
+/* Hover effekt på "checkmark-in-box", når man holder over .item-container */
+.item-container:hover input ~ .checkmark-in-box {
+background-color: #ccc;
+}
+
+/* Ændring når checkboxen er tjekkede af */
+.item-container input:checked ~ .checkmark-in-box {
+background-color: #32CD32;
+}
+
+/* Her laver jeg et simple checkmark (den er gemet, så man ikke kan se den) */
+.checkmark-in-box:after {
+margin: 10px 13px;
+content: "";
+display: none;
+}
+
+/* Vis checkmark'et */
+.item-container input:checked ~ .checkmark-in-box:after {
+display: block;
+}
+
+/* Style til mit checkmark'et */
+.item-container .checkmark-in-box:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+transform: rotate(45deg);
+}
+
+/* ------------------ kommentar boxen ------------------ */
+.comment-checklist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 190px;
+  /* background: #7D7D7D; */
+  border-radius: 15px;
+}
+
+.comment-checklist-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 200px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.comment-checklist-wrapper h4 {
+font-size: 20px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: white;
+}
+
+.comment-container {
+display: flex;
+height: 100px;
+width: 90%;
+background: white;
+border-radius: 15px;
+margin: 15px;
+}
+
+.comment-container textarea {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-around;
+border-radius: 15px;
+padding: 15px;
+}
+
+/* ------------------ upload boxen ------------------ */
+.upload-pic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 230px;
+  /* background: violet; */
+}
+
+/* ------------------ dokument boxen ------------------ */
+.document {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 145px;
+  /* background: yellowgreen; */
+}
+
+.document-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+height: 145px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+/* The container */
+.document-container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+cursor: pointer;
+font-size: 22px;
+user-select: none;
+background: white;
+border-radius: 5px;
+height: 50px;
+width: 90%;
+}
+
+.documents p {
+margin: 15px;
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+}
+
+/* ------------------ procentbaren boxen ------------------ */
+.procentagebar-box {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 50px;
+background-color: white;
+box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+}
+
+.ui-progressbar-value {
+background: #337AB7;
+}
+
+.progressbar-bar {
+margin-top: 10px;
+margin-left: 20px;
+margin-right: 20px;
+height: 30px;
+width: auto;
+border-radius: 230px;
+border-style: none;
+z-index: 5;
+background: #EBEBEB;
+}
+
+.progressbar-label {
+position: absolute;
+margin-top: 10px;
+top: 15%;
+left: 50%;
+z-index: 2;
+color: #3F3844;
+}
+/* ------------------ SLUT CHECKLIST UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
+
+
+/* ------------------ SETTINGS UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
+/* SETTINGS BOX STYLE */
+#mobile-settings-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Knappe boxen til settings undersiden som skal indenholde knapperne til at navigerer
+ rundt under settings  */
+.navigation-buttons-settings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  /* background: rebeccapurple; */
+}
+/* Så de er på lige linje med de andrer div'er */
+.navigation-buttons-settings-wrapper-margin {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+width: 90%;
+/* background: rebeccapurple; */
+}
+
+/* GENERAL SETTINGS BOX STYLE */
+#mobile-general-settings-container {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#center-div-shadow {
+display: none;
+position: absolute;
+margin: auto;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100vw;
+height: 89vh;
+background-color: rgba(0, 0, 0, 0.3);;
+border-radius: 0px;
+}
+
+.center-div {
+position: absolute;
+margin-top: 15vh;
+right: 0;
+left: 0;
+}
+
+.center-div-indhold {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: auto;
+width: 250px;
+height: 190px;
+line-height: 40px;
+background-color: #F1F1F1;
+border-radius: 6px;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.center-div-indhold p {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+}
+
+.close-button-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+padding: 10px;
+}
+
+.selection-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+flex-wrap: nowrap;
+margin: 0px 15px;
+}
+
+.selection-container input::placeholder  {
+font-size: 12px;
+}
+
+.selection-container input[type=text], select {
+width: 83%;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 15px;
+}
+
+#add-group-button {
+height: 30px;
+width: 30px;
+border-radius: 5px;
+background-color: #32CD32;
+text-decoration: none;
+border: none;
+color: #ffffff;
+font-size: 25px;
+}
+
+.add-group-button-div {
+margin-right: 15px;
+height: 30px;
+width: 30px;
+border-radius: 5px;
+background-color: #32CD32;
+text-decoration: none;
+border: none;
+}
+
+.add-group-button-div::before {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+content: "+";
+font-size: 25px;
+color:white;
+height: 30px;
+width: 30px;
+}
+
+.close-add-group-button {
+
+}
+
+/* Dropdown menus */
+#group-add-select {
+width: 220px;
+height: 30px;
+user-select: none;
+}
+
+.select-and-button-contianer {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+width: 65%;
+height: 30px;
+}
+
+#group-add-select-out {
+width: 100%;
+height: 30px;
+margin-right: 5px;
+user-select: none;
+}
+
+/* Knap som ikke er selectede */
+.button-nav-settings {
+background: white;
+width: 30%;
+height: 30px;
+text-align: center;
+text-decoration: none;
+border: none;
+font-size: 9px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: black;
+cursor: pointer;
+border-radius: 5px;
+}
+
+/* Knap som er selectede */
+.button-nav-settings-blue {
+background: #337AB7;
+width: 30%;
+height: 30px;
+text-align: center;
+text-decoration: none;
+border: none;
+font-size: 9px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: white;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.navigation-buttons-settings-wrapper {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+height: 50px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.name-group {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+height: 150px;
+/* background: rebeccapurple; */
+}
+
+.name-group-container {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+background: orange;
+height: 125px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.name-group-proxi {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+height: 100px;
+width: 100%;
+/* background: red; */
+border-radius: 5px;
+}
+
+.name-group-wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+height: 45px;
+width: 90%;
+background: white;
+border-radius: 5px;
+}
+
+.name-group-wrapper p {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+margin-left: 15px;
+}
+
+#lname {
+margin-right: 15px;
+width: 100%;
+}
+
+.name-group-wrapper input[type=text], select {
+width: 60%;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 15px;
+}
+
+.description-settings {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 190px;
+/* background: #7D7D7D; */
+border-radius: 15px;
+}
+
+.description-settings-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 200px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.description-settings-wrapper h4 {
+font-size: 20px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: white;
+}
+
+.description-container {
+display: flex;
+height: 100px;
+width: 90%;
+background: white;
+border-radius: 15px;
+margin: 15px;
+}
+
+.description-container textarea {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-around;
+border-radius: 15px;
+padding: 15px;
+}
+
+/* SERVICE SETTINGS BOX STYLE */
+#mobile-service-settings-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ADD TO CHECKLISTEN SETTINGS BOX STYLE */
+#mobile-add-to-settings-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-checklist-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+height: auto;
+/* background: rebeccapurple; */
+}
+
+.add-todo-container {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+/* background: orange; */
+height: auto;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+.add-todo-container h4 {
+font-size: 20px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: white;
+margin: 10px;
+}
+
+.add-todo-proxi {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+height: auto;
+width: 100%;
+/* background: red; */
+border-radius: 5px;
+margin-top: 0 15px;
+margin-top: 10px;
+}
+
+.add-todo-wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+height: 45px;
+width: 90%;
+background: white;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.add-todo-wrapper p {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+margin-left: 15px;
+}
+
+.add-todo-button-div {
+margin-right: 15px;
+height: 30px;
+width: 30px;
+border-radius: 5px;
+background-color: #32CD32;
+text-decoration: none;
+border: none;
+margin-bottom: 10px;
+}
+
+.add-todo-button-div::before {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+content: "+";
+font-size: 25px;
+color:white;
+height: 30px;
+width: 30px;
+}
+/* SLUT SETTINGS UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER*/
+
+
+/* HISTORY BOX STYLE */
+#mobile-history-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ALLE UNDERSIDE - SPECIFIKT TIL TING PÅ ALLE UNDERSIDER AD RESSOURCEN*/
+/* Dette er boxen til "titlen" på undersiderne */
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    margin-top: 90px;
+    background: darkturquoise;
+}
+/* HER STARTER HISTORY MENU DELEN */
+.history-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 170px;
+  background: #f1f1f1;
+}
+
+.history-menu-kasse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  background-color: #7d7d7d;
+  border-radius: 5px;
+}
+
+.history-menu-øvre-kasse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.history-menu-øvre-kasse .history-boks-tekst {
+  margin-left: 20px;
+}
+
+.history-menu-nedre-kasse {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-1 {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  font-size: 15px;
+  color: #fff;
+  font-family: segoe ui;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-2 i {
+  margin: 0px 10px 0px 10px;
+}
+
+#datepicker-history-menu1{
+    border-radius: 8px;
+    width: 40%;
+    margin-left: 10px;
+}
+
+#datepicker-history-menu2{
+    border-radius: 8px;
+    width: 40%;
+}
+
+/* History Boks Tekst */
+
+.history-boks-tekst {
+  color: #fff;
+  margin-left: 15px;
+  font-family: segoe ui;
+  font-weight: bold;
+}
+
+/* Historie Søgefunktion */
+
+.history-søgefunktion {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Øvre kasse dropdowns */
+
+/* Dropdown til listeantal */
+.history-listeantal{
+  width: 75px;
+  margin: 15px;
+  position: relative;
+  user-select: none;
+}
+
+.history-listeantal .history-default-option{
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+}
+
+.history-listeantal .history-default-option li{
+    padding: 10px 20px;
+}
+
+.history-listeantal .history-default-option:before{
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid;
+    border-color: transparent transparent #555555 #555555;
+    transform: rotate(-45deg);
+}
+
+.history-listeantal .history-listeantal-ul{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+.history-listeantal .history-listeantal-ul li{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.history-listeantal .history-listeantal-ul li:first-child:hover{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.history-listeantal .history-listeantal-ul li:last-child:hover{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.history-listeantal .history-listeantal-ul li:hover{
+  background: #e8e8e8;
+}
+
+.history-listeantal .option{
+  display: flex;
+  align-items: center;
+}
+
+
+.history-listeantal.active .history-listeantal-ul{
+  display: block;
+  list-style: none;
+  text-decoration: none;
+}
+
+.history-listeantal.active .history-default-option:before{
+  top: 18px;
+  transform: rotate(-225deg);
+}
+
+
+
+/* HER SLUTTER HISTORY MENU DELEN */
+
+/* HER STARTER HISTORY LISTE DELEN */
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 450px;
+  background: #f1f1f1;
+}
+
+.history-list .history-list-boks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+  width: 90%;
+  height: 425px;
+  background-color: #7d7d7d;
+}
+
+/* HER STARTER LISTE FILTER DELEN */
+
+.history-list .history-list-boks .history-list-id {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-list .history-list-boks .history-list-id .history-list-filter-id {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #fff;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #222;
+  margin: 10px 0px 10px 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-name {
+  width: 25%;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-filter-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #fff;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #222;
+  margin: 10px 0px 10px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-date {
+  width: 25%;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-filter-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #fff;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #222;
+  margin: 10px 0px 10px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-value {
+  width: 25%;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-filter-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #fff;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #222;
+  margin: 10px 10px 10px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+/* HER SLUTTER LISTE FILTER DELEN */
+
+/* HER STARTER LISTEN */
+
+.history-list .history-list-boks .history-list-id .history-list-element-id {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-id .history-list-element-id ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-id .history-list-element-id ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 0px 0px 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 0px 0px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 0px 0px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-family: segoe ui;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 10px 0px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+/* HER SLUTTER HISTORY LISTE DELEN */
+
+.title h1 {¨
+  height: 75vh;
+  font-size: 40px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+}
+
+/* Dette er boxen til "save" knappens style */
+.save-button-mobil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 70px;
+    /* background: orange; */
+}
+
+.save-mobil {
+  margin-top: 20px;
+  background-color: #32CD32;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border-radius: 55px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+
+/* Knappe boxen som skal indenholde knapperne til at navigerer
+   rundt mellem "Checklist", "Setting" & "History" */
+.navigation-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    background: rebeccapurple;
+    box-shadow: 0px 1px 5px rgba(0,0,0,.5);
+}
+
+/* Knap som ikke er selectede */
+.button-nav {
+    background: #222222;
+    width: 25vh;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+/* Knap som er selectede */
+.button-nav-blue {
+    background: #337AB7;
+    width: 25vh;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  /* SLUT - TIL RESSOURCEN NÅR DEN ER SELECTED - SLUT MOBIL*/
+
+  @media only screen and (max-width: 1200px) {
+    .navelement1 .navmenu {
+      display: none;
+    }
+    .navelement2 .navikoner {
+      display: ;
+    }
+    .navelement2 .plugandlog {
+      display: none;
+    }
+    .navelement2 .navprofildropdown {
+      display: ;
+    }
+
+    .navprofil a i {
+      display: none;
+    }
+
+    .navelement2 .burger a {
+      display: block;
+    }
+  }

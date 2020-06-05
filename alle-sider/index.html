@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../alle-sider/style.css">
+    <meta name="description" content="app-development">
+    <meta name="keywords" content="app-development, maintenance, maintenancesystem, maintenanceplanner,
+    app, html5, css, code">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+  	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="gruppe25">
+    <link rel='icon' href='../img/facicon.png' type='image/x-icon'/>
+    <title>Forside | Trendlog</title>
+</head>
+<body>
+
+<!-- NAVBAR STARTER HER -->
+  <header class="header-fixed">
+    <nav>
+      <div class="navelement1">
+        <div class="logo">
+          <a href="index.html">
+          <img src="../img/trendlog-io-white-thin4.png" alt="Trendlog.io logo">
+          </a>
+        </div>
+        <ul class="navmenu">
+          <li><a href="login.html"><i class="fas fa-home"></i></a></li>
+          <li><a href="#">Trendboards</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Views</a></li>
+          <li><a href="#">Feeds</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Shares</a></li>
+        </ul>
+      </div>
+      <div class="navelement2">
+        <ul class="navikoner">
+          <li><a href="#"><i class="fas fa-wrench"></i></a></li>
+          <li><a href="#"><i class="fas fa-eye-slash"></i></a></li>
+          <li><a href="#"><i class="fas fa-bell"></i></a></li>
+        </ul>
+        <input class="plugandlog" type="text" name="plug&log" value="">
+        <div class="navprofildropdown" id="navprofildropdown">
+          <div class="navprofil"><a href="#">
+            Navn
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+        </div>
+      </div>
+      <div class="burgerdropdownmenu" id="burgerdropdownmenu">
+        <div class="burger" id="burger">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+      </div>
+  </nav>
+</header>
+
+  <div id="alertbox">
+    <span class=alerticon><i class="fas fa-exclamation-circle"></i></span>
+    <p>Sure you want to disable?</p>
+    <a onclick="pop()" class="yes">Yes</a>
+    <a onclick="pop()" class="no">No</a>
+  </div>
+  <div class="wrapper">
+
+<!-- NAVBAR SLUTTER HER -->
+
+  <!--WRAPPER, ER EN WRAPPER TIL ALT CONTENT PÅ WEB SIDEN - PC-->
+  <div class="wrapper-webversion">
+    <!--CONTENTFLEXBOX-1 er den div der indholder at det content der er i den store hvide container, til venstre for siden. Der er her settings og sådan noget til resourcer kommer til at ligge.-->
+    <div class="contentflexbox-1">
+      <div class="text-resourcer-wrapp">
+       <p class="select-rs">
+        SELECT RESOURCE
+        </p>
+      </div>
+    </div>
+
+
+    <!--CONTENTFLEX-2 Inderholder alt det content vi har i den store box til højre. Den indeholder blandt andet alle resource containere og knapper til pending osv-->
+    <div class="contentflexbox-2">
+        <div class="flex-knapper3">
+            <button class="active" type="button" onclick="click">Overdue Service<br>Check</button>
+
+            <form method="get" action="awaiting.html">
+              <button class="deactive1" type="submit">Awaiting</button>
+            </form>
+
+            <select class="service-interval1">
+              <option class="default_option">Sort by</option>
+              <option>ID </option>
+              <option>NAME</option>
+              <option>ENABLE</option>
+              <option>TYPE</option>
+              <option>NEXT SERVICE</option>
+              <option>LAST SERVICE</option>
+              <option>DATA ADDED</option>
+              <option>GROUP</option>
+              </select>
+        </div>
+
+
+        <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
+        <div class="div-click" onclick="location.href='resource.html';" style="cursor: pointer;">
+       <div class="resource-container">
+        <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
+        <div class="resourceflex-1">
+            <!--Overskriften til resourcer-->
+            <!--Indholdet til første flexcontainer-->
+        <div class="overskrift">
+            <h2>Rescource #1</h2>
+          </div>
+          <div class="ID">
+            <p><span class="text-kategori">ID - 1</span></p>
+          </div>
+          <div class="show-more-flex">
+            <p><span class="green-text">SHOW MORE</span></p>
+          </div>
+          <!--Indholdet til første flexcontainer SLUT-->
+        </div>
+        <!--resourceflex-2 er diven med type, preventivce, group, og machine. Det er de kategorier vi har i resource-containeren-->
+        <div class="resourceflex-2">
+            <p class="middle-text-resourcer">
+             <span class="grey-text">Type</span><br><span class="text-kategori">Preventive</span><br><span class="grey-text">Group</span> <br><span class="text-kategori">Machine</span>
+            </p>
+        </div>
+        <!--resourceflex-3 er den div der har en enableknap og last service kategori. dette er stadig indholdet til hele den store resource-container-->
+        <div class="resourceflex-3">
+            <div class="enable">
+                <p><span class="grey-text">Enable</span></p>
+                <div class="toggleBox" onclick="pop()">
+                    <div class="toggle">
+                      <input class="toggle-pc" type="checkbox">
+                      <div class="onbtn"></div>
+                      <div class="ofbtn"></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="enable-text">
+            <p><span class="grey-text">Last Service</span><br><span class="text-kategori">N/A</span></p>
+            </div>
+
+        </div>
+        <!--Dette er den sidste flexcontainer til resource-containeren. Denne indeholder cores cirkeldiagram, som viser hvor mange dage der er indtil serive.-->
+        <div class="resourceflex-4">
+            <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                  <path class="circle"
+                    stroke-dasharray="100, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                    <!-- Next service er det øvereste test i cirkeldiagrammet-->
+                  <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                    <!-- precentage er de dage der er tilbage/- eller overskredet af service-->
+                  <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                </svg>
+              </div>
+        </div>
+    </div>
+  </div>
+    <!-- Nr 1 resourcecontainer slut.-->
+
+
+    <!-- Nr 2 resourcecontainer start-->
+        <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
+        <div class="div-click" onclick="location.href='index.html';" style="cursor: pointer;">
+          <div class="resource-container">
+           <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
+           <div class="resourceflex-1">
+               <!--Overskriften til resourcer-->
+               <!--Indholdet til første flexcontainer-->
+           <div class="overskrift">
+               <h2>Resource #2</h2>
+             </div>
+             <div class="ID">
+               <p><span class="text-kategori">ID - 2</span></p>
+             </div>
+             <div class="show-more-flex">
+               <p><span class="green-text">SHOW MORE</span></p>
+             </div>
+             <!--Indholdet til første flexcontainer SLUT-->
+           </div>
+           <!--resourceflex-2 er diven med type, preventivce, group, og machine. Det er de kategorier vi har i resource-containeren-->
+           <div class="resourceflex-2">
+               <p class="middle-text-resourcer">
+                <span class="grey-text">Type</span><br><span class="text-kategori">Preventive</span><br><span class="grey-text">Group</span> <br><span class="text-kategori">Machine</span>
+               </p>
+           </div>
+           <!--resourceflex-3 er den div der har en enableknap og last service kategori. dette er stadig indholdet til hele den store resource-container-->
+           <div class="resourceflex-3">
+               <div class="enable">
+                   <p><span class="grey-text">Enable</span></p>
+                   <div class="toggleBox">
+                       <div class="toggle">
+                         <input class="toggle-pc" type="checkbox">
+                         <div class="onbtn"></div>
+                         <div class="ofbtn"></div>
+                       </div>
+                     </div>
+               </div>
+               <div class="enable-text">
+               <p><span class="grey-text">Last Service</span><br><span class="text-kategori">N/A</span></p>
+               </div>
+
+           </div>
+           <!--Dette er den sidste flexcontainer til resource-containeren. Denne indeholder cores cirkeldiagram, som viser hvor mange dage der er indtil serive.-->
+           <div class="resourceflex-4">
+               <div class="single-chart">
+                   <svg viewBox="0 0 36 36" class="circular-chart red">
+                     <path class="circle-bg"
+                       d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                     <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                     <path class="circle"
+                       stroke-dasharray="100, 100"
+                       d="M18 2.0845
+                         a 15.9155 15.9155 0 0 1 0 31.831
+                         a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                       <!--Next service er det øvereste test i cirkeldiagrammet-->
+                     <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                       <!--precentage er de dage der er tilbage/- eller overskredet af service-->
+                     <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                   </svg>
+                 </div>
+           </div>
+       </div>
+     </div>
+     <!-- Nr 2 resourcecontainer slut.-->
+
+    <!-- Nr 3 resourcecontainer start-->
+        <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
+        <div class="div-click" onclick="location.href='index.html';" style="cursor: pointer;">
+          <div class="resource-container">
+              <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
+              <div class="resourceflex-1">
+                  <!--Overskriften til resourcer-->
+                  <!--Indholdet til første flexcontainer-->
+              <div class="overskrift">
+                  <h2>Resource #3</h2>
+                </div>
+                <div class="ID">
+                  <p><span class="text-kategori">ID - 3</span></p>
+                </div>
+                <div class="show-more-flex">
+                  <p><span class="green-text">SHOW MORE</span></p>
+                </div>
+                <!--Indholdet til første flexcontainer SLUT-->
+              </div>
+              <!--resourceflex-2 er diven med type, preventivce, group, og machine. Det er de kategorier vi har i resource-containeren-->
+              <div class="resourceflex-2">
+                  <p class="middle-text-resourcer">
+                   <span class="grey-text">Type</span><br><span class="text-kategori">Preventive</span><br><span class="grey-text">Group</span> <br><span class="text-kategori">Machine</span>
+                  </p>
+              </div>
+              <!--resourceflex-3 er den div der har en enableknap og last service kategori. dette er stadig indholdet til hele den store resource-container-->
+              <div class="resourceflex-3">
+                  <div class="enable">
+                      <p><span class="grey-text">Enable</span></p>
+                      <div class="toggleBox">
+                          <div class="toggle">
+                            <input class="toggle-pc" type="checkbox">
+                            <div class="onbtn"></div>
+                            <div class="ofbtn"></div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="enable-text">
+                  <p><span class="grey-text">Last Service</span><br><span class="text-kategori">N/A</span></p>
+                  </div>
+
+              </div>
+              <!--Dette er den sidste flexcontainer til resource-containeren. Denne indeholder cores cirkeldiagram, som viser hvor mange dage der er indtil serive.-->
+              <div class="resourceflex-4">
+                  <div class="single-chart">
+                      <svg viewBox="0 0 36 36" class="circular-chart red">
+                        <path class="circle-bg"
+                          d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                        <path class="circle"
+                          stroke-dasharray="100, 100"
+                          d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                          <!--Next service er det øvereste test i cirkeldiagrammet-->
+                        <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                          <!--precentage er de dage der er tilbage/- eller overskredet af service-->
+                        <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                      </svg>
+                    </div>
+              </div>
+          </div>
+        </div>
+          <!-- Nr 3 resourcecontainer slut.-->
+
+        <!-- Nr 4 resourcecontainer start-->
+        <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
+        <div class="resource-container">
+        <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
+        <div class="resourceflex-1">
+            <!--Overskriften til resourcer-->
+            <!--Indholdet til første flexcontainer-->
+        <div class="overskrift">
+            <h2>Rescource #4</h2>
+          </div>
+          <div class="ID">
+            <p><span class="text-kategori">ID - 4</span></p>
+          </div>
+          <div class="show-more-flex">
+            <p><span class="green-text">SHOW MORE</span></p>
+          </div>
+          <!--Indholdet til første flexcontainer SLUT-->
+        </div>
+        <!--resourceflex-2 er diven med type, preventivce, group, og machine. Det er de kategorier vi har i resource-containeren-->
+        <div class="resourceflex-2">
+            <p class="middle-text-resourcer">
+             <span class="grey-text">Type</span><br><span class="text-kategori">Preventive</span><br><span class="grey-text">Group</span> <br><span class="text-kategori">Machine</span>
+            </p>
+        </div>
+        <!--resourceflex-3 er den div der har en enableknap og last service kategori. dette er stadig indholdet til hele den store resource-container-->
+        <div class="resourceflex-3">
+            <div class="enable">
+                <p><span class="grey-text">Enable</span></p>
+                <div class="toggleBox" onclick="pop()">
+                    <div class="toggle">
+                      <input class="toggle-pc" type="checkbox">
+                      <div class="onbtn"></div>
+                      <div class="ofbtn"></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="enable-text">
+            <p><span class="grey-text">Last Service</span><br><span class="text-kategori">N/A</span></p>
+            </div>
+
+        </div>
+        <!--Dette er den sidste flexcontainer til resource-containeren. Denne indeholder cores cirkeldiagram, som viser hvor mange dage der er indtil serive.-->
+        <div class="resourceflex-4">
+            <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                  <path class="circle"
+                    stroke-dasharray="100, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <!-- Next service er det øvereste test i cirkeldiagrammet-->
+                  <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                    <!-- precentage er de dage der er tilbage/- eller overskredet af service-->
+                  <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                </svg>
+              </div>
+        </div>
+    </div>
+    <!-- Nr 4 resourcecontainer slut.-->
+
+
+    <!-- Nr 5 resourcecontainer start-->
+        <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
+        <div class="resource-container">
+          <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
+          <div class="resourceflex-1">
+              <!--Overskriften til resourcer-->
+              <!--Indholdet til første flexcontainer-->
+          <div class="overskrift">
+              <h2>Rescource #4</h2>
+            </div>
+            <div class="ID">
+              <p><span class="text-kategori">ID - 4</span></p>
+            </div>
+            <div class="show-more-flex">
+              <p><span class="green-text">SHOW MORE</span></p>
+            </div>
+            <!--Indholdet til første flexcontainer SLUT-->
+          </div>
+          <!--resourceflex-2 er diven med type, preventivce, group, og machine. Det er de kategorier vi har i resource-containeren-->
+          <div class="resourceflex-2">
+              <p class="middle-text-resourcer">
+               <span class="grey-text">Type</span><br><span class="text-kategori">Preventive</span><br><span class="grey-text">Group</span> <br><span class="text-kategori">Machine</span>
+              </p>
+          </div>
+          <!--resourceflex-3 er den div der har en enableknap og last service kategori. dette er stadig indholdet til hele den store resource-container-->
+          <div class="resourceflex-3">
+              <div class="enable">
+                  <p><span class="grey-text">Enable</span></p>
+                  <div class="toggleBox" onclick="pop()">
+                      <div class="toggle">
+                        <input class="toggle-pc" type="checkbox">
+                        <div class="onbtn"></div>
+                        <div class="ofbtn"></div>
+                      </div>
+                    </div>
+              </div>
+              <div class="enable-text">
+              <p><span class="grey-text">Last Service</span><br><span class="text-kategori">N/A</span></p>
+              </div>
+
+          </div>
+          <!--Dette er den sidste flexcontainer til resource-containeren. Denne indeholder cores cirkeldiagram, som viser hvor mange dage der er indtil serive.-->
+          <div class="resourceflex-4">
+              <div class="single-chart">
+                  <svg viewBox="0 0 36 36" class="circular-chart red">
+                    <path class="circle-bg"
+                      d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                    <path class="circle"
+                      stroke-dasharray="100, 100"
+                      d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                      <!-- Next service er det øvereste test i cirkeldiagrammet-->
+                    <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                      <!-- precentage er de dage der er tilbage/- eller overskredet af service-->
+                    <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                  </svg>
+                </div>
+          </div>
+      </div>
+      <!-- Nr 5 resourcecontainer slut.-->
+
+      <!-- Nr 6 resourcecontainer start-->
+        <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
+        <div class="resource-container">
+          <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
+          <div class="resourceflex-1">
+              <!--Overskriften til resourcer-->
+              <!--Indholdet til første flexcontainer-->
+          <div class="overskrift">
+              <h2>Rescource #4</h2>
+            </div>
+            <div class="ID">
+              <p><span class="text-kategori">ID - 4</span></p>
+            </div>
+            <div class="show-more-flex">
+              <p><span class="green-text">SHOW MORE</span></p>
+            </div>
+            <!--Indholdet til første flexcontainer SLUT-->
+          </div>
+          <!--resourceflex-2 er diven med type, preventivce, group, og machine. Det er de kategorier vi har i resource-containeren-->
+          <div class="resourceflex-2">
+              <p class="middle-text-resourcer">
+               <span class="grey-text">Type</span><br><span class="text-kategori">Preventive</span><br><span class="grey-text">Group</span> <br><span class="text-kategori">Machine</span>
+              </p>
+          </div>
+          <!--resourceflex-3 er den div der har en enableknap og last service kategori. dette er stadig indholdet til hele den store resource-container-->
+          <div class="resourceflex-3">
+              <div class="enable">
+                  <p><span class="grey-text">Enable</span></p>
+                  <div class="toggleBox" onclick="pop()">
+                      <div class="toggle">
+                        <input class="toggle-pc" type="checkbox">
+                        <div class="onbtn"></div>
+                        <div class="ofbtn"></div>
+                      </div>
+                    </div>
+              </div>
+              <div class="enable-text">
+              <p><span class="grey-text">Last Service</span><br><span class="text-kategori">N/A</span></p>
+              </div>
+
+          </div>
+          <!--Dette er den sidste flexcontainer til resource-containeren. Denne indeholder cores cirkeldiagram, som viser hvor mange dage der er indtil serive.-->
+          <div class="resourceflex-4">
+              <div class="single-chart">
+                  <svg viewBox="0 0 36 36" class="circular-chart red">
+                    <path class="circle-bg"
+                      d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                    <path class="circle"
+                      stroke-dasharray="100, 100"
+                      d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                      <!-- Next service er det øvereste test i cirkeldiagrammet-->
+                    <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                      <!-- precentage er de dage der er tilbage/- eller overskredet af service-->
+                    <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                  </svg>
+                </div>
+          </div>
+      </div>
+      <!-- Nr 6 resourcecontainer slut.-->
+      <br>
+      <div class="div-tilbagom">
+      </div>
+
+      <div class="fixed-knap-container1">
+        <div class="tester">
+          <div class="addnew-rs">
+            <div class="search-bar">
+              <div class="virk">
+              <p class="texttt">
+                  Search:
+              </p>
+              </div>
+              <div class="virk1">
+                  <input class="search-web" type="text" name="search" value="" autocomplete="off"  onkeyup="searchFunction()" placeholder="Search...">
+              </div>
+          </div>
+        </div>
+
+          <div class="addnew-rs">
+            <button class="modal-btn" onclick="selectionAppear('modal');">ADD RESOURCE</button>
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--denne wrapper holder alt til mobilversionen. Dette har vi med for at vi kan bruge media queryes til hurtigt at fjerne hele layoutet og skifte det ud med mobillayoutet-->
+  <div class="mobil-wrapper">
+    <!--Denne container søger for at der er en margin i hele layoutet-->
+    <div class="content-container">
+      <!--containeren der holder på de 3 øvereste knapper i layoutet-->
+      <div class="flex-knapper-mobil">
+        <button class="mobile-btn-top-active"  onclick="click">Overdue Service <br>Check </button>
+        <form action="../alle-sider/awaiting.html">
+        <button type="submit" class="mobile-btn-top-awa"  onclick="click">Awaiting</button>
+        </form>
+        <button class="mobile-btn-top" type="button" onclick="click">Sort by</button>
+    </div>
+    <!--knapper-flex3 containeren slutter her-->
+
+    <!--1 resource container start-->
+    <div class="div-click" onclick="location.href='resource.html';" style="cursor: pointer;">
+    <div class="resourcervirk">
+
+        <div class="flexbox1">
+          <div class="overskrift-mb">
+            <h2>RESOURCES #1</h2>
+          </div>
+          <div class="ID">
+            <p>ID - 1</p>
+          </div>
+          <div class="show-more-flex-mobil">
+            <p><span class="green-text-mb">SHOW MORE</span></p>
+          </div>
+        </div>
+
+        <div class="flexbox2">
+          <div class="enable">
+            <div class="empty-box">
+
+            </div>
+              <p class="enable1">ENABLE</p>
+              <div class="togglebox-mb">
+                  <div class="toggle-mb">
+                    <input class="checkbox-mb" type="checkbox">
+                    <div class="onbtn-mb"></div>
+                    <div class="ofbtn-mb"></div>
+                  </div>
+                </div>
+      </div>
+      </div>
+
+        <div class="flexbox3">
+            <p class="middle-text-resourcer-mb">
+                Type <br> Preventive <br> Group <br> Machine <br> Last Sercive <br> 08-04-20
+            </p>
+        </div>
+
+        <div class="flexbox4">
+            <div class="single-chart-mobil">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <path class="circle"
+                    stroke-dasharray="100, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+
+                  <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                  <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                </svg>
+              </div>
+        </div>
+
+      </div>
+    </div>
+<!--1 reosurce container slut-->
+
+
+      <!--2 reosurce container start-->
+      <!--Containeren er delt op i 4 flexcontainere-->
+      <div class="resourcervirk">
+
+        <div class="flexbox1">
+          <div class="overskrift-mb">
+            <h2>RESOURCES #2</h2>
+          </div>
+          <div class="ID">
+            <p>ID - 2</p>
+          </div>
+          <div class="show-more-flex-mobil">
+            <p><span class="green-text-mb">SHOW MORE</span></p>
+          </div>
+        </div>
+
+        <div class="flexbox2">
+          <div class="enable">
+            <div class="empty-box">
+
+            </div>
+              <p class="enable1">ENABLE</p>
+              <div class="togglebox-mb">
+                  <div class="toggle-mb">
+                    <input class="checkbox-mb" type="checkbox">
+                    <div class="onbtn-mb"></div>
+                    <div class="ofbtn-mb"></div>
+                  </div>
+                </div>
+      </div>
+      </div>
+
+        <div class="flexbox3">
+            <p class="middle-text-resourcer-mb">
+                Type <br> Preventive <br> Group <br> Machine <br> Last Sercive <br> 08-04-20
+            </p>
+        </div>
+
+        <div class="flexbox4">
+            <div class="single-chart-mobil">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <path class="circle"
+                    stroke-dasharray="100, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+
+                  <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                  <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                </svg>
+              </div>
+        </div>
+
+      </div>
+      <!--2 reosurce container slut-->
+
+      <!--3 reosurce container start-->
+      <!--Containeren er delt op i 4 flexcontainere-->
+      <div class="resourcervirk">
+
+        <div class="flexbox1">
+          <div class="overskrift-mb">
+            <h2>RESOURCES #3</h2>
+          </div>
+          <div class="ID">
+            <p>ID - 3</p>
+          </div>
+          <div class="show-more-flex-mobil">
+            <p><span class="green-text-mb">SHOW MORE</span></p>
+          </div>
+        </div>
+
+        <div class="flexbox2">
+          <div class="enable">
+            <div class="empty-box">
+
+            </div>
+              <p class="enable1">ENABLE</p>
+              <div class="togglebox-mb">
+                  <div class="toggle-mb">
+                    <input class="checkbox-mb" type="checkbox">
+                    <div class="onbtn-mb"></div>
+                    <div class="ofbtn-mb"></div>
+                  </div>
+                </div>
+      </div>
+      </div>
+        <div class="flexbox3">
+            <p class="middle-text-resourcer-mb">
+                Type <br> Preventive <br> Group <br> Machine <br> Last Sercive <br> 08-04-20
+             </p>
+        </div>
+
+        <div class="flexbox4">
+            <div class="single-chart-mobil">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <path class="circle"
+                    stroke-dasharray="100, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+
+                  <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                  <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                </svg>
+              </div>
+        </div>
+
+      </div>
+      <!--3 reosurce container slut-->
+
+
+      <!--4 reosurce container start-->
+      <!--Containeren er delt op i 4 flexcontainere-->
+      <div class="resourcervirk">
+
+        <div class="flexbox1">
+          <div class="overskrift-mb">
+            <h2>RESOURCES #4</h2>
+          </div>
+          <div class="ID">
+            <p>ID - 4</p>
+          </div>
+          <div class="show-more-flex-mobil">
+            <p><span class="green-text-mb">SHOW MORE</span></p>
+          </div>
+        </div>
+
+        <div class="flexbox2">
+          <div class="enable">
+            <div class="empty-box">
+
+            </div>
+              <p class="enable1">ENABLE</p>
+              <div class="togglebox-mb">
+                  <div class="toggle-mb">
+                    <input class="checkbox-mb" type="checkbox">
+                    <div class="onbtn-mb"></div>
+                    <div class="ofbtn-mb"></div>
+                  </div>
+                </div>
+      </div>
+      </div>
+
+        <div class="flexbox3">
+            <p class="middle-text-resourcer-mb">
+                Type <br> Preventive <br> Group <br> Machine <br> Last Sercive <br> 08-04-20
+            </p>
+        </div>
+
+        <div class="flexbox4">
+            <div class="single-chart-mobil">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <path class="circle"
+                    stroke-dasharray="100, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+
+                  <text x="18" y="17" class="next-service-red">NEXT SERVICE</text>
+                  <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                </svg>
+              </div>
+        </div>
+
+      </div>
+      <!--4 reosurce container slut-->
+
+      <!--5 reosurce container start-->
+      <!--Containeren er delt op i 4 flexcontainere-->
+      <div class="resourcervirk">
+
+        <div class="flexbox1">
+          <div class="overskrift-mb">
+            <h2>RESOURCES #5</h2>
+          </div>
+          <div class="ID">
+            <p>ID - 5</p>
+          </div>
+          <div class="show-more-flex-mobil">
+            <p><span class="green-text-mb">SHOW MORE</span></p>
+          </div>
+        </div>
+
+        <div class="flexbox2">
+          <div class="enable-mb">
+            <div class="empty-box">
+
+            </div>
+              <p class="enable1">ENABLE</p>
+              <div class="togglebox-mb">
+                  <div class="toggle-mb">
+                    <input class="checkbox-mb" type="checkbox">
+                    <div class="onbtn-mb"></div>
+                    <div class="ofbtn-mb"></div>
+                  </div>
+                </div>
+      </div>
+      </div>
+
+        <div class="flexbox3">
+            <p class="middle-text-resourcer-mb">
+                Type <br> Preventive <br> Group <br> Machine <br> Last Sercive <br> 08-04-20
+            </p>
+        </div>
+
+        <div class="flexbox4">
+            <div class="single-chart-mobil">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <path class="circle"
+                    stroke-dasharray="100, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+
+                  <text x="18" y="17" class="next-service-red">NEXT SERVICE</text>
+                  <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                </svg>
+              </div>
+        </div>
+
+      </div>
+      <!--5 reosurce container slut-->
+
+      <!--content.container slutter lige under-->
+    </div>
+    <!--Denne container søger for at man kan se alle containere når man scroller ned på siden. ift footeren-->
+    <div class="div-tilbagom1">
+    </div>
+
+    <!--footer containeren der har searchknapper, og add resource knappen-->
+    <!--footer containeren der har searchknapper, og add resource knappen-->
+    <div class="fixed-knap-container-mb">
+      <div class="knap-wrapper-mobil">
+        <div class="search-bar1">
+          <div class="search-text">
+          <p class="texttt">
+              Search:
+          </p>
+          </div>
+          <div class="search-btnn1">
+              <input class="search-btn-mb" type="text" name="search" value="" autocomplete="off" onkeyup="searchFunction()" placeholder="Search...">
+          </div>
+      </div>
+
+        <div class="addnew-rs1">
+          <div class="addnew-text" onclick="selectionAppear('modal');">Add New Resource</div>
+        </div>
+      </div>
+      </div>
+      <!--footer knap container slut-->
+
+  </div>
+  <!--mobil wrapper slut-->
+      <!--footer knap container slut-->
+
+
+  <!--mobil wrapper slut-->
+  <div class="modal-bg">
+
+    <div id="modal">
+
+      <div id="slide-one">
+        <div id="newresource">
+            <div class="close">
+              <button class="x-close" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one');">x</button>
+            </div>
+            <h2 class="header-popup">Create Resource</h2>
+            <div class="name-newresource">
+
+              <div class="resource-wrapper-placeholder">
+               <div class="name-placeholder">Name:</div>
+              <input id="name-placeholder" type="text" placeholder="TEST_RESOURCE...">
+            </div>
+          </div>
+
+          <div class="type-newresource">
+            <div class="resource-wrapper-placeholder">
+              <div class="type-placeholder">Type:</div>
+              <select class="type-select-newresource">
+              <option class="default_option">Preventive</option>
+              <option class="default_option">Predictive</option>
+            </select>
+            </div>
+          </div>
+
+
+            <div class="name-group-web">
+                    <div class="name-group-container-web1">
+                  <div class="name-group-proxi-web">
+
+
+                    <div id="center-div-shadow2">
+                      <div class="center-div-web">
+                          <div class="center-div-indhold-web">
+                              <p>Add New Group</p><div class="selection-container"><input type="text" placeholder="Write group name here..." id = "nyt-element-navn" />
+                              <input type="button" id = "add-group-button" value="+" onclick = "addnewgroup(); addnewgrouptwo(); "/></div>
+                              <select size="1" id = "group-add-select">
+                                  <option>Machine</option>
+                              </select>
+                              <div class="close-button-container"><button class="close-add-group-button" onclick="selectionAppear('center-div-shadow2');">close</button></div>
+                          </div>
+                      </div>
+                  </div>
+
+
+
+
+                      <div class="resource-wrapper-placeholder1">
+                          <label><span class="grouptext">Group:</span></label>
+                          <div class="select-and-button-contianer-web">
+                          <select size="1" id = "group-add-select-out">
+                              <option class="default_option">Machine</option>
+                          </select>
+                          <button class="add-group-button-div1" value="+" onclick="selectionAppear('center-div-shadow2');"></button>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+
+
+
+
+            <div class="group-newresource-dc">
+              <div class="description-wrapper">
+              Description:
+
+              <div class="container-dc-wrap">
+
+              </div>
+            </div>
+              <div class="resource-wrapper-placeholder-description">
+                <div class="comment-container">
+                  <textarea cols="110" name="comment" placeholder="Write comment here..."></textarea>
+              </div>
+              </div>
+
+            </div>
+
+            <div class="slide-container">
+
+              <div class="slide-container-wrapper">
+              <div class="slide-aktiv">
+                <p><span class="sliderp-aktiv">1</span></p>
+              </div>
+
+              <div class="slide">
+                <p><span class="sliderp" onclick="toggleVisibilityNewRes('slide-two');">2</span></p>
+              </div>
+
+              <div class="slide">
+                <p><span class="sliderp" onclick="toggleVisibilityNewRes('slide-three');">3</span></p>
+              </div>
+
+            </div>
+            <button class="next-btn-popup" onclick="toggleVisibilityNewRes('slide-two');">Next</button>
+            </div>
+          </div>
+      </div>
+
+
+    <!--HER STARTER SLIDE TWO-->
+    <div id="slide-two">
+        <div id="newresource2">
+            <div class="close">
+              <button class="x-close" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one');">x</button>
+            </div>
+            <h2 class="header-popup">Create Resource</h2>
+            <div class="name-newresource">
+
+              <div class="resource-wrapper-placeholder-3">
+                <p>First service check:</p>
+                <div class="history-menu-nedre-kasse-2">
+                  <input type="text" id="datepicker-history-menu2">
+                </div>
+            </div>
+          </div>
+
+          <div class="type-newresource">
+            <div class="service-interval-wrapper">
+              <div class="type-placeholder">Service Interval:</div>
+              <input id="service-interval-nr1" type="text" placeholder="1">
+              <select class="service-interval">
+              <option class="default_option">Days</option>
+              <option class="default_option">Month</option>
+            </select>
+            </div>
+          </div>
+
+
+          <div class="type-newresource">
+            <div class="service-interval-wrapper">
+              <div class="type-placeholder">Nofify:</div>
+              <input id="service-interval-nr" type="text" placeholder="2">
+              <select class="service-interval">
+              <option class="default_option">Days</option>
+              <option class="default_option">Month</option>
+            </select>
+            <p>Before</p>
+            </div>
+          </div>
+
+            <div class="name-newresource-em">
+
+              <div class="resource-wrapper-placeholder-2">
+               <div class="name-placeholder">Notify to email:</div>
+              <input id="name-placeholder-em" type="text" placeholder="Ims@trendlog.io">
+            </div>
+          </div>
+
+
+            <div class="slide-container">
+
+              <div class="slide-container-wrapper">
+              <div class="slide-aktiv">
+                <p><span class="sliderp-aktiv" onclick="toggleVisibilityNewRes('slide-one');">1</span></p>
+              </div>
+
+              <div class="slide-aktiv">
+                <p><span class="sliderp-aktiv" >2</span></p>
+              </div>
+
+
+              <div class="slide">
+                <p><span class="sliderp" onclick="toggleVisibilityNewRes('slide-three');">3</span></p>
+              </div>
+
+            </div>
+            <button class="next-btn-popup" onclick="toggleVisibilityNewRes('slide-three');">Next</button>
+            </div>
+          </div>
+    </div>
+    <!--HER SLUTTER SLIDE TWO-->
+
+
+
+
+    <!--HER STARTER SLIDE THREE-->
+    <div id="slide-three">
+        <div id="newresource3">
+            <div class="close">
+              <button class="x-close" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one');">x</button>
+            </div>
+            <h2 class="header-popup">Create Resource</h2>
+            <div class="name-newresource-3">
+              <h4>Checklist</h4>
+              <div class="add-checklist-container">
+                    <div class="add-todo-proxi">
+                        <div class="add-todo-wrapper-web">
+                            <label>Add to checklist</label>
+                        </div>
+                        <button class="add-todo-button-div" value="+" onclick=""></button>
+                        </div>
+                </div>
+            </div>
+              <div class="name-newresource-3">
+                <h4>Documents</h4>
+                <div class="add-checklist-container">
+                      <div class="add-todo-proxi">
+                          <div class="add-todo-wrapper-web">
+                            <label>Add adocument</label>
+                          </div>
+                          <button class="add-todo-button-div" value="+" onclick=""></button>
+                          </div>
+                  </div>
+        </div>
+
+            <div class="slide-container">
+
+              <div class="slide-container-wrapper">
+              <div class="slide-aktiv">
+                <p><span class="sliderp-aktiv" onclick="toggleVisibilityNewRes('slide-one');">1</span></p>
+              </div>
+
+              <div class="slide-aktiv">
+                <p><span class="sliderp-aktiv" onclick="toggleVisibilityNewRes('slide-two');">2</span></p>
+              </div>
+
+
+              <div class="slide-aktiv">
+                <p><span class="sliderp-aktiv">3</span></p>
+              </div>
+
+            </div>
+            <button class="create-btn-popup" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one'); toggleVisibilityNewRes('slide-one'); createAlert();">Create</button>
+            </div>
+          </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src="../js/java.js"></script>
+<script src="../js/dropdown.js"></script>
+<script src="../js/select-div.js"></script>
+<script src="../js/selection-apppear.js"></script>
+<script src="../js/drop.js"></script>
+<script src="../js/navbar.js"></script>
+<script src="../alle-sider/popup.js"></script>
+<script src="../alle-sider/selection-apppear.js"></script>
+<script src="../js/savealert.js"></script>
+
+<script src="../js/select-div.js"></script>
+<script src="../js/dropdown.js"></script>
+<script src="../js/calender.js"></script>
+<script src="../js/popup.js"></script>
+
+
+</body>
+</html>

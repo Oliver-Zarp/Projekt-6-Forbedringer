@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+  	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../alle-sider/style.css">
+    <link rel="stylesheet" href="navbar.css">
+      	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <meta name="description" content="app-development">
+    <meta name="keywords" content="app-development, maintenance, maintenancesystem, maintenanceplanner,
+    app, html5, css, code">
+    <!--<link rel="stylesheet" href="../styleguide/styles.css"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="gruppe25">
+    <link rel='icon' href='../img/facicon.png' type='image/x-icon'/>
+    <title>Resource 1 | Trendlog</title>
+</head>
+<body>
+
+  <header id="top" class="header-fixed">
+    <nav>
+      <div class="navelement1">
+        <div class="logo">
+          <a href="index.html">
+          <img src="../img/trendlog-io-white-thin4.png" alt="Trendlog.io logo">
+          </a>
+        </div>
+        <ul class="navmenu">
+          <li><a href="login.html"><i class="fas fa-home"></i></a></li>
+          <li><a href="#">Trendboards</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Views</a></li>
+          <li><a href="#">Feeds</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Shares</a></li>
+        </ul>
+      </div>
+      <div class="navelement2">
+        <ul class="navikoner">
+          <li><a href="#"><i class="fas fa-wrench"></i></a></li>
+          <li><a href="#"><i class="fas fa-eye-slash"></i></a></li>
+          <li><a href="#"><i class="fas fa-bell"></i></a></li>
+        </ul>
+        <input class="plugandlog" type="text" name="plug&log" value="">
+        <div class="navprofildropdown" id="navprofildropdown">
+          <div class="navprofil"><a href="#">
+            Navn
+            <i class="fas fa-user"></i>
+          </a>
+        </div>
+        </div>
+      </div>
+      <div class="burgerdropdownmenu" id="burgerdropdownmenu">
+        <div class="burger" id="burger">
+          <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--WRAPPER, ER EN WRAPPER TIL ALT CONTENT PÅ WEB SIDEN - PC-->
+  <div class="wrapper-webversion">
+    <!--CONTENTFLEXBOX-1 er den div der indholder at det content der er i den store hvide container, til venstre for siden. Der er her settings og sådan noget til resourcer kommer til at ligge.-->
+    <div class="contentflexbox-1">
+
+        <!--Indenholder checklisten - PC-->
+      <div id="wrapper-inhold-contentflexbox-1">
+        <div class="flex-knapper-venstre">
+            <button class="activevenstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-1');">Checklist</button>
+            <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-2');">Settings</button>
+            <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-3');">History</button>
+      </div>
+
+<div id="print">
+    <div class="text-flex-venstre">
+        <h2 class="resource-venstre">Resource #1</h2>
+        <p><b>Name</b></p>
+        <p>lms@trendlog.io</p>
+        <p><b>Service date planned:</b></p>
+        <p>23/04/2020</p>
+        <p><b>Description</b></p>
+        <p>Dette er en test.</p>
+        <!-- <input type="button" onclick="printDiv('print')" value="print a div!" /> -->
+    </div>
+
+      <div class="todo-list-box">
+        <div class="checkboxes-web">
+            <div class="todo-list-wrapper-web">
+                <div class="todo-item"><p>TODO #1</p></div>
+                <label class="item-container">
+                  <input id="todo-item-1-2" type="checkbox" name="myCheckbox-1">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+            <div class="todo-list-wrapper-web">
+                <div class="todo-item"><p>TODO #2</p></div>
+                <label class="item-container">
+                  <input id="todo-item-2-2" type="checkbox" name="myCheckbox-2">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+            <div class="todo-list-wrapper-web">
+                <div class="todo-item"><p>TODO #3</p></div>
+                <label class="item-container">
+                  <input type="checkbox" id="todo-item-3-2" name="myCheckbox-4">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+            <div class="todo-list-wrapper-web">
+                <div class="todo-item"><p>TODO #4</p></div>
+                <label class="item-container">
+                  <input type="checkbox" id="todo-item-4-2" name="myCheckbox-6">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="checkboxes-web">
+      <div class="group-newresource-dc-comment">
+        <div class="description-wrapper">
+        Comment:
+
+        <div class="container-dc-wrap">
+
+        </div>
+      </div>
+        <div class="resource-wrapper-placeholder-description">
+          <div class="comment-container">
+            <textarea cols="110" name="comment" placeholder="Write comment here..."></textarea>
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="image-upload-box">
+    <div class="image-upload">
+      <a  href="#">
+      <img class="uploadimg" src="../img/cloud.png" alt="uploadimg">
+      <h2 class="upload-img-text">Upload image here</h2></a>
+    </div>
+  </div>
+
+  <div class="docs-upload-box">
+    <div class="docs-upload">
+      <a href="">
+      <img class="document-png" src="../img/doc.png" alt="manual">
+      <p class="docs-text">Manual</p>
+    </a>
+
+    <a href="">
+      <img class="document-png" src="../img/doc.png" alt="diagram">
+      <p class="docs-text">Ei-diagram</p>
+    </a>
+    </div>
+  </div>
+
+  <div class="procentagebar-box-web-box">
+    <div class="procentagebar-box-web">
+      <div class="progressbar-bar"></div>
+      <div class="progressbar-label"></div>
+  </div>
+</div>
+</div>
+
+    <div class="save-button" onclick="saveAlert()">
+      <button class="save" onclick="saveAlert">Save</button>
+    </div>
+
+  </div>
+        <!--Indenholder settings - PC-->
+  <div id="wrapper-inhold-contentflexbox-2">
+    <div class="flex-knapper-venstre">
+      <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-1');">Checklist</button>
+      <button class="activevenstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-2');">Settings</button>
+      <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-3');">History</button>
+  </div>
+
+  <div id="general-settings-web">
+    <h2 class="header-popup">Resource Details</h2>
+    <div class="nedre-knapcontainer-content1">
+      <button class="active2" onclick="toggleVisibilityResSetWeb('general-settings-web');">General settings</button>
+      <button class="deactive2" onclick="toggleVisibilityResSetWeb('service-check-settings-web');">Service check settings</button>
+      <button class="deactive2" onclick="toggleVisibilityResSetWeb('add-to-checklist-web');">Add to checklist</button>
+    </div>
+    <div class="name-newresource">
+
+      <div class="resource-wrapper-placeholder">
+       <div class="name-placeholder">Name:</div>
+      <input id="name-placeholder-rwp" type="text" placeholder="Write name here...">
+    </div>
+  </div>
+
+    <div class="name-group-web1">
+            <div class="name-group-container-web">
+          <div class="name-group-proxi-web">
+
+
+            <div id="center-div-shadow3">
+
+              <div class="center-div-web">
+                  <div class="center-div-indhold-web1">
+                      <p>Add New Group</p><div class="selection-container1"><input type="text" placeholder="Write group name here..." id = "nyt-element-navn" />
+                      <input type="button" id = "add-group-button-2" value="+" onclick = "addnewgroup(); addnewgrouptwo(); addnewgroup1(); addnewgrouptwo1()"/></div>
+
+
+                      <select size="1" id = "group-add-select">
+                          <option>Machine</option>
+                      </select>
+                      <div class="close-button-container"><button class="close-add-group-button" onclick="selectionAppear('center-div-shadow3');">close</button></div>
+                  </div>
+              </div>
+          </div>
+
+              <div class="resource-wrapper-placeholder1">
+                  <label><span class="grouptext">Group:</span></label>
+                  <div class="select-and-button-contianer-web">
+                  <select size="1" id = "group-add-select-out">
+                      <option class="default_option">Machine</option>
+                  </select>
+                  <button class="add-group-button-div1" value="+" onclick="selectionAppear('center-div-shadow3');"></button>
+              </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <div class="group-newresource-dc">
+      <div class="description-wrapper">
+      Description:
+
+      <div class="container-dc-wrap">
+
+      </div>
+    </div>
+      <div class="resource-wrapper-placeholder-description">
+        <div class="comment-container">
+          <textarea cols="110" name="comment" placeholder="Write comment here..."></textarea>
+      </div>
+      </div>
+
+    </div>
+
+    <div class="">
+      <button class="save" onclick="saveAlert()">Save</button>
+    </div>
+  </div>
+
+  <div id="service-check-settings-web">
+    <h2 class="header-popup">Resource Details</h2>
+    <div class="nedre-knapcontainer-content1">
+      <button class="deactive2" onclick="toggleVisibilityResSetWeb('general-settings-web');">General settings</button>
+      <button class="active2" onclick="toggleVisibilityResSetWeb('service-check-settings-web');">Service check settings</button>
+      <button class="deactive2" onclick="toggleVisibilityResSetWeb('add-to-checklist-web');">Add to checklist</button>
+    </div>
+
+    <!--          FORSØG                   -->
+    <div class="type-newresource">
+      <div class="resource-wrapper-placeholder">
+        <div class="type-placeholder">Type:</div>
+        <select class="type-select-newresource">
+        <option class="default_option">Preventive</option>
+        <option class="default_option">Predictive</option>
+      </select>
+      </div>
+    </div>
+    <div class="name-newresource">
+
+      <div class="resource-wrapper-placeholder-3">
+        <p>Last service:</p>
+        <div class="history-menu-nedre-kasse-2">
+          <input type="text" id="datepicker-history-menu3">
+
+        </div>
+    </div>
+  </div>
+
+  <div class="type-newresource">
+    <div class="service-interval-wrapper">
+      <div class="type-placeholder">Service Interval:</div>
+      <input id="service-interval-nr2" type="text" placeholder="1">
+      <select class="service-interval">
+      <option class="default_option">Days</option>
+      <option class="default_option">Month</option>
+    </select>
+    </div>
+  </div>
+
+
+  <div class="type-newresource">
+    <div class="service-interval-wrapper">
+      <div class="type-placeholder">Nofify:</div>
+      <input id="service-interval-nr" type="text" placeholder="2">
+      <select class="service-interval">
+      <option class="default_option">Days</option>
+      <option class="default_option">Month</option>
+    </select>
+    <p>Before</p>
+    </div>
+  </div>
+
+    <div class="name-newresource-em">
+
+      <div class="resource-wrapper-placeholder-2">
+       <div class="name-placeholder">Notify to email:</div>
+      <input id="name-placeholder-em1" type="text" placeholder="Ims@trendlog.io">
+    </div>
+  </div>
+<!--       FORSØG         -->
+
+    <div class="">
+      <button class="save" onclick="saveAlert()">Save</button>
+    </div>
+  </div>
+
+  <div id="add-to-checklist-web">
+    <h2 class="header-popup">Resource Details</h2>
+    <div class="nedre-knapcontainer-content1">
+      <button class="deactive2" onclick="toggleVisibilityResSetWeb('general-settings-web');">General settings</button>
+      <button class="deactive2" onclick="toggleVisibilityResSetWeb('service-check-settings-web');">Service check settings</button>
+      <button class="active2" onclick="toggleVisibilityResSetWeb('add-to-checklist-web');">Add to checklist</button>
+    </div>
+    <div class="web-checklist-main-div">
+      <div class="web-checklist-main-div-tekst">
+        Checklist:
+      </div>
+      <div class="web-checklist-main-div-elementer">
+        <div class="web-settings-checklist-element1">
+          <div class="web-settings-resource-todo-tekst">
+          ToDo #1
+          </div>
+          <div class="web-settings-resource-todo-ikoner">
+            <i class="fas fa-pencil-alt"></i>
+            <i class="fas fa-trash-alt"></i>
+          </div>
+        </div>
+        <div class="web-settings-checklist-element1">
+          <div class="web-settings-resource-todo-tekst">
+          ToDo #1
+          </div>
+          <div class="web-settings-resource-todo-ikoner">
+            <i class="fas fa-pencil-alt"></i>
+            <i class="fas fa-trash-alt"></i>
+          </div>
+        </div>
+        <div class="web-settings-checklist-element1">
+          <div class="web-settings-resource-todo-tekst">
+          ToDo #1
+          </div>
+          <div class="web-settings-resource-todo-ikoner">
+            <i class="fas fa-pencil-alt"></i>
+            <i class="fas fa-trash-alt"></i>
+          </div>
+        </div>
+        <div class="add-to-checklist-web-settings">
+          <i class="fas fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="web-document-main-div">
+      <div class="web-checklist-main-div-tekst">
+        Documents:
+      </div>
+      <div class="web-checklist-main-div-elementer">
+        <div class="web-settings-checklist-element1">
+          <div class="web-settings-resource-todo-tekst">
+          Manual (pdf)
+          </div>
+          <div class="web-settings-resource-todo-ikoner">
+            <i class="fas fa-pencil-alt"></i>
+            <i class="fas fa-trash-alt"></i>
+          </div>
+        </div>
+        <div class="web-settings-checklist-element1">
+          <div class="web-settings-resource-todo-tekst">
+          El-diagram (pdf)
+          </div>
+          <div class="web-settings-resource-todo-ikoner">
+            <i class="fas fa-pencil-alt"></i>
+            <i class="fas fa-trash-alt"></i>
+          </div>
+        </div>
+        <div class="add-to-checklist-web-settings">
+          <i class="fas fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <button class="save" onclick="saveAlert()">Save</button>
+    </div>
+  </div>
+
+</div>
+
+        <!--Indenholder historien - PC-->
+  <div id="wrapper-inhold-contentflexbox-3">
+    <div class="flex-knapper-venstre">
+      <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-1');">Checklist</button>
+      <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-2');">Settings</button>
+      <button class="activevenstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-3');">History</button>
+   </div>
+
+   <div class="text-flex-venstre">
+    <h2 class="resource-venstre">Maintenance history</h2>
+  </div>
+
+    <div class="history-menu">
+      <div class="history-menu-kasse">
+        <div class="history-menu-øvre-kasse">
+          <div class="history-boks-tekst">
+            Entries:
+          </div>
+          <select class="history-menu-øvre-kasse-entries">
+            <option class="history-boks-tekst">10</option>
+            <option>10 </option>
+            <option>20</option>
+            <option>30</option>
+            <option>40</option>
+            <option>50</option>
+            </select>
+          <input class="history-søgefunktion" type="text" name="historyesøgefunktion" placeholder="Søg...">
+        </div>
+        <div class="history-menu-nedre-kasse">
+          <div class="history-menu-nedre-kasse-1">
+            Date Filter:
+          </div>
+          <div class="history-menu-nedre-kasse-2">
+            <input type="text" id="datepicker-history-menu7">
+              <i class="fas fa-arrow-right"></i>
+            <input type="text" id="datepicker-history-menu4">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="history-list">
+      <div class="history-list-boks">
+        <div class="history-list-id">
+          <div class="history-list-filter-id">
+            ID
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="history-list-element-id">
+            <ul>
+              <li>203</li>
+              <li>204</li>
+              <li>203</li>
+              <li>204</li>
+              <li>203</li>
+              <li>204</li>
+              <li>203</li>
+              <li>204</li>
+              <li>203</li>
+              <li>204</li>
+            </ul>
+          </div>
+        </div>
+        <div class="history-list-name">
+          <div class="history-list-filter-name">
+            Name
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="history-list-element-name">
+            <ul>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+            </ul>
+          </div>
+        </div>
+        <div class="history-list-date">
+          <div class="history-list-filter-date">
+            Date
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="history-list-element-date">
+            <ul>
+              <li>08/02/20</li>
+              <li>02/01/20</li>
+              <li>09/12/19</li>
+              <li>12/11/19</li>
+              <li>14/10/19</li>
+              <li>25/09/19</li>
+              <li>30/08/19</li>
+              <li>03/07/19</li>
+              <li>03/06/19</li>
+              <li>13/05/19</li>
+            </ul>
+          </div>
+        </div>
+        <div class="history-list-value">
+          <div class="history-list-filter-value">
+            Value
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="history-list-element-value">
+            <ul>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="næste-side-knapper">
+            <button class="previous-knap" type="button" name="nextpage">
+              <i class="fas fa-arrow-left"></i>
+              Previous
+            </button>
+            <button class="next-knap" type="button" name="nextpage">
+              Next
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+  </div>
+
+  </div>
+
+
+    <!--CONTENTFLEX-2 Inderholder alt det content vi har i den store box til højre. Den indeholder blandt andet alle resource containere og knapper til pending osv-->
+    <div class="contentflexbox-2">
+      <div class="flex-knapper3">
+        <button class="active" type="button" onclick="click">Overdue Service<br>Check</button>
+
+        <form method="get" action="awaiting-resource.html">
+          <button class="deactive1" type="submit">Awaiting</button>
+        </form>
+
+        <select class="service-interval1">
+          <option class="default_option">Sort by</option>
+          <option>ID </option>
+          <option>NAME</option>
+          <option>ENABLE</option>
+          <option>TYPE</option>
+          <option>NEXT SERVICE</option>
+          <option>LAST SERVICE</option>
+          <option>DATA ADDED</option>
+          <option>GROUP</option>
+          </select>
+    </div>
+
+
+        <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
+        <div class="div-click" onclick="location.href='index.html';" style="cursor: pointer;">
+       <div class="resource-container1">
+        <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
+        <div class="resourceflex-1">
+            <!--Overskriften til resourcer-->
+            <!--Indholdet til første flexcontainer-->
+        <div class="overskrift">
+            <h2>Recource #1</h2>
+          </div>
+          <div class="ID">
+            <p><span class="text-kategori">ID - 1</span></p>
+          </div>
+          <div class="show-more-flex">
+            <p><span class="green-text">SHOW MORE</span></p>
+          </div>
+          <!--Indholdet til første flexcontainer SLUT-->
+        </div>
+        <!--resourceflex-2 er diven med type, preventivce, group, og machine. Det er de kategorier vi har i resource-containeren-->
+        <div class="resourceflex-2">
+            <p class="middle-text-resourcer">
+             <span class="white-text">Type</span><br><span class="text-kategori">Preventive</span><br><span class="white-text">Group</span> <br><span class="text-kategori">Machine</span>
+            </p>
+        </div>
+        <!--resourceflex-3 er den div der har en enableknap og last service kategori. dette er stadig indholdet til hele den store resource-container-->
+        <div class="resourceflex-3">
+            <div class="enable">
+                <p><span class="white-text">Enable</span></p>
+                <div class="toggleBox">
+                    <div class="toggle">
+                      <input class="toggle-pc" type="checkbox">
+                      <div class="onbtn"></div>
+                      <div class="ofbtn"></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="enable-text">
+            <p><span class="white-text">Last Service</span><br><span class="text-kategori">N/A</span></p>
+            </div>
+
+        </div>
+        <!--Dette er den sidste flexcontainer til resource-containeren. Denne indeholder cores cirkeldiagram, som viser hvor mange dage der er indtil serive.-->
+        <div class="resourceflex-4">
+            <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                  <path class="circle"
+                    stroke-dasharray="100, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                    <!--Next service er det øvereste test i cirkeldiagrammet-->
+                  <text x="18" y="17" class="next-service-white">NEXT SERVICE</text>
+                    <!--precentage er de dage der er tilbage/- eller overskredet af service-->
+                  <text x="18" y="23" class="percentage-white">0 DAYS</text>
+                </svg>
+              </div>
+        </div>
+    </div>
+  </div>
+    <!--Nr 1 resourcecontainer slut.-->
+
+
+    <!-- Nr 2 resourcecontainer start-->
+        <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
+        <div class="div-click" onclick="location.href='index.html';" style="cursor: pointer;">
+       <div class="resource-container">
+        <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
+        <div class="resourceflex-1">
+            <!--Overskriften til resourcer-->
+            <!--Indholdet til første flexcontainer-->
+        <div class="overskrift">
+            <h2>Resource #2</h2>
+          </div>
+          <div class="ID">
+            <p><span class="text-kategori">ID - 2</span></p>
+          </div>
+          <div class="show-more-flex">
+            <p><span class="green-text">SHOW MORE</span></p>
+          </div>
+          <!--Indholdet til første flexcontainer SLUT-->
+        </div>
+        <!--resourceflex-2 er diven med type, preventivce, group, og machine. Det er de kategorier vi har i resource-containeren-->
+        <div class="resourceflex-2">
+            <p class="middle-text-resourcer">
+             <span class="grey-text">Type</span><br><span class="text-kategori">Preventive</span><br><span class="grey-text">Group</span> <br><span class="text-kategori">Machine</span>
+            </p>
+        </div>
+        <!--resourceflex-3 er den div der har en enableknap og last service kategori. dette er stadig indholdet til hele den store resource-container-->
+        <div class="resourceflex-3">
+            <div class="enable">
+                <p><span class="grey-text">Enable</span></p>
+                <div class="toggleBox">
+                    <div class="toggle">
+                      <input class="toggle-pc" type="checkbox">
+                      <div class="onbtn"></div>
+                      <div class="ofbtn"></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="enable-text">
+            <p><span class="grey-text">Last Service</span><br><span class="text-kategori">N/A</span></p>
+            </div>
+
+        </div>
+        <!--Dette er den sidste flexcontainer til resource-containeren. Denne indeholder cores cirkeldiagram, som viser hvor mange dage der er indtil serive.-->
+        <div class="resourceflex-4">
+            <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                  <path class="circle"
+                    stroke-dasharray="100, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <!--Next service er det øvereste test i cirkeldiagrammet-->
+                  <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                    <!--precentage er de dage der er tilbage/- eller overskredet af service-->
+                  <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                </svg>
+              </div>
+        </div>
+    </div>
+  </div>
+    <!--Nr 2 resourcecontainer slut.-->
+
+    <!-- Nr 3 resourcecontainer start-->
+        <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
+        <div class="div-click" onclick="location.href='index.html';" style="cursor: pointer;">
+        <div class="resource-container">
+            <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
+            <div class="resourceflex-1">
+                <!--Overskriften til resourcer-->
+                <!--Indholdet til første flexcontainer-->
+            <div class="overskrift">
+                <h2>Resource #3</h2>
+              </div>
+              <div class="ID">
+                <p><span class="text-kategori">ID - 3</span></p>
+              </div>
+              <div class="show-more-flex">
+                <p><span class="green-text">SHOW MORE</span></p>
+              </div>
+              <!--Indholdet til første flexcontainer SLUT-->
+            </div>
+            <!--resourceflex-2 er diven med type, preventivce, group, og machine. Det er de kategorier vi har i resource-containeren-->
+            <div class="resourceflex-2">
+                <p class="middle-text-resourcer">
+                 <span class="grey-text">Type</span><br><span class="text-kategori">Preventive</span><br><span class="grey-text">Group</span> <br><span class="text-kategori">Machine</span>
+                </p>
+            </div>
+            <!--resourceflex-3 er den div der har en enableknap og last service kategori. dette er stadig indholdet til hele den store resource-container-->
+            <div class="resourceflex-3">
+                <div class="enable">
+                    <p><span class="grey-text">Enable</span></p>
+                    <div class="toggleBox">
+                        <div class="toggle">
+                          <input class="toggle-pc" type="checkbox">
+                          <div class="onbtn"></div>
+                          <div class="ofbtn"></div>
+                        </div>
+                      </div>
+                </div>
+                <div class="enable-text">
+                <p><span class="grey-text">Last Service</span><br><span class="text-kategori">N/A</span></p>
+                </div>
+
+            </div>
+            <!--Dette er den sidste flexcontainer til resource-containeren. Denne indeholder cores cirkeldiagram, som viser hvor mange dage der er indtil serive.-->
+            <div class="resourceflex-4">
+                <div class="single-chart">
+                    <svg viewBox="0 0 36 36" class="circular-chart red">
+                      <path class="circle-bg"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                      <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                      <path class="circle"
+                        stroke-dasharray="100, 100"
+                        d="M18 2.0845
+                          a 15.9155 15.9155 0 0 1 0 31.831
+                          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <!--Next service er det øvereste test i cirkeldiagrammet-->
+                      <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                        <!--precentage er de dage der er tilbage/- eller overskredet af service-->
+                      <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                    </svg>
+                  </div>
+            </div>
+        </div>
+      </div>
+        <!--Nr 3 resourcecontainer slut.-->
+
+        <!--Nr 4 resourcecontainer start-->
+        <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
+        <div class="div-click" onclick="location.href='index.html';" style="cursor: pointer;">
+        <div class="resource-container">
+        <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
+        <div class="resourceflex-1">
+            <!--Overskriften til resourcer-->
+            <!--Indholdet til første flexcontainer-->
+        <div class="overskrift">
+            <h2>Resource #4</h2>
+          </div>
+          <div class="ID">
+            <p><span class="text-kategori">ID - 4</span></p>
+          </div>
+          <div class="show-more-flex">
+            <p><span class="green-text">SHOW MORE</span></p>
+          </div>
+          <!--Indholdet til første flexcontainer SLUT-->
+        </div>
+        <!--resourceflex-2 er diven med type, preventivce, group, og machine. Det er de kategorier vi har i resource-containeren-->
+        <div class="resourceflex-2">
+            <p class="middle-text-resourcer">
+             <span class="grey-text">Type</span><br><span class="text-kategori">Preventive</span><br><span class="grey-text">Group</span> <br><span class="text-kategori">Machine</span>
+            </p>
+        </div>
+        <!--resourceflex-3 er den div der har en enableknap og last service kategori. dette er stadig indholdet til hele den store resource-container-->
+        <div class="resourceflex-3">
+            <div class="enable">
+                <p><span class="grey-text">Enable</span></p>
+                <div class="toggleBox">
+                    <div class="toggle">
+                      <input class="toggle-pc" type="checkbox">
+                      <div class="onbtn"></div>
+                      <div class="ofbtn"></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="enable-text">
+            <p><span class="grey-text">Last Service</span><br><span class="text-kategori">N/A</span></p>
+            </div>
+
+        </div>
+        <!--Dette er den sidste flexcontainer til resource-containeren. Denne indeholder cores cirkeldiagram, som viser hvor mange dage der er indtil serive.-->
+        <div class="resourceflex-4">
+            <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                  <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                  <path class="circle"
+                    stroke-dasharray="100, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <!-- Next service er det øvereste test i cirkeldiagrammet-->
+                  <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                    <!-- precentage er de dage der er tilbage/- eller overskredet af service-->
+                  <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                </svg>
+              </div>
+        </div>
+    </div>
+  </div>
+    <!--Nr 4 resourcecontainer slut.-->
+
+
+    <!--Nr 5 resourcecontainer start-->
+        <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
+        <div class="div-click" onclick="location.href='index.html';" style="cursor: pointer;">
+        <div class="resource-container">
+          <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
+          <div class="resourceflex-1">
+              <!--Overskriften til resourcer-->
+              <!--Indholdet til første flexcontainer-->
+          <div class="overskrift">
+              <h2>Resource #4</h2>
+            </div>
+            <div class="ID">
+              <p><span class="text-kategori">ID - 4</span></p>
+            </div>
+            <div class="show-more-flex">
+              <p><span class="green-text">SHOW MORE</span></p>
+            </div>
+            <!--Indholdet til første flexcontainer SLUT-->
+          </div>
+          <!--resourceflex-2 er diven med type, preventivce, group, og machine. Det er de kategorier vi har i resource-containeren-->
+          <div class="resourceflex-2">
+              <p class="middle-text-resourcer">
+               <span class="grey-text">Type</span><br><span class="text-kategori">Preventive</span><br><span class="grey-text">Group</span> <br><span class="text-kategori">Machine</span>
+              </p>
+          </div>
+          <!--resourceflex-3 er den div der har en enableknap og last service kategori. dette er stadig indholdet til hele den store resource-container-->
+          <div class="resourceflex-3">
+              <div class="enable">
+                  <p><span class="grey-text">Enable</span></p>
+                  <div class="toggleBox">
+                      <div class="toggle">
+                        <input class="toggle-pc" type="checkbox">
+                        <div class="onbtn"></div>
+                        <div class="ofbtn"></div>
+                      </div>
+                    </div>
+              </div>
+              <div class="enable-text">
+              <p><span class="grey-text">Last Service</span><br><span class="text-kategori">N/A</span></p>
+              </div>
+
+          </div>
+          <!--Dette er den sidste flexcontainer til resource-containeren. Denne indeholder cores cirkeldiagram, som viser hvor mange dage der er indtil serive.-->
+          <div class="resourceflex-4">
+              <div class="single-chart">
+                  <svg viewBox="0 0 36 36" class="circular-chart red">
+                    <path class="circle-bg"
+                      d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                    <path class="circle"
+                      stroke-dasharray="100, 100"
+                      d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                      <!--Next service er det øvereste test i cirkeldiagrammet-->
+                    <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                      <!--precentage er de dage der er tilbage/- eller overskredet af service-->
+                    <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                  </svg>
+                </div>
+          </div>
+      </div>
+    </div>
+      <!--Nr 5 resourcecontainer slut.-->
+
+      <!--Nr 6 resourcecontainer start-->
+        <!--Resource-container giver lidt sig selv. Dette er containeren med alt resource indhold. Det er den hvide container med et cirkeldiagram-->
+        <div class="div-click" onclick="location.href='index.html';" style="cursor: pointer;">
+        <div class="resource-container">
+          <!--Resource flex containerne er de 4 store flexcontainere der har det content der er i resource-containeren (den aflangde hvide)-->
+          <div class="resourceflex-1">
+              <!--Overskriften til resourcer-->
+              <!--Indholdet til første flexcontainer-->
+          <div class="overskrift">
+              <h2>Resource #4</h2>
+            </div>
+            <div class="ID">
+              <p><span class="text-kategori">ID - 4</span></p>
+            </div>
+            <div class="show-more-flex">
+              <p><span class="green-text">SHOW MORE</span></p>
+            </div>
+            <!--Indholdet til første flexcontainer SLUT-->
+          </div>
+          <!--resourceflex-2 er diven med type, preventivce, group, og machine. Det er de kategorier vi har i resource-containeren-->
+          <div class="resourceflex-2">
+              <p class="middle-text-resourcer">
+               <span class="grey-text">Type</span><br><span class="text-kategori">Preventive</span><br><span class="grey-text">Group</span> <br><span class="text-kategori">Machine</span>
+              </p>
+          </div>
+          <!--resourceflex-3 er den div der har en enableknap og last service kategori. dette er stadig indholdet til hele den store resource-container-->
+          <div class="resourceflex-3">
+              <div class="enable">
+                  <p><span class="grey-text">Enable</span></p>
+                  <div class="toggleBox">
+                      <div class="toggle">
+                        <input class="toggle-pc" type="checkbox">
+                        <div class="onbtn"></div>
+                        <div class="ofbtn"></div>
+                      </div>
+                    </div>
+              </div>
+              <div class="enable-text">
+              <p><span class="grey-text">Last Service</span><br><span class="text-kategori">N/A</span></p>
+              </div>
+
+          </div>
+          <!--Dette er den sidste flexcontainer til resource-containeren. Denne indeholder cores cirkeldiagram, som viser hvor mange dage der er indtil serive.-->
+          <div class="resourceflex-4">
+              <div class="single-chart">
+                  <svg viewBox="0 0 36 36" class="circular-chart red">
+                    <path class="circle-bg"
+                      d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                    <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                    <path class="circle"
+                      stroke-dasharray="100, 100"
+                      d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                      <!-- Next service er det øvereste test i cirkeldiagrammet-->
+                    <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                      <!-- precentage er de dage der er tilbage/- eller overskredet af service-->
+                    <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                  </svg>
+                </div>
+          </div>
+      </div>
+    </div>
+      <!--Nr 6 resourcecontainer slut.-->
+      <br>
+      <div class="div-tilbagom">
+      </div>
+
+      <div class="fixed-knap-container1">
+        <div class="tester">
+          <div class="addnew-rs">
+          <div class="search-bar">
+            <div class="virk">
+            <p class="texttt">
+                Search:
+            </p>
+            </div>
+            <div class="virk1">
+                <input class="search-web" type="text" name="search" value="" autocomplete="off"  onkeyup="searchFunction()" placeholder="Search...">
+            </div>
+        </div>
+      </div>
+
+          <div class="addnew-rs">
+            <button class="modal-btn" onclick="selectionAppear('modal');">ADD RESOURCE</button>
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+
+  <!--denne wrapper holder alt til mobilversionen. Dette har vi med for at vi kan bruge media queryes til hurtigt at fjerne hele layoutet og skifte det ud med mobillayoutet-->
+  <div id="mobil-wrapper-res">
+
+    <!--TIL RESSOURCEN NÅR DEN ER SELECTED - MOBIL VERSION-->
+
+
+<!--  Headeren ligger for sig selv (i sit eget div) og ikke inden i en nogen container, da den skal vises på alle undersider  -->
+<!--SLUT PÅ HEADER-->
+
+
+<!--Dette div indenholder checklisten undersiden-->
+<div id="mobile-checkliste-container">
+
+    <div class="navigation-buttons">
+      <form class="button-nav-back-box" action="../alle-sider/index.html">
+        <button class="button-nav-back" type="submit">BACK</button>
+      </form>
+        <button class="button-nav-blue" onclick="toggleVisibility('mobile-checkliste-container');">CHECKLIST</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-settings-container');;">SETTINGS</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
+    </div>
+    <div class="title">
+        <h1>Resource #1</h1>
+    </div>
+    <div class="info-text">
+        <div class="info-text-categori"><h4>Name</h4>
+        <p>lms@trendlog.io</p></div>
+        <div class="info-text-categori"><h4>Service date planned</h4>
+        <p>08/04/2020</p></div>
+        <div class="info-text-categori"><h4>Description</h4>
+        <p>Der er ingen beskrivelse. </p></div>
+    </div>
+
+    <div class="todo-list-box">
+        <div class="checkboxes">
+            <div class="todo-list-wrapper">
+                <div class="todo-item"><p>TODO #1</p></div>
+                <label class="item-container">
+                  <input id="todo-item-1-1" type="checkbox" name="myCheckbox">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+            <div class="todo-list-wrapper">
+                <div class="todo-item"><p>TODO #2</p></div>
+                <label class="item-container">
+                  <input id="todo-item-2-1" type="checkbox" name="myCheckbox-3">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+            <div class="todo-list-wrapper">
+                <div class="todo-item"><p>TODO #3</p></div>
+                <label class="item-container">
+                  <input type="checkbox" id="todo-item-3-1" name="myCheckbox-5">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+            <div class="todo-list-wrapper">
+                <div class="todo-item"><p>TODO #4</p></div>
+                <label class="item-container">
+                  <input type="checkbox" id="todo-item-4-1" name="myCheckbox-7">
+                <span class="checkmark-in-box"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment-checklist">
+        <div class="comment-checklist-wrapper">
+            <h4>Comment</h4>
+            <div class="comment-container">
+                <textarea cols="110" name="comment" placeholder="Write comment here..."></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="upload-pic"><img src="../img/upload.svg" alt="uploading"/></div>
+    <div class="document">
+        <div class="document-wrapper">
+            <div class="document-container">
+                <div class="documents"><p>Manual (pdf)</p></div>
+            </div>
+            <div class="document-container">
+                <div class="documents"><p>Manual (pdf)</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="save-button-mobil">
+        <button class="save-mobil" onclick="saveAlert()">Save</button>
+    </div>
+    <div class="procentagebar-box">
+        <div class="progressbar-bar"></div>
+        <div class="progressbar-label"></div>
+    </div>
+</div>
+<!--SLUT PÅ CHECKLISTE UNDERSIDEN-->
+
+<!--SETTINGS-->
+<!--Dette div indenholder settings undersiden, samt den første underside under settings "general settings"-->
+<div id="mobile-settings-container">
+
+    <div id="center-div-shadow">
+        <div class="center-div">
+            <div class="center-div-indhold">
+                <p>Add New Group</p><div class="selection-container"><input type="text" placeholder="Write group name here..." id = "nyt-element-navn-1" />
+                <input type="button" id = "add-group-button-1" value="+" onclick = "addnewgroupmobil(); addnewgrouptwomobil(); addnewgroup1mobil(); addnewgrouptwo1mobil()"/></div>
+                <select size="1" id = "group-add-select3">
+                    <option>Machine</option>
+                </select>
+                <div class="close-button-container"><button class="close-add-group-button" onclick="selectionAppear('center-div-shadow');">close</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+      <form class="button-nav-back-box" action="../alle-sider/index.html">
+        <button class="button-nav-back" type="submit">BACK</button>
+      </form>
+        <button class="button-nav" onclick="toggleVisibility('mobile-checkliste-container');">CHECKLIST</button>
+        <button class="button-nav-blue" onclick="toggleVisibility('mobile-settings-container');">SETTINGS</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
+    </div>
+
+    <div class="title">
+        <h1>Resource Details</h1>
+    </div>
+
+    <div id="mobile-general-settings-container">
+
+        <div class="navigation-buttons">
+          <form class="button-nav-back-box" action="../alle-sider/index.html">
+            <button class="button-nav-back" type="submit">BACK</button>
+          </form>
+            <button class="button-nav" onclick="toggleVisibility('mobile-checkliste-container');">CHECKLIST</button>
+            <button class="button-nav-blue" onclick="toggleVisibility('mobile-settings-container');">SETTINGS</button>
+            <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
+        </div>
+
+        <div class="navigation-buttons-settings">
+            <div class="navigation-buttons-settings-wrapper">
+                <div class="navigation-buttons-settings-wrapper-margin">
+                    <button class="button-nav-settings-blue" onclick="toggleVisibility('mobile-settings-container');">GENERAL SETTINGS</button>
+                    <button class="button-nav-settings" onclick="toggleVisibility('mobile-service-settings-container');">SERVICE CHECK SETTINGS</button>
+                    <button class="button-nav-settings" onclick="toggleVisibility('mobile-add-to-settings-container');">ADD TO CHECKLIST</button>
+                </div>
+            </div>
+        </div>
+        <div class="name-group">
+            <div class="name-group-container">
+                <div class="name-group-proxi">
+                    <div class="name-group-wrapper">
+                        <label>Name:</label>
+                        <div class="select-and-button-contianer"><input type="text" class="name-button-class" name="name" placeholder="Resource #1"></div>
+                    </div>
+                    <div class="name-group-wrapper">
+                        <label>Group:</label>
+                        <div class="select-and-button-contianer">
+                        <select size="1" id = "group-add-select-out-1">
+                            <option class="default_option">Machine</option>
+                        </select>
+                        <button class="add-group-button-div" value="+" onclick="selectionAppear('center-div-shadow');"></button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="description-settings">
+            <div class="description-settings-wrapper">
+                <h4>Description</h4>
+                <div class="description-container">
+                    <textarea cols="110" name="comment" placeholder="Write description here..."></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="save-button-mobil">
+            <button class="save-mobil" onclick="saveAlert()">Save</button>
+        </div>
+
+    </div>
+</div>
+<!--SLUT PÅ SETTINGS "GENERAL SETTINGS" UNDERSIDEN-->
+
+
+<!--Dette div indenholder settings undersiden, samt den anden underside under settings "service settings"-->
+<div id="mobile-service-settings-container">
+
+    <div class="navigation-buttons">
+      <form class="button-nav-back-box" action="../alle-sider/index.html">
+        <button type="submit" class="button-nav-back">BACK</button>
+      </form>
+        <button class="button-nav" onclick="toggleVisibility('mobile-checkliste-container');">CHECKLIST</button>
+        <button class="button-nav-blue" onclick="toggleVisibility('mobile-settings-container');">SETTINGS</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
+    </div>
+
+    <div class="title">
+        <h1>Resource Details</h1>
+    </div>
+
+    <div class="navigation-buttons-settings">
+        <div class="navigation-buttons-settings-wrapper">
+            <div class="navigation-buttons-settings-wrapper-margin">
+                <button class="button-nav-settings" onclick="toggleVisibility('mobile-settings-container');">GENERAL SETTINGS</button>
+                <button class="button-nav-settings-blue" onclick="toggleVisibility('mobile-service-settings-container');">SERVICE CHECK SETTINGS</button>
+                <button class="button-nav-settings" onclick="toggleVisibility('mobile-add-to-settings-container');">ADD TO CHECKLIST</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="type">
+        <div class="type-container">
+            <div class="type-proxi">
+                <div class="type-wrapper">
+                    <label>Type:</label>
+                    <div class="select-and-button-contianer">
+                    <select size="1" id = "group-add-select-out-2">
+                        <option class="default_option">Preventiv</option>
+                        <option class="default_option">Predictiv</option>
+                    </select>
+                    <button class="add-group-button-div2" value="+" onclick="selectionAppear('center-div-shadow');"></button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="servive-form-mobil">
+        <div class="servive-form-mobil-container">
+            <div class="servive-form-mobil-proxi">
+                <h4>Service form</h4>
+                <div class="servive-form-mobil-wrapper">
+                    <label>
+                        Service
+                        interval:
+                    </label>
+                    <div class="select-and-button-contianer">
+                    <select size="1" id = "group-add-select-out-3">
+                        <option class="option">1</option>
+                        <option class="option">2</option>
+                        <option class="option">3</option>
+                        <option class="option">4</option>
+                        <option class="option">5</option>
+                        <option class="option">6</option>
+                        <option class="option">7</option>
+                        <option class="option">8</option>
+                        <option class="option">9</option>
+                        <option class="default_option">10</option>
+                        <option class="option">11</option>
+                        <option class="option">12</option>
+                        <option class="option">13</option>
+                        <option class="option">14</option>
+                        <option class="option">15</option>
+                        <option class="option">16</option>
+                        <option class="option">17</option>
+                        <option class="option">18</option>
+                        <option class="option">19</option>
+                        <option class="option">20</option>
+                        <option class="option">21</option>
+                        <option class="option">22</option>
+                        <option class="option">23</option>
+                        <option class="option">24</option>
+                        <option class="option">25</option>
+                        <option class="option">26</option>
+                        <option class="option">27</option>
+                        <option class="option">28</option>
+                        <option class="option">29</option>
+                        <option class="option">30</option>
+                    </select>
+                    <select size="1" id = "group-add-select-out-4">
+                        <option class="default_option">Days</option>
+                        <option class="option">months</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="notify">
+        <div class="notify-container">
+            <div class="notify-proxi">
+                <h4>Notify</h4>
+                <div class="notify-wrapper">
+                    <label>Notify:</label>
+                    <div class="select-and-button-contianer">
+                    <select size="1" id = "group-add-select-out-5">
+                        <option class="option">1</option>
+                        <option class="option">2</option>
+                        <option class="option">3</option>
+                        <option class="option">4</option>
+                        <option class="option">5</option>
+                        <option class="option">6</option>
+                        <option class="option">7</option>
+                        <option class="option">8</option>
+                        <option class="option">9</option>
+                        <option class="default_option">10</option>
+                        <option class="option">11</option>
+                        <option class="option">12</option>
+                        <option class="option">13</option>
+                        <option class="option">14</option>
+                        <option class="option">15</option>
+                        <option class="option">16</option>
+                        <option class="option">17</option>
+                        <option class="option">18</option>
+                        <option class="option">19</option>
+                        <option class="option">20</option>
+                        <option class="option">21</option>
+                        <option class="option">22</option>
+                        <option class="option">23</option>
+                        <option class="option">24</option>
+                        <option class="option">25</option>
+                        <option class="option">26</option>
+                        <option class="option">27</option>
+                        <option class="option">28</option>
+                        <option class="option">29</option>
+                        <option class="option">30</option>
+                    </select>
+                    <select size="1" id = "group-add-select-out-6">
+                        <option class="default_option">Days</option>
+                        <option class="option">months</option>
+                    </select>
+                    <p class="before">before</p>
+                </div>
+                </div>
+                <div class="notify-wrapper">
+                    <label>Email:</label>
+                    <div class="select-and-button-contianer">
+                        <input type="text" class="name-button-class" name="name" placeholder="example@hotmail.com">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="date-service">
+        <div class="date-service-container">
+            <div class="date-service-proxi">
+                <h4>Service</h4>
+                <div class="date-service-wrapper">
+                    <label>Last service:</label>
+                    <div class="history-menu-nedre-kasse-service-next">
+                        <input type="text" id="datepicker-history-menu-service-next">
+                      </div>
+                </div>
+                <div class="date-service-wrapper">
+                    <label>Next service:</label>
+                        <div class="history-menu-nedre-kasse-service-last">
+                            <input type="text" id="datepicker-history-menu-service-last">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="save-button-mobil">
+        <button class="save-mobil" onclick="saveAlert()">Save</button>
+    </div>
+
+</div>
+<!--SLUT PÅ SETTINGS "SERVICE SETTINGS" UNDERSIDEN-->
+
+
+<!--Dette div indenholder settings undersiden, samt den tredje underside under settings "add to checklisten settings"-->
+<div id="mobile-add-to-settings-container">
+
+    <div class="navigation-buttons">
+      <form class="button-nav-back-box" action="../alle-sider/index.html">
+        <button class="button-nav-back" type="submit">BACK</button>
+      </form>
+        <button class="button-nav" onclick="toggleVisibility('mobile-checkliste-container');">CHECKLIST</button>
+        <button class="button-nav-blue" onclick="toggleVisibility('mobile-settings-container');">SETTINGS</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
+    </div>
+
+    <div class="title">
+        <h1>Resource Details</h1>
+    </div>
+
+    <div class="navigation-buttons-settings">
+        <div class="navigation-buttons-settings-wrapper">
+            <div class="navigation-buttons-settings-wrapper-margin">
+                <button class="button-nav-settings" onclick="toggleVisibility('mobile-settings-container');">GENERAL SETTINGS</button>
+                <button class="button-nav-settings" onclick="toggleVisibility('mobile-service-settings-container');">SERVICE CHECK SETTINGS</button>
+                <button class="button-nav-settings-blue" onclick="toggleVisibility('mobile-add-to-settings-container');">ADD TO CHECKLIST</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="add-checklist-container">
+        <div class="add-todo-container">
+            <h4>Description</h4>
+            <div class="add-todo-proxi">
+                <div class="add-todo-wrapper">
+                    <label>TODO #1</label>
+                    <div class="add-todo-ikoner">
+                      <i class="fas fa-pencil-alt"></i>
+                      <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="add-todo-wrapper">
+                    <label>TODO #2</label>
+                    <div class="add-todo-ikoner">
+                      <i class="fas fa-pencil-alt"></i>
+                      <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="add-todo-wrapper">
+                    <label>TODO #3</label>
+                    <div class="add-todo-ikoner">
+                      <i class="fas fa-pencil-alt"></i>
+                      <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="add-todo-wrapper">
+                    <label>TODO #4</label>
+                    <div class="add-todo-ikoner">
+                      <i class="fas fa-pencil-alt"></i>
+                      <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                </div>
+                <button class="add-todo-button-div" value="+" onclick=""></button>
+            </div>
+        </div>
+        <div class="add-checklist-container">
+            <div class="add-todo-container">
+                <h4>Document</h4>
+                <div class="add-todo-proxi">
+                    <div class="add-todo-wrapper">
+                        <label>Manual (pdf)</label>
+                        <div class="add-todo-ikoner">
+                          <i class="fas fa-pencil-alt"></i>
+                          <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    <div class="add-todo-wrapper">
+                        <label>El-diagram (pdf)</label>
+                        <div class="add-todo-ikoner">
+                          <i class="fas fa-pencil-alt"></i>
+                          <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="add-todo-button-div" value="+" onclick=""></button>
+                </div>
+            </div>
+            <div class="save-button-mobil">
+                <button class="save-mobil" onclick="saveAlert()">Save</button>
+            </div>
+
+</div>
+<!--SLUT PÅ SETTINGS "ADD TO CHECKLISTEN SETTINGS" UNDERSIDEN-->
+<!--SLUT SETTINGS-->
+
+
+<!--Dette div indenholder history undersiden-->
+<div id="mobile-history-container">
+
+    <div class="navigation-buttons">
+      <form class="button-nav-back-box" action="../alle-sider/index.html">
+        <button class="button-nav-back" type="submit">BACK</button>
+      </form>
+        <button class="button-nav" onclick="toggleVisibility('mobile-checkliste-container');">CHECKLIST</button>
+        <button class="button-nav" onclick="toggleVisibility('mobile-settings-container');">SETTINGS</button>
+        <button class="button-nav-blue" onclick="toggleVisibility('mobile-history-container');">HISTORY</button>
+    </div>
+
+    <div class="title">
+        <h1>Maintenance history</h1>
+    </div>
+    <div class="history-menu">
+      <div class="history-menu-kasse">
+        <div class="history-menu-øvre-kasse-mobil">
+          <div class="history-boks-tekst">
+            Entries:
+          </div>
+          <select class="history-menu-øvre-kasse-entries-mobil">
+            <option class="history-boks-tekst">10</option>
+            <option>10 </option>
+            <option>20</option>
+            <option>30</option>
+            <option>40</option>
+            <option>50</option>
+            </select>
+          <div class="history-søgefunktion"><input type="text" name="historyesøgefunktion" placeholder="Søg..."></div>
+        </div>
+        <div class="history-menu-nedre-kasse">
+          <div class="history-menu-nedre-kasse-1">
+            Date Filter:
+          </div>
+          <div class="history-menu-nedre-kasse-2">
+            <input type="text" id="datepicker-history-menu1">
+              <i class="fas fa-arrow-right"></i>
+            <input type="text" id="datepicker-history-menu2">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="history-list">
+      <div class="history-list-boks">
+        <div class="history-list-id">
+          <div class="history-list-filter-id">
+            ID
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="history-list-element-id">
+            <ul>
+              <li>203</li>
+              <li>204</li>
+              <li>203</li>
+              <li>204</li>
+              <li>203</li>
+              <li>204</li>
+              <li>203</li>
+              <li>204</li>
+              <li>203</li>
+              <li>204</li>
+            </ul>
+          </div>
+        </div>
+        <div class="history-list-name">
+          <div class="history-list-filter-name">
+            Name
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="history-list-element-name">
+            <ul>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+              <li>Rsc. #1</li>
+            </ul>
+          </div>
+        </div>
+        <div class="history-list-date">
+          <div class="history-list-filter-date">
+            Date
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="history-list-element-date">
+            <ul>
+              <li>08/02/20</li>
+              <li>02/01/20</li>
+              <li>09/12/19</li>
+              <li>12/11/19</li>
+              <li>14/10/19</li>
+              <li>25/09/19</li>
+              <li>30/08/19</li>
+              <li>03/07/19</li>
+              <li>03/06/19</li>
+              <li>13/05/19</li>
+            </ul>
+          </div>
+        </div>
+        <div class="history-list-value">
+          <div class="history-list-filter-value">
+            Value
+            <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="history-list-element-value">
+            <ul>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+              <li>N/A</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+  <!--mobil wrapper slut-->
+      <!--footer knap container slut-->
+
+
+  <!--mobil wrapper slut-->
+  <div class="modal-bg">
+
+    <div id="modal">
+
+      <div id="slide-one">
+        <div id="newresource">
+            <div class="close">
+              <button class="x-close" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one');">x</button>
+            </div>
+            <h2 class="header-popup">Create Resource</h2>
+            <div class="name-newresource">
+
+              <div class="resource-wrapper-placeholder">
+               <div class="name-placeholder">Name:</div>
+              <input id="name-placeholder" type="text" placeholder="TEST_RESOURCE1...">
+            </div>
+          </div>
+
+          <div class="type-newresource">
+            <div class="resource-wrapper-placeholder">
+              <div class="type-placeholder">Type:</div>
+              <select class="type-select-newresource">
+              <option class="default_option">Preventive</option>
+              <option class="default_option">Predictive</option>
+            </select>
+            </div>
+          </div>
+
+
+            <div class="name-group-web">
+                    <div class="name-group-container-web1">
+                  <div class="name-group-proxi-web">
+
+
+                    <div id="center-div-shadow2">
+                      <div class="center-div-web">
+                          <div class="center-div-indhold-web">
+                              <p>Add New Group</p><div class="selection-container"><input type="text" placeholder="Write group name here..." id = "nyt-element-navn-2" />
+                              <input type="button" id = "add-group-button" value="+" onclick = "addnewgroupresources(); addnewgrouptworesources(); "/></div>
+                              <select size="1" id = "group-add-select-res">
+                                  <option>Machine</option>
+                              </select>
+                              <div class="close-button-container"><button class="close-add-group-button" onclick="selectionAppear('center-div-shadow2');">close</button></div>
+                          </div>
+                      </div>
+                  </div>
+
+
+
+
+                      <div class="resource-wrapper-placeholder1">
+                          <label><span class="grouptext">Group:</span></label>
+                          <div class="select-and-button-contianer-web">
+                          <select size="1" id = "group-add-select-out-res">
+                              <option class="default_option">Machine</option>
+                          </select>
+                          <button class="add-group-button-div1" value="+" onclick="selectionAppear('center-div-shadow2');"></button>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+
+
+
+
+            <div class="group-newresource-dc">
+              <div class="description-wrapper">
+              Description:
+
+              <div class="container-dc-wrap">
+
+              </div>
+            </div>
+              <div class="resource-wrapper-placeholder-description">
+                <div class="comment-container">
+                  <textarea cols="110" name="comment" placeholder="Write comment here..."></textarea>
+              </div>
+              </div>
+
+            </div>
+
+            <div class="slide-container">
+
+              <div class="slide-container-wrapper">
+              <div class="slide-aktiv">
+                <p><span class="sliderp-aktiv">1</span></p>
+              </div>
+
+              <div class="slide">
+                <p><span class="sliderp" onclick="toggleVisibilityNewRes('slide-two');">2</span></p>
+              </div>
+
+              <div class="slide">
+                <p><span class="sliderp" onclick="toggleVisibilityNewRes('slide-three');">3</span></p>
+              </div>
+
+            </div>
+            <button class="next-btn-popup" onclick="toggleVisibilityNewRes('slide-two');">Next</button>
+            </div>
+          </div>
+      </div>
+
+
+    <!--HER STARTER SLIDE TWO-->
+    <div id="slide-two">
+        <div id="newresource2">
+            <div class="close">
+              <button class="x-close" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one');">x</button>
+            </div>
+            <h2 class="header-popup">Create Resource</h2>
+            <div class="name-newresource">
+
+              <div class="resource-wrapper-placeholder-3">
+                <p>First service check:</p>
+                <div class="history-menu-nedre-kasse-2">
+                  <input type="text" id="datepicker-history-menu5">
+
+                </div>
+            </div>
+          </div>
+
+          <div class="type-newresource">
+            <div class="service-interval-wrapper">
+              <div class="type-placeholder">Service Interval:</div>
+              <input id="service-interval-nr1" type="text" placeholder="1">
+              <select class="service-interval">
+              <option class="default_option">Days</option>
+              <option class="default_option">Month</option>
+            </select>
+            </div>
+          </div>
+
+
+          <div class="type-newresource">
+            <div class="service-interval-wrapper">
+              <div class="type-placeholder">Nofify:</div>
+              <input id="service-interval-nr3" type="text" placeholder="2">
+              <select class="service-interval">
+              <option class="default_option">Days</option>
+              <option class="default_option">Month</option>
+            </select>
+            <p>Before</p>
+            </div>
+          </div>
+
+            <div class="name-newresource-em">
+
+              <div class="resource-wrapper-placeholder-2">
+               <div class="name-placeholder">Notify to email:</div>
+              <input id="name-placeholder-em" type="text" placeholder="Ims@trendlog.io">
+            </div>
+          </div>
+
+
+            <div class="slide-container">
+
+              <div class="slide-container-wrapper">
+              <div class="slide-aktiv">
+                <p><span class="sliderp-aktiv" onclick="toggleVisibilityNewRes('slide-one');">1</span></p>
+              </div>
+
+              <div class="slide-aktiv">
+                <p><span class="sliderp-aktiv" >2</span></p>
+              </div>
+
+
+              <div class="slide">
+                <p><span class="sliderp" onclick="toggleVisibilityNewRes('slide-three');">3</span></p>
+              </div>
+
+            </div>
+            <button class="next-btn-popup" onclick="toggleVisibilityNewRes('slide-three');">Next</button>
+            </div>
+          </div>
+    </div>
+    <!--HER SLUTTER SLIDE TWO-->
+
+
+
+
+    <!--HER STARTER SLIDE THREE-->
+    <div id="slide-three">
+        <div id="newresource3">
+            <div class="close">
+              <button class="x-close" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one');">x</button>
+            </div>
+            <h2 class="header-popup">Create Resource</h2>
+            <div class="name-newresource-3">
+              <h4>Checklist</h4>
+              <div class="add-checklist-container">
+                    <div class="add-todo-proxi">
+                        <div class="add-todo-wrapper-web">
+                            <label>Add to checklist</label>
+                        </div>
+                        <button class="add-todo-button-div" value="+" onclick=""></button>
+                        </div>
+                </div>
+            </div>
+              <div class="name-newresource-3">
+                <h4>Documents</h4>
+                <div class="add-checklist-container">
+                      <div class="add-todo-proxi">
+                          <div class="add-todo-wrapper-web">
+                            <label>Add adocument</label>
+                          </div>
+                          <button class="add-todo-button-div" value="+" onclick=""></button>
+                          </div>
+                  </div>
+        </div>
+
+            <div class="slide-container">
+
+              <div class="slide-container-wrapper">
+              <div class="slide-aktiv">
+                <p><span class="sliderp-aktiv" onclick="toggleVisibilityNewRes('slide-one');">1</span></p>
+              </div>
+
+              <div class="slide-aktiv">
+                <p><span class="sliderp-aktiv" onclick="toggleVisibilityNewRes('slide-two');">2</span></p>
+              </div>
+
+
+              <div class="slide-aktiv">
+                <p><span class="sliderp-aktiv">3</span></p>
+              </div>
+
+            </div>
+            <button class="create-btn-popup" onclick="selectionAppear('modal'); toggleVisibilityNewRes('slide-one'); toggleVisibilityNewRes('slide-one'); createAlert();">Create</button>
+            </div>
+          </div>
+      </div>
+      </div>
+
+    </div>
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  <script src="../js/java.js"></script>
+  <script src="../js/dropdown.js"></script>
+  <script src="../js/select-div.js"></script>
+  <script src="../js/selection-apppear.js"></script>
+  <script src="../js/drop.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/savealert.js"></script>
+
+  <script src="../alle-sider/popup.js"></script>
+  <script src="../alle-sider/selection-apppear.js"></script>
+
+  <script src="../js/calender.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/size-change.js"></script>
+  <script src="../js/change.js"></script>
+
+</body>
+</html>

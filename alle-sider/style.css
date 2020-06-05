@@ -1,0 +1,5170 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+
+body{
+    color:#000;
+    font-family: 'Segoe UI', sans-serif;
+    background: #F1F1F1;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 5px;
+}
+
+/* NAVBAR STARTER HER */
+
+
+/* NAVBAR SLUTTER HER */
+
+/* LOGIN SIDE STARTER HER */
+
+.header-fixed {
+  top: 0;
+  z-index: 10;
+  position: fixed;
+}
+
+.login-body {
+  position: relative;
+  background-image: url(../img/baggrundblur6.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.login-wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  margin-left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.login-wrapper .login-content-boks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  width: 500px;
+  height: 620px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,.5);
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs .login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs .boks-logo {
+  margin-top: 60px;
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs .username {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-family: 'Segoe UI';
+  font-weight: 500;
+  color: #2c3e50;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs .password {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs input {
+  width: 400px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid #999;
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs .login-knap button {
+  padding: 5px 100px 10px 100px;
+  font-size: 30px;
+  font-family: 'Segoe UI';
+  font-weight: 500;
+  color: #fff;
+  background-color: #3bc143;
+  border-style: none;
+  border-radius: 30px;
+  margin-top: 50px;
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs .boks-hjelptekst {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  border-top: 2px solid #666;
+  margin-top: 50px;
+  padding-top: 30px;
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs .boks-hjelptekst a {
+  color: #333;
+  font-family: 'Segoe UI';
+  font-weight: 500;
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs .login-knap button:focus {
+  outline-style: none;
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs input:focus {
+  outline-style: none;
+  border-color:dodgerBlue;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs .login-knap button:hover {
+  background-color: #7ed06b;
+}
+
+.login-wrapper .login-content-boks .login-content-boks-inputs .boks-hjelptekst a:hover {
+  text-decoration: underline;
+}
+
+/* WEB VERSION STARTER HER */
+
+@media (min-width: 800px) {
+  .login-wrapper .login-content-boks {
+    width: 300px;
+    height: 420px;
+  }
+  .login-wrapper .login-content-boks .login-content-boks-inputs .boks-logo {
+    margin-top: 30px;
+  }
+  .login-wrapper .login-content-boks .login-content-boks-inputs .boks-logo img {
+    height: 30px;
+  }
+  .login-wrapper .login-content-boks .login-content-boks-inputs .username {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .login-wrapper .login-content-boks .login-content-boks-inputs input {
+    width: 230px;
+    height: 20px;
+    border-radius: 5px;
+  }
+  .login-wrapper .login-content-boks .login-content-boks-inputs .password {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .login-wrapper .login-content-boks .login-content-boks-inputs .login-knap button {
+    padding: 8px 70px 10px 70px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .login-wrapper .login-content-boks .login-content-boks-inputs .boks-hjelptekst {
+    border-top: 2px solid #666;
+    margin-top: 40px;
+    padding-top: 30px;
+  }
+  .login-wrapper .login-content-boks .login-content-boks-inputs .boks-hjelptekst a {
+    color: #333;
+    font-size: 13px;
+  }
+}
+
+/* LOGIN SIDEN SLUTTER HER */
+
+/*Wrapperen til mobil = formålet med denne wrapper er så vi kan lave display none på den når vi rammer web-udgaven af vores hjemmeside*/
+.mobil-wrapper{
+  background-color: #2C3E50;
+  height: auto;
+}
+
+#mobil-wrapper-res{
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+/*Denne container er lavet til mobil layoutet = formålet er at får en margin i siderne af layoutet*/
+.content-container{
+    margin: auto;
+    margin-top: 100px;
+    width: 90%;
+    min-height: 100vh;
+    font-size: 12px;
+}
+
+/*knapperne der ses øverst i layoutet af mobilversionen*/
+.flex-knapper-mobil form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31%;
+}
+
+.mobile-btn-top-awa {
+  margin-top: 20px;
+  width: 100%;
+  height: 39px;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.mobile-btn-top {
+  margin-top: 20px;
+  width: 31%;
+  height: 39px;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.mobile-btn-top-active {
+  margin-top: 20px;
+  width: 31%;
+  height: 39px;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: #337ab7;
+  color: #f1f1f1;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/*Parrenten til resource containerne.*/
+.resourcervirk{
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 12px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    box-shadow: 3px 2px 8px 3px rgba(0,0,0,.5);
+}
+/*Parrenten - resourcediv er opdelt i 4 store flexbox, nogle med mindre boxe indei. Dette er den første flexbox til resourcecontaineren. Den indeholder overskriften, ID navn og knappen Show more*/
+.flexbox1{
+    padding-top: 13px;
+    padding-left: 10px;
+    width: 32%;
+    flex-direction: column;
+
+}
+/*Dette er nr2 flexbox til parrenten resource containeren*/
+/*Den indeholder text vedr. type og group af det der skal bruge maintaince*/
+.flexbox2{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 8%;
+}
+
+/*En tom div der hjælper med at skubbe toggleknappen på plads i resource container*/
+.empty-box{
+  width: auto;
+  height: 84px;
+
+}
+/*Enable knap mobil ------starter her*/
+.enable-mb{
+  width: auto;
+  height: 100%;
+}
+
+/*Dette er bare skriften der siger "Enable" over knappen*/
+.enable1{
+  width: auto;
+  font-size:0.7em;
+  font-weight: 600;
+}
+
+/*dette er 3 flexbox til parrenten "resourcevirk", som er resource containeren*/
+.flexbox3{
+   display: flex;
+   width: 20%;
+   height: 100%;
+   padding-left: 20px;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.middle-text-resourcer-mb{
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 18px;
+}
+/*flexbox 3 css slutter her*/
+
+/* popup warning */
+#alertbox{
+  width: 350px;
+  overflow: hidden;
+  background: #f1f1f1;
+  box-shadow: 0 0 20px black;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+#alertbox .alerticon{
+  color: #FF4300;
+  font-size: 4em;
+  margin: 10px 0;
+  display: block;
+}
+
+#alertbox p{
+  color: #333333;
+  font-size: 20px;
+}
+
+.yes {
+  font-size: 20px;
+  color: white;
+  background-color: #FF4300;
+  padding: 0px 8px;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 2px;
+  padding-bottom: 2px;
+}
+
+.no{
+  background-color: #337AB7;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  padding: 0 8px;
+  cursor: pointer;
+  border-radius: 2px;
+  padding-bottom: 2px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+/*Dette er den sidste flexbox til resource containeren */
+.flexbox4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+}
+
+/*Styleing/css til flexbox 1*/
+
+.green-text-mb{
+  font-weight: 700;
+  color: #00ff00;
+}
+.show-more-flex-mobil{
+  padding-top: 25px;
+  font-size: 0.9em;
+}
+
+h2{
+  font-size: 15px;
+  font-weight: 700;
+}
+/*Styleing/css til flexbox 1*/
+
+
+
+
+
+
+
+
+/*Cirkel loadingbaren til mobil*/
+  .single-chart-mobil {
+    width: 160px;
+    justify-content: space-around ;
+  }
+
+  /*css til grøn loading tab i cirkelbaren*/
+  .circular-chart.green .circle {
+    stroke: #38DB38;
+  }
+
+  /*GRØN CIRKEL*/
+  .next-service{
+    fill: rgb(78, 78, 78);
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.3em;
+    text-anchor: middle;
+  }
+
+  /*Viser antal dage i cirkel loadingbaren*/
+  .percentage {
+    fill: #38DB38;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.4em;
+    text-anchor: middle;
+  }
+
+  /*GRØN CIRKEL SLUT*/
+
+  /*---------------RØD CIRKEL---------------*/
+  .next-service-red{
+    fill: rgb(78, 78, 78);
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.3em;
+    text-anchor: middle;
+  }
+
+  .percentage-red {
+    fill: #DF403C;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.4em;
+    text-anchor: middle;
+  }
+
+  .percentage-white {
+    fill: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.4em;
+    text-anchor: middle;
+  }
+
+  .circular-chart.red .circle {
+    stroke:#DF403C;
+  }
+  /*-------------------RØD SLUT--------------------*/
+
+
+
+  /*containeren der holder searchknappen, samt add resource knappen (WEB)*/
+  .fixed-knap-container-web {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    left: 1px;
+    bottom: 0;
+    background-color: #233240;
+    box-shadow: 4px -5px 5px 1px rgba(0,0,0,.5);
+    /* første er X aksen næste er til Y aksen, 3det 3 er til blur, den sidste er spread af shadow*/
+    /*rykker diven og indholdet op foran. sådan der ikke giver bøbl med resourve containerne*/
+    z-index: 10;
+    }
+
+    /**/
+    .plus-svg1{
+      width: 30%;
+      height: 40%;
+     }
+
+     /**/
+     .addnew-text1{
+       color: #fff;
+       font-size: 0.8em;
+     }
+     /**/
+     .knap-wrapper-mobil{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100%;
+    }
+    /**/
+    .addnew-rs1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #32CD32;
+      margin-left: 15px;
+      min-width: 160px;
+      height: 30px;
+      font-weight: 700;
+      text-align: center;
+      border-radius: 12px;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 8px 10px;
+      box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    }
+    /**/
+    .search-bar1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 10px;
+      width: 160px;
+      height: 30px;
+      background: rgb(255, 255, 255);
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+  }
+  /**/
+  .search-text{
+      font-size: 1em;
+  }
+  /**/
+  .addnew-text1{
+    color: #fff;
+    font-size: 0.8em;
+  }
+  /**/
+  .search-btnn{
+      width: 60%;
+      height: 44px;
+  }
+
+    /**/
+    .fixed-knap-container-mb{
+      display: flex;
+      align-items: center;
+      width: 100vw;
+      height: 80px;
+      position: fixed;
+      left: 1px;
+      bottom: 0;
+      background-color:#18222c;
+      box-shadow: 0px -6px 9px 1px rgba(0,0,0,.5);
+      /* første er X aksen næste er til Y aksen, 3det 3 er til blur, den sidste er spread af shadow*/
+      /*rykker diven og indholdet op foran. sådan der ikke giver bøbl med resourve containerne*/
+      z-index: 8;
+    }
+  /**/
+
+  /*plus ikon til add resource knappen*/
+  .plus-svg{
+   width: 30%;
+   height: 40%;
+  }
+  /*add new resoruce teksten*/
+  .addnew-text{
+    color: #fff;
+    font-size: 0.8em;
+  }
+
+  /*Containeren til search skriften i searchbaren*/
+  .virk{
+      font-size: 1em;
+  }
+  /*teksten i search containeren*/
+  .texttt{
+    font-size: 15px;
+    font-weight: 600;
+}
+  /*containeren der indeholder placeholdertexten og til searchbaren*/
+  .virk1{
+      width: 60%;
+      height: 44px;
+  }
+    /*Css / style til den orange streng i cirkel loadingbaren*/
+  .circular-chart.orange .circle {
+    stroke:#FFB347;
+  }
+
+  /*Viser antal dage i orange - skal kun bruges til de resourcer der er tæt på at mangle service*/
+  .percentage-orange {
+    fill: #FFB347;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 0.4em;
+    text-anchor: middle;
+  }
+
+  /*placeholder teksten til searchbaren (web)*/
+  .search-web {
+    width: 99%;
+    height: 40px;
+    margin: -2px 0;
+    border-radius: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+.search-web[type=text] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin-top: 2px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: .3s;
+}
+.search-web[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+
+.search-btn-mb[type=text] {
+  width: 92%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 0px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: .3s;
+}
+.search-btn-mb[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+
+  /*De 3 øvereste knapper i mobilversionen*/
+  .flex-knapper-mobil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100%;
+    }
+
+
+
+
+    /*checkbox mobil TOGGLEKNAP (mobil)*/
+    .checkbox-mb[type="checkbox"] {
+      position: relative;
+      width: 30px;
+      height: 10px;
+      background: #00ff00;
+      -webkit-appearance: none;
+      border-radius: 20px;
+      outline: none;
+      transition: .4s;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    /*EFTER KLIK TOGGLE KNAP (MOBIL)*/
+    .checkbox-mb:checked[type="checkbox"] {
+      background: #ff0000;
+    }
+
+    /*KNAPPEN INDEN CLICK.   (MOBIL)*/
+    .checkbox-mb[type="checkbox"]::before {
+      z-index: 2;
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      border-radius: 50%;
+      transform: scale(1.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: .4s;
+    }
+
+    /*Styrer hvor langt toggleknapper rykker (MOBIL)*/
+    .checkbox-mb:checked[type="checkbox"]::before {
+      left: 20px;
+    }
+
+    /*knappen  (MOBIL)*/
+    .toggle-mb {
+      position: relative;
+      display: inline;
+    }
+
+    /*Label i toggle knappen   (MOBIL)*/
+    .toggle-mb label {
+      position: absolute;
+      color: #fff;
+      font-weight: 600;
+      font-size: 10px;
+      pointer-events: none;
+    }
+
+    /*TÆNDT KNAP  (MOBIL)*/
+    .onbtn-mb {
+      bottom: 10px;
+      left: 10px;
+    }
+
+    /*SLUKKET KNAP  (MOBIL)*/
+    .ofbtn-mb {
+      bottom: 10px;
+      right: 10px;
+      color: #34495e;
+    }
+
+
+
+
+  /*WEB VERSION CSS START---------------------------------------------------------------*/
+  /*Den wrapper der styrer margin på venstre side*/
+.wrapper-content1{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+
+}
+.wrapper-webversion{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+
+.container-settings-web {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  color: #000000;
+  margin-top: 20px;
+  width: 100%;
+  height: 84px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 2px 2px 3px 1px rgba(0,0,0,.5);
+  border-radius: 20px;
+}
+.setting-tekst-web{
+  padding-left: 30px;
+  padding-right: 60px;
+}
+.placeholder-setting-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+/*ALT INDHOLD PÅ VENSTRE SIDE AF HJEMMESIDEN: DETTE GÆLDER KUN PÅ WEB*/
+.contentflexbox-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  background: #f1f1f1f1;
+  /* overflow: auto; */
+  height:100vh;
+  overflow-y: scroll;
+}
+
+.resource-venstre{
+  font-size: 30px;
+}
+
+
+#wrapper-inhold-contentflexbox-1{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#wrapper-inhold-contentflexbox-2{
+  width: 90%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#wrapper-inhold-contentflexbox-3{
+  width: 90%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+/*Skrift på index.html venstre for*/
+.select-rs{
+display: flex;
+margin-top: 60%;
+justify-content: center;
+text-align: center;
+width: 100%;
+font-size: 4em;
+font-weight: 700;
+color:#2c3e50;
+}
+
+.text-resourcer-wrapp{
+  width: 100%;
+}
+
+/*Flexcontainer til alt text på venstre side CHECKLIST FORMULAREN*/
+.text-flex-venstre{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+justify-content: center;
+line-height: 40px;
+margin-top: 30px;
+}
+
+
+
+/*KNAPPER TIL VENSTRE PÅ SIDEN FLEXBOX/WRAPPER*/
+.flex-knapper-ventre{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-self: center;
+width: 100%;
+}
+
+/**/
+.active {
+padding: 10px 20px;
+width: 22%;
+height: 60px;
+margin: 10px;
+margin-bottom: 0px;
+background-color: #337AB7;
+color:#ffffff;
+outline: none;
+border: none;
+font-size: 15px;
+font-weight: 700;
+border-radius: 12px;
+cursor: pointer;
+}
+
+/*KNAPPERNE NEDENFOR DE ANDRE KNAPPER I CONTENTCONTAINER1*/
+.active2 {
+  width: 22%;
+  height: 52px;
+  margin: 10px 10px;
+  background-color: #337AB7;
+  box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
+  color:white;
+  outline: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+  /*KNAPPERNE NEDERFOR DE ANDRE KNAPPER I CONTENTCONTAINER1*/
+  .deactive2 {
+    width: 22%;
+    height: 52px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
+    color:#2c3e50;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    }
+
+
+.deactive {
+width: 22%;
+height: 60px;
+margin: 10px;
+background-color: rgb(255, 255, 255);
+color:#2c3e50;
+outline: none;
+border: none;
+font-size: 15px;
+font-weight: 700;
+border-radius: 12px;
+cursor: pointer;
+}
+.deactive1 {
+  width: 160px;
+  height: 60px;
+  margin: 10px;
+  margin-bottom: 0px;
+  background-color: rgb(255, 255, 255);
+  color:#2c3e50;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  }
+
+
+/*Knapper øverst i den venstre store container ("contentflexbox-1")*/
+.venstre-btn {
+width: 130px;
+height: 60px;
+margin-top: 20px;
+margin-right: 10px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
+outline: none;
+border: none;
+font-size: 15px;
+font-weight: 700;
+border-radius: 12px;
+cursor: pointer;
+}
+
+/*Knapper øverst i den venstre store container *når der er aktive* ("contentflexbox-1")*/
+.activevenstre-btn {
+width: 130px;
+height: 60px;
+margin-top: 20px;
+margin-right: 10px;
+background-color: #337AB7;
+box-shadow: 5px 3px 5px 0px rgba(0,0,0,.5);
+color: #fff;
+outline: none;
+border: none;
+font-size: 15px;
+font-weight: 700;
+border-radius: 12px;
+cursor: pointer;
+}
+
+/*Klik effekt til knapper i den vestre container. (virker ikke endnu)*/
+.venstre-btn:active{
+background: #337AB7;
+color: #fff;
+}
+
+
+/*save knappen */
+.save {
+  margin-top: 50px;
+  background-color: #32CD32;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 2px 4px 6px 1px rgba(0,0,0,.5);
+  cursor: pointer;
+  margin-bottom: 150px;
+}
+
+.save:hover{
+background-color: rgb(29, 62, 90);
+}
+
+/*save knappen slut */
+
+/*Upload image boxen i venstre side af layoutet (WEB)*/
+.image-upload-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+.image-upload{
+margin-top: 40px;
+margin-bottom: 20px;
+width: 35%;
+display: flex;
+border: dotted;
+border-radius: 15px;
+border-color: #8F8F8F;
+flex-direction: column;
+padding: 40px;
+justify-content: center;
+align-items: center;
+text-align: center;
+cursor: pointer;
+}
+
+/*Upload image. Billedet der er i containeren */
+.uploadimg{
+width: 90px;
+height: 90px;
+}
+/**/
+.upload-img-text{
+font-weight: 500;
+color: #8F8F8F;
+}
+a{
+text-decoration: none;
+}
+
+/*wrapper der fordeler dosc billederne/img (WEB)*/
+.docs-upload-box{
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  }
+
+.docs-upload{
+width: 50%;
+justify-content: space-evenly;
+margin-top: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+/*styling af docuement png/img så er i venstre side af layoutet (WEB)*/
+.document-png{
+cursor: pointer;
+width: 100px;
+height: 100px;
+}
+
+
+
+/*ALT INDHOLD PÅ HØJRE SIDE AF HJEMMESIDEN: DETTE GÆLDER KUN PÅ WEB*/
+.contentflexbox-2{
+  width: 60vw;
+  background-color:#2c3e50;
+  height:100vh;
+  overflow-y: scroll;
+}
+
+/*HELE REOSURCE CONTAINEREN*/
+.resource-container{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  background-color:#ffffff;
+  height: 170px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0,0,0,.5);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/*Hover effekt til resource containeren (WEB)*/
+.resource-container:hover{
+transform: translateY(-10px);
+box-shadow: 0 15px 35px rgba(0,0,0,.5);
+transition: 0.5s;
+}
+
+/*aktiv resource container*/
+.resource-container1{
+display: flex;
+flex-direction: row;
+width: 90%;
+margin: auto;
+margin-top: 20px;
+background-color: #337AB7;
+color: #fff;
+height: 170px;
+border-radius: 12px;
+box-shadow: 0 5px 25px rgba(0,0,0,.5);
+cursor: pointer;
+transition: 0.5s;
+overflow: hidden;
+
+}
+/*hover effekt til en aktiv resource container*/
+.resource-container1:hover{
+transform: translateY(-10px);
+box-shadow: 0 15px 35px rgba(0,0,0,.5);
+}
+
+
+
+
+/*Gør resource containeren clickeble*/
+.div-click{
+text-decoration: none;
+color:#2c3e50;
+}
+
+/*Første flexbox til diven - resource-container. denne container er en stor container der er opdelt i 4 flexboxe med mindre boxe inde i disse flexboxe*/
+.resourceflex-1{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+/*Denne grønne tekst der siger "Show more" (Web)*/
+.green-text{
+  font-weight: bold;
+  color: #00ff00;
+  font-size: 15px;
+}
+.show-more-flex{
+  padding-top: 40px;
+}
+
+/* span css --- denne css er til de tekst inde i reosurce containeren der er grå*/
+.grey-text{
+  color: #737373;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.text-kategori{
+  font-size: 15px;
+  font-weight: bold;
+}
+.overskrift h2{
+  font-size:2em;
+}
+
+/*den blå test der er ved document container/billederne til venstre for web layoutet*/
+.docs-text{
+color: #337AB7;
+font-size: 12px;
+}
+
+
+
+
+
+
+/*Resourceflex-2 er et såkaldt 'cild' til 'parrenten' --resource-containeren*/
+/*WEB*/
+.resourceflex-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  font-weight: 600;
+  width: 40%;
+}
+/*Text css til resourceflex-2 containeren -----WEB*/
+.middle-text-resourcer{
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 35px;
+}
+/*Resourceflex-1 css (web)-----slutter her*/
+
+/**/
+.flex-knapper3{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-end;
+margin-top: 55px;
+}
+/**/
+.resourceflex-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15px;
+  padding-left: 50px;
+  line-height: 25px;
+  font-weight: 500;
+  width: 10%;
+  height: 80%;
+}
+
+/**/
+.resourceflex-4{
+  width: 20%;
+  height: 100%;
+}
+
+/*Denne div ligger bag den fixed container der indeholder search knap og add resource = formålet er at når man scroller helt ned på siden kan man se den sidste resource container. så den ikke ligger kan denne fixed container*/
+.div-tilbagom{
+display: flex;
+align-items: center;
+width: 100%;
+height: 150px;
+left: 40%;
+bottom: 0;
+background-color:#2c3e50;
+}
+
+
+/*search knappen css (WEB)*/
+.search-btn{
+font-weight: 700;
+margin-top: 20px;
+background-color: #fff;
+border: none;
+color: rgb(0, 0, 0);
+padding: 10px;
+width: 279px;
+height: 68px;
+font-size: 15px;
+text-align: center;
+border-radius: 30px;
+text-decoration: none;
+display: inline-block;
+box-shadow: 0 5px 25px rgba(0,0,0,.5);
+}
+/*section på fixed container slut*/
+
+
+
+
+
+/*Enablew knap*/
+/*EFTER KLIK TOGGLE KNAP*/
+.toggle-pc:checked[type="checkbox"] {
+  background: #ff0000;
+}
+
+
+.toggle-pc[type="checkbox"] {
+  position: relative;
+  width: 50px;
+  height: 15px;
+  background:  #00ff00;
+  -webkit-appearance: none;
+  border-radius: 20px;
+  outline: none;
+  transition: .4s;
+  z-index: 0;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/*KNAPPEN INDEN CLICK.*/
+.toggle-pc[type="checkbox"]::before {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: .4s;
+}
+
+/*Styrer hvor langt toggleknapper rykker*/
+.toggle-pc:checked[type="checkbox"]::before {
+  left: 40px;
+}
+
+/*knappen*/
+.toggle {
+  position: relative;
+  display: inline;
+}
+
+/*Label i toggle knappen*/
+.toggleBox label {
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  pointer-events: none;
+}
+
+/*TÆNDT KNAP*/
+.onbtn {
+  bottom: 10px;
+  left: 10px;
+}
+
+.enable{
+  width: auto;
+  height: 100%;
+}
+
+/*SLUKKET KNAP*/
+.ofbtn {
+  bottom: 10px;
+  right: 10px;
+  color: #34495e;
+}
+/*Toggleknap slut*/
+
+
+
+/*CIRKEL*/
+.single-chart {
+  width: 100%;
+  padding-top: 15px;
+  justify-content: space-around ;
+}
+
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 65%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+/*den farvede cirkel til cirkel diagrammet/loadbaren*/
+.circular-chart.green .circle {
+  stroke: #38DB38;
+}
+
+/*GRØN CIRKEL*/
+.next-service{
+  fill: rgb(78, 78, 78);
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.22em;
+  text-anchor: middle;
+}
+
+.percentage {
+  fill: #38DB38;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.4em;
+  text-anchor: middle;
+}
+
+/*GRØN CIRKEL SLUT*/
+
+
+
+/*aktiv cirkel text - hvid*/
+.next-service-white{
+  fill: #fff;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.22em;
+  text-anchor: middle;
+}
+
+
+/*RØD CIRKEL*/
+.next-service-red{
+  fill: rgb(78, 78, 78);
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.3em;
+  text-anchor: middle;
+}
+
+.circular-chart.red .circle {
+  stroke:#DF403C;
+}
+/*RØD SLUT*/
+
+
+/*Orange cirkel start*/
+.circular-chart.orange .circle {
+  stroke:#FFB347;
+}
+.percentage-orange {
+  fill: #FFB347;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 0.4em;
+  text-anchor: middle;
+}
+
+/*Fixed bar til searchknappen og add resource WEB*/
+.fixed-knap-container{
+display: flex;
+align-items: center;
+width: 100%;
+height: 143px;
+position: fixed;
+left: 40%;
+bottom: 0;
+background-color:#243342;
+box-shadow: 2px -7px 14px rgba(0,0,0,.5);
+/* første er X aksen næste er til Y aksen, 3det 3 er til blur, den sidste er spread af shadow*/
+/*rykker diven og indholdet op foran. sådan der ikke giver bøbl med resourve containerne*/
+z-index: 10;
+}
+
+.fixed-knap-container1{
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 100px;
+  position: fixed;
+  left: 40%;
+  bottom: 0;
+  background-color:#243342;
+  box-shadow: 2px -7px 14px rgba(0,0,0,.5);
+  /* første er X aksen næste er til Y aksen, 3det 3 er til blur, den sidste er spread af shadow*/
+  /*rykker diven og indholdet op foran. sådan der ikke giver bøbl med resourve containerne*/
+
+  }
+
+
+
+
+.plus-svg{
+width: 30%;
+height: 40%;
+}
+
+.addnew-text{
+color: #fff;
+font-size: 15px;
+}
+
+.tester {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0px 20%;
+}
+
+
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin: 10px;
+  background: white;
+  border-radius: 12px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.search-bar p{
+margin-right: 20px;
+}
+
+.virk{
+  width: 25%;
+}
+.virk1{
+  width: 60%;
+}
+
+.search-btn-mb {
+  width: 83%;
+  height: 22px;
+  margin: -11px 0;
+  border-radius: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+.div-tilbagom1{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  bottom: 0;
+  background-color:#2c3e50;
+}
+
+
+
+
+
+
+/*-----------------------------STYLEGUIDE-START-------------------------------------*/
+
+.header-styleguide{
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.wrapper-styleguide{
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.wrapper-styleguide .sidebar{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+  background-color: #000000;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper-styleguide .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper-styleguide .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.wrapper-styleguide .sidebar ul li a{
+  color: #ffffff;
+  display: block;
+}
+
+.wrapper-styleguide .sidebar ul li:hover{
+  background-color: #717171;
+}
+
+.wrapper-styleguide .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper-styleguide .sidebar ul li:hover a{
+  color: #fff;
+}
+
+.wrapper-styleguide .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper-styleguide .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.header-styleguide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.header-styleguide h1{
+font-size: 50px;
+
+}
+
+.header-styleguide h2{
+  font-size: 30px;
+  }
+
+.wrapper-styleguide .main-content-styleguide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 200px;
+  text-align: center;
+}
+
+.wrapper-styleguide .main-content-styleguide .header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: lightgrey;
+  color: #000000;
+  border-bottom: 1px solid #e0e4e8;
+  text-align: center;
+}
+
+.wrapper-styleguide .main-content-styleguide .info{
+  margin: 20px;
+  line-height: 25px;
+}
+
+.wrapper-styleguide .main-content-styleguide .info div{
+  margin-bottom: 20px;
+}
+
+.sg-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 90%;
+  margin: 20px;
+  padding: 30px;
+  background: #f1f1f1f1;
+  border-radius: 12px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,.5);
+  color: #2c3e50;
+}
+
+.sg-knap-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 50%;
+  /* background: blue; */
+  margin: 10px;
+}
+
+.sg-tekst-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  width: 50%;
+  /* background: blue; */
+  margin: 10px;
+}
+
+
+/*Farver */
+.farver-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  background-color: #2c3e50;
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.farve-header-styleguide {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+}
+
+.farve-box-elementer {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  height: 100px;
+  padding: 20px 20px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+}
+
+.farven {
+  width: 200px;
+  height: 100px;
+  background-color: #2c3e50;
+  border-radius: 10px;
+}
+
+.farven-tekst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+/*Farver Slut */
+
+
+
+/*UI PATTERNS START*/
+/*NAME PLACEHOLDER*/
+input[type=text]{
+  width:50%;
+  border:2px solid #aaa;
+  border-radius:4px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 8px;
+  transition:.3s;
+  margin-right: 10px;
+}
+
+.history-søgefunktion input[type=text]{
+  width:100%;
+  border:2px solid #aaa;
+  border-radius:4px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 5px;
+  transition:.3s;
+}
+
+input[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+
+/* Calender picker */
+
+.ui-datepicker-trigger{
+    width: auto;
+    height: 30px;
+}
+
+#datepicker{
+    border-radius: 8px;
+    margin-left: 20px;
+    width: 150px;
+}
+
+
+
+/* Dropdown menu */
+
+.select-wrap{
+  width: 225px;
+  margin: 15px;
+  position: relative;
+  user-select: none;
+  margin-left: 210px;
+}
+
+.select-wrap .default_option{
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+}
+
+.select-wrap .default_option li{
+    padding: 10px 20px;
+}
+
+.select-wrap .default_option:before{
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid;
+    border-color: transparent transparent #555555 #555555;
+    transform: rotate(-45deg);
+}
+
+.select-wrap .select_ul{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+.select-wrap .select_ul li{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.select-wrap .select_ul li:first-child:hover{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.select-wrap .select_ul li:last-child:hover{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.select-wrap .select_ul li:hover{
+  background: #e8e8e8;
+}
+
+.select-wrap .option{
+  display: flex;
+  align-items: center;
+}
+
+
+.select-wrap.active .select_ul{
+  display: block;
+  list-style: none;
+  text-decoration: none;
+}
+
+.select-wrap.active .default_option:before{
+  top: 18px;
+  transform: rotate(-225deg);
+}
+
+
+/*til alt content på styleguiden*/
+.content-wrapper-styleguide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  background-color: #2c3e50;
+  margin-left: 200px;
+  padding: 20px;
+  color: white;
+}
+
+
+/*TOGGLE KNAP DESIGN*/
+.toggleknap-styleguide[type="checkbox"] {
+  position: relative;
+  width: 70px;
+  height: 25px;
+  background: #bdc3c7;
+  -webkit-appearance: none;
+  border-radius: 20px;
+  outline: none;
+  transition: .4s;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/*EFTER KLIK TOGGLE KNAP*/
+.toggleknap-styleguide:checked[type="checkbox"] {
+  background: #00ff00;
+}
+
+/*KNAPPEN INDEN CLICK.*/
+.toggleknap-styleguide[type="checkbox"]::before {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 50%;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: .4s;
+}
+
+/*Styrer hvor langt toggleknapper rykker*/
+.toggleknap-styleguide:checked[type="checkbox"]::before {
+  left: 44px;
+}
+
+/*knappen*/
+.toggle-sg {
+  position: relative;
+  display: inline;
+}
+
+/*Label i toggle knappen*/
+.toogle label {
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  pointer-events: none;
+}
+
+/*TÆNDT KNAP*/
+.onbtn1 {
+  bottom: 10px;
+  left: 10px;
+}
+
+/*SLUKKET KNAP*/
+.ofbtn1 {
+  bottom: 10px;
+  right: 10px;
+  color: #34495e;
+}
+/*toggle switch -done*/
+
+/*Brugermenu*/
+.burger-nav{
+  width: 50px;
+  height: 50px;
+}
+.styleguidewheel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.wheelsg{
+  width: 60%;
+  height: auto;
+}
+
+
+
+
+/* ------------------ TIL RESSOURCEN NÅR DEN ER SELECTED - MOBIL ------------------ */
+/* ------------------ HEADER - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
+/* HEADER BOX STYLE */
+.header-mobile {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #222;
+  z-index: 5;
+}
+/* ------------------ SLUT HEADER - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
+
+
+/* ------------------ CHECKLIST UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER ------------------*/
+/* CHECKLIST BOX STYLE */
+#mobile-checkliste-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F1F1;
+  height: auto;
+}
+
+/* Infomationens box - "name", "service date planned" & "description" */
+.info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  /* background: royalblue; */
+}
+
+.info-text-categori {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 80px;
+line-height: 25px;
+}
+
+.info-text-categori h4 {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+}
+
+.info-text-categori p {
+font-size: 15px;
+font-family: 'Segoe UI';
+}
+
+/* ------------------ Checklisten boxen som indenholder de forskellige "todo's" ------------------ */
+.todo-list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 325px;
+  /* background: sandybrown; */
+}
+
+.checkboxes {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 90%;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+padding-top: 12px;
+}
+
+.todo-list-wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+height: 60px;
+width: 90%;
+background:#fff;
+border-radius: 5px;
+margin-bottom: 12px;
+}
+
+.item-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-end;
+cursor: pointer;
+font-size: 22px;
+user-select: none;
+background: #fff;
+border-radius: 5px;
+height: 50px;
+width: 50%;
+}
+
+.todo-item {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+cursor: pointer;
+user-select: none;
+background: none;
+border-radius: 5px;
+height: 75px;
+width: 50%;
+}
+
+.todo-item p {
+margin: 15px;
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+}
+
+/* Gem browserens default checkbox, så jeg kan lave en custom */
+.item-container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Her laver jeg en custom checkbox */
+.checkmark-in-box {
+margin-right: 15px;
+height: 35px;
+width: 35px;
+border-radius: 5px;
+background-color: #eee;
+}
+
+/* Hover effekt på "checkmark-in-box", når man holder over .item-container */
+.item-container:hover input ~ .checkmark-in-box {
+background-color: #ccc;
+}
+
+/* Ændring når checkboxen er tjekkede af */
+.item-container input:checked ~ .checkmark-in-box {
+background-color: #32CD32;
+}
+
+/* Her laver jeg et simple checkmark (den er gemet, så man ikke kan se den) */
+.checkmark-in-box:after {
+margin: 10px 13px;
+content: "";
+display: none;
+}
+
+/* Vis checkmark'et */
+.item-container input:checked ~ .checkmark-in-box:after {
+display: block;
+}
+
+/* Style til mit checkmark'et */
+.item-container .checkmark-in-box:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid #fff;
+border-width: 0 3px 3px 0;
+transform: rotate(45deg);
+}
+
+/* ------------------ kommentar boxen ------------------ */
+.comment-checklist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 190px;
+  /* background: #7D7D7D; */
+  border-radius: 15px;
+}
+
+.comment-checklist-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 200px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.comment-checklist-wrapper h4 {
+font-size: 20px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #fff;
+}
+
+.comment-container {
+display: flex;
+height: 100px;
+width: 90%;
+background: #fff;
+border-radius: 15px;
+margin: 15px;
+}
+
+.comment-container textarea {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-around;
+border-radius: 15px;
+width: 100%;
+padding: 15px;
+}
+
+/* ------------------ upload boxen ------------------ */
+.upload-pic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 230px;
+  /* background: violet; */
+}
+
+/* ------------------ dokument boxen ------------------ */
+.document {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 145px;
+  /* background: yellowgreen; */
+}
+
+.document-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+height: 145px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+/* The container */
+.document-container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+cursor: pointer;
+font-size: 22px;
+user-select: none;
+background: #fff;
+border-radius: 5px;
+height: 50px;
+width: 90%;
+}
+
+.documents p {
+margin: 15px;
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+}
+
+/* ------------------ procentbaren boxen ------------------ */
+
+
+.procentagebar-box {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 50px;
+background-color: #fff;
+box-shadow: 0px 2px 2px rgba(0,0,0,.5);
+}
+
+.ui-progressbar-value {
+background: #337AB7;
+}
+
+.ui-widget.ui-widget-content {
+  border-style: none;
+}
+
+.progressbar-bar {
+margin-top: 10px;
+margin-left: 20px;
+margin-right: 20px;
+height: 30px;
+width: auto;
+border-radius: 230px;
+z-index: 5;
+background: #EBEBEB;
+}
+
+.progressbar-label {
+position: absolute;
+margin-top: 10px;
+top: 10%;
+left: 45%;
+z-index: 2;
+color: #3F3844;
+font-weight: bold;
+}
+/* ------------------ SLUT CHECKLIST UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
+
+
+/* ------------------ SETTINGS UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER ------------------ */
+/* SETTINGS BOX STYLE */
+#mobile-settings-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Knappe boxen til settings undersiden som skal indenholde knapperne til at navigerer
+ rundt under settings  */
+.navigation-buttons-settings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  /* background: rebeccapurple; */
+}
+/* Så de er på lige linje med de andrer div'er */
+.navigation-buttons-settings-wrapper-margin {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+width: 90%;
+/* background: rebeccapurple; */
+}
+
+/* GENERAL SETTINGS BOX STYLE */
+#mobile-general-settings-container {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#center-div-shadow {
+display: none;
+position: absolute;
+margin: auto;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100vw;
+height: 95vh;
+background-color: rgba(0, 0, 0, 0.3);;
+border-radius: 0px;
+}
+
+.center-div {
+position: absolute;
+margin-top: 15vh;
+right: 0;
+left: 0;
+}
+
+.center-div-indhold {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: auto;
+margin-top: 6vh;
+width: 250px;
+height: 190px;
+line-height: 40px;
+background-color: #F1F1F1;
+border-radius: 6px;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.center-div-indhold p {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+}
+
+.close-button-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+padding: 10px;
+}
+
+.selection-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+flex-wrap: nowrap;
+width: 85%;
+}
+
+.selection-container input::placeholder  {
+font-size: 12px;
+}
+
+.selection-container input[type=text], select {
+width: 83%;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 15px;
+}
+
+
+
+.selection-container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 85%;
+  margin: 0px 15px;
+  }
+
+  .selection-container1 input::placeholder  {
+  font-size: 12px;
+  }
+
+  .selection-container1 input[type=text], select {
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  }
+
+#add-group-button {
+height: 30px;
+width: 30px;
+border-radius: 5px;
+background-color: #32CD32;
+text-decoration: none;
+border: none;
+color: #ffffff;
+font-size: 25px;
+}
+#add-group-button1 {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #32CD32;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  font-size: 25px;
+  }
+
+
+#add-group-button-1 {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #32CD32;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  font-size: 25px;
+  }
+
+#add-group-button-2 {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #32CD32;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  font-size: 25px;
+  }
+
+.add-group-button-div {
+margin-right: 15px;
+height: 30px;
+width: 30px;
+border-radius: 5px;
+background-color: #32CD32;
+text-decoration: none;
+border: none;
+}
+
+.add-group-button-div::before {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+content: "+";
+font-size: 25px;
+color:#fff;
+height: 30px;
+width: 30px;
+}
+
+
+/* Dropdown menus */
+#group-add-select {
+width: 85%;
+height: 30px;
+user-select: none;
+}
+
+#group-add-select1 {
+  width: 85%;
+  height: 30px;
+  user-select: none;
+}
+
+#group-add-select3 {
+  width: 85%;
+  height: 30px;
+  user-select: none;
+}
+
+#group-add-select-res {
+  width: 85%;
+  height: 30px;
+  user-select: none;
+}
+
+.select-and-button-contianer {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+width: 65%;
+height: 30px;
+}
+
+/* GENERAL SETTINGS #group-add-select-out */
+
+#group-add-select-out-1 {
+width: 100%;
+height: 30px;
+margin-right: 5px;
+user-select: none;
+}
+
+/* SERVICE CHECK SETTINGS #group-add-select-out */
+
+#group-add-select-out-2 {
+  width: 100%;
+  height: 30px;
+  margin-right: 5px;
+  user-select: none;
+  margin-right: 15px;
+  }
+
+#group-add-select-out-3 {
+  width: 100%;
+  height: 30px;
+  margin-right: 5px;
+  user-select: none;
+  margin-right: 15px;
+  }
+
+#group-add-select-out-4 {
+  width: 100%;
+  height: 30px;
+  margin-right: 5px;
+  user-select: none;
+  margin-right: 15px;
+  }
+
+#group-add-select-out-5 {
+  width: 100%;
+  height: 30px;
+  margin-right: 5px;
+  user-select: none;
+  margin-right: 15px;
+  }
+
+#group-add-select-out-6 {
+  width: 100%;
+  height: 30px;
+  margin-right: 0px;
+  user-select: none;
+  }
+
+
+
+/* Knap som ikke er selectede */
+.button-nav-settings {
+background: #fff;
+width: 30%;
+height: 30px;
+text-align: center;
+text-decoration: none;
+border: none;
+font-size: 9px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #000;
+cursor: pointer;
+border-radius: 5px;
+}
+
+/* Knap som er selectede */
+.button-nav-settings-blue {
+background: #337AB7;
+width: 30%;
+height: 30px;
+text-align: center;
+text-decoration: none;
+border: none;
+font-size: 9px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color:#fff;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.navigation-buttons-settings-wrapper {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+height: 50px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.name-group {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+height: 150px;
+/* background: rebeccapurple; */
+}
+
+.name-group-container {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+background: orange;
+height: 125px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.name-group-proxi {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+height: 100px;
+width: 100%;
+/* background: red; */
+border-radius: 5px;
+}
+
+.name-group-wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+height: 45px;
+width: 90%;
+background: #fff;
+border-radius: 5px;
+}
+
+.name-group-wrapper label {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+margin-left: 15px;
+}
+
+.name-group-wrapper input[type=text], select {
+width: 60%;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 15px;
+}
+
+.description-settings {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 190px;
+/* background: #7D7D7D; */
+border-radius: 15px;
+}
+
+.description-settings-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 200px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.description-settings-wrapper h4 {
+font-size: 20px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #fff;
+}
+
+.description-container {
+display: flex;
+height: 100px;
+width: 90%;
+background: #fff;
+border-radius: 15px;
+margin: 15px;
+}
+
+.description-container textarea {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-around;
+border-radius: 15px;
+padding: 15px;
+}
+
+/* SERVICE SETTINGS BOX STYLE */
+#mobile-service-settings-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dette er type */
+
+.type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  /* background: rebeccapurple; */
+  }
+
+  .type-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: orange;
+  height: 70px;
+  width: 90%;
+  background: #7D7D7D;
+  border-radius: 5px;
+  }
+
+  .type-proxi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* background: red; */
+  border-radius: 5px;
+  }
+
+  .type-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  width: 90%;
+  background: white;
+  border-radius: 5px;
+  }
+
+  .type-wrapper label {
+  font-size: 15px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: #3F3844;
+  margin-left: 15px;
+  }
+
+  .type-wrapper input[type=text], select {
+  width: 60%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  }
+
+/* Dette er service form */
+
+  .servive-form-mobil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    /* background: rebeccapurple; */
+    }
+
+    .servive-form-mobil-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: orange;
+    height: 100px;
+    width: 90%;
+    background: #7D7D7D;
+    border-radius: 5px;
+    }
+
+    .servive-form-mobil-proxi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background: red; */
+    border-radius: 5px;
+    }
+
+    .servive-form-mobil-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    }
+
+    .servive-form-mobil-wrapper label {
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: white;
+    margin-left: 15px;
+    }
+
+    .servive-form-mobil-wrapper input[type=text], select {
+    width: 60%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 15px;
+    }
+
+  .servive-form-mobil-proxi h4 {
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    }
+
+/* Dette er notify */
+
+.notify {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+height: 150px;
+/* background: rebeccapurple; */
+}
+
+.notify-container {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+background: orange;
+height: 150px;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+}
+
+.notify-proxi {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 150px;
+width: 100%;
+/* background: red; */
+border-radius: 5px;
+}
+
+.notify-wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+height: 45px;
+width: 100%;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.notify-wrapper label {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: white;
+margin-left: 15px;
+}
+
+.notify-wrapper label {
+  font-size: 15px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: white;
+  }
+
+.name-button-class {
+margin-right: 15px;
+width: 100%;
+}
+
+.before {
+  margin-right: 20px;
+  margin-left: 10px;
+  font-size: 15px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: white;
+}
+
+.notify-wrapper input[type=text], select {
+width: 60%;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 15px;
+}
+
+.notify-proxi h4 {
+  font-size: 20px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+
+/* Dette er service form */
+
+.date-service {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 150px;
+  margin-top: 12.5px;
+  /* background: rebeccapurple; */
+  }
+
+  .date-service-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: orange;
+  height: 150px;
+  width: 90%;
+  background: #7D7D7D;
+  border-radius: 5px;
+  }
+
+  .date-service-proxi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+  /* background: red; */
+  border-radius: 5px;
+  }
+
+  .date-service-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  }
+
+  .date-service-wrapper label {
+  font-size: 15px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: white;
+  margin-left: 15px;
+  }
+
+  .date-service-wrapper input[type=text], select {
+  width: 90%;
+  height: 33px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  }
+
+.date-service-proxi h4 {
+  font-size: 20px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+
+.history-menu-nedre-kasse-service-next {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  color: black;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.history-menu-nedre-kasse-service-last {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  margin-right: 15px;
+}
+
+/* ADD TO CHECKLISTEN SETTINGS BOX STYLE */
+#mobile-add-to-settings-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-checklist-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+height: auto;
+/* background: rebeccapurple; */
+}
+
+.add-todo-container {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+/* background: orange; */
+height: auto;
+width: 90%;
+background: #7D7D7D;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+.add-todo-container h4 {
+font-size: 20px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #fff;
+margin: 10px;
+}
+
+.add-todo-proxi {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+height: auto;
+width: 100%;
+/* background: red; */
+border-radius: 5px;
+margin-top: 15px;
+margin-top: 10px;
+}
+
+.add-todo-wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+height: 45px;
+width: 90%;
+background: #fff;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.add-todo-wrapper label {
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: bold;
+color: #3F3844;
+margin-left: 15px;
+}
+
+.add-todo-wrapper i {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.add-todo-button-div {
+margin-right: 0px;
+height: 30px;
+width: 30px;
+border-radius: 5px;
+background-color: #32CD32;
+text-decoration: none;
+border: none;
+margin-bottom: 10px;
+}
+
+.add-todo-button-div::before {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+content: "+";
+font-size: 25px;
+color:#fff;
+height: 30px;
+width: 30px;
+}
+/* SLUT SETTINGS UNDERSIDE - SPECIFIKT TIL TING KUN UNDER HER*/
+
+
+/* --------------- ALLE UNDERSIDE - SPECIFIKT TIL TING PÅ ALLE UNDERSIDER AD RESSOURCEN -------------*/
+/* Dette er boxen til "titlen" på undersiderne */
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  margin-top: 140px;
+  /* background: darkturquoise; */
+}
+
+/* Dette er boxen til "save" knappens style */
+.save-button-mobil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 70px;
+  /* background: orange; */
+}
+
+.save-mobil {
+margin-top: 20px;
+background-color: #32CD32;
+border: none;
+color: #fff;
+padding: 10px;
+width: 200px;
+height: 50px;
+text-align: center;
+border-radius: 55px;
+text-decoration: none;
+display: inline-block;
+box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+
+/* Knappe boxen som skal indenholde knapperne til at navigerer
+ rundt mellem "Checklist", "Setting" & "History" */
+.navigation-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 100px;
+  background: #222222;
+  box-shadow: 0px 1px 5px rgba(0,0,0,.5);
+}
+
+/* Knap som ikke er selectede */
+.button-nav {
+  background: #222222;
+  width: 25vh;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-nav-back-box {
+  width: 25vh;
+  text-align: center;
+}
+
+.button-nav-back {
+  background: #222222;
+  height: 40px;
+  text-decoration: none;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Knap som er selectede */
+.button-nav-blue {
+  background: #337AB7;
+  width: 25vh;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+/* ----------------------- SLUT - TIL RESSOURCEN NÅR DEN ER SELECTED - SLUT MOBIL-------------------- */
+
+
+/* HISTORY BOX STYLE */
+#mobile-history-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HER STARTER HISTORY MENU DELEN */
+.history-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 170px;
+  background: #f1f1f1;
+}
+
+.history-menu-kasse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  background-color: #7d7d7d;
+  border-radius: 5px;
+}
+
+.history-menu-øvre-kasse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;
+}
+
+.history-menu-øvre-kasse-mobil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+  width: 90%;
+}
+
+.history-menu-øvre-kasse-entries {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 35%;
+  width: 50%;
+  margin-right: 10px;
+}
+
+.history-menu-øvre-kasse-entries-mobil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 45%;
+  width: 50%;
+  margin-right: 10px;
+}
+
+.history-menu-øvre-kasse .history-boks-tekst {
+  margin-right: 10px;
+}
+
+.history-menu-nedre-kasse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  width: 90%;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-1 {
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  margin-top: 10px;
+  height: 50%;
+  width: 25%;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.history-menu-nedre-kasse-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-2 {
+  height: 50%;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-2 i {
+  margin: 0px 10px 0px 10px;
+}
+
+#datepicker-history-menu2.hasDatepicker {
+  border-radius: 8px;
+  width: 42%;
+  margin-right: 10px;
+}
+
+#datepicker-history-menu4.hasDatepicker {
+  border-radius: 8px;
+  width: 82%;
+  margin-left: 10px;
+}
+
+#datepicker-history-menu5.hasDatepicker {
+  border-radius: 8px;
+  width: 82%;
+  margin-left: 10px;
+}
+
+
+#datepicker-history-menu3 {
+  border-radius: 8px;
+  width: 80%;
+  margin-left: 10px;
+}
+
+#datepicker-history-menu4 {
+  border-radius: 8px;
+  width: 80%;
+  margin-left: 10px;
+}
+
+/* History Boks Tekst */
+
+.history-boks-tekst {
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/* Øvre kasse dropdowns */
+
+/* Dropdown til listeantal */
+.history-listeantal{
+  width: 75px;
+  margin: 15px;
+  position: relative;
+  user-select: none;
+}
+
+.history-listeantal .history-default-option{
+  background: #fff;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+}
+
+.history-listeantal .history-default-option li{
+    padding: 10px 20px;
+}
+
+.history-listeantal .history-default-option:before{
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid;
+    border-color: transparent transparent #555555 #555555;
+    transform: rotate(-45deg);
+}
+
+.history-listeantal .history-listeantal-ul{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+.history-listeantal .history-listeantal-ul li{
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.history-listeantal .history-listeantal-ul li:first-child:hover{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.history-listeantal .history-listeantal-ul li:last-child:hover{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.history-listeantal .history-listeantal-ul li:hover{
+  background: #e8e8e8;
+}
+
+.history-listeantal .option{
+  display: flex;
+  align-items: center;
+}
+
+
+.history-listeantal.active .history-listeantal-ul{
+  display: block;
+  list-style: none;
+  text-decoration: none;
+}
+
+.history-listeantal.active .history-default-option:before{
+  top: 18px;
+  transform: rotate(-225deg);
+}
+
+
+
+/* HER SLUTTER HISTORY MENU DELEN */
+
+/* HER STARTER HISTORY LISTE DELEN */
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 450px;
+  background: #f1f1f1;
+}
+
+.history-list .history-list-boks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 5px;
+  width: 90%;
+  height: 425px;
+  background-color: #7d7d7d;
+}
+
+/* HER STARTER LISTE FILTER DELEN */
+
+.history-list .history-list-boks .history-list-id {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-list .history-list-boks .history-list-id .history-list-filter-id {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #222;
+  margin: 10px 0px 10px 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-name {
+  width: 25%;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-filter-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #222;
+  margin: 10px 0px 10px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-date {
+  width: 25%;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-filter-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #222;
+  margin: 10px 0px 10px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-value {
+  width: 25%;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-filter-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #222;
+  margin: 10px 10px 10px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+@media only screen and (min-width: 861px) {
+  .mobile-history-container {
+    display: none;
+  }
+
+  .history-menu {
+  height: 150px;
+  margin-top: 20px;
+}
+
+.history-menu-kasse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  background-color: #f1f1f1;
+}
+
+.history-menu-nedre-kasse {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-1 {
+  color: #333;
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-2 input {
+  height: 25px;
+  border-style: none;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+.history-menu-nedre-kasse .history-menu-nedre-kasse-2 i {
+  color: #333;
+}
+
+
+#datepicker-history-menu1 {
+    border-radius: 8px;
+    width: 40%;
+    margin-left: 10px;
+}
+
+#datepicker-history-menu7 {
+  border-radius: 8px;
+  width: 40%;
+  margin-left: 10px;
+}
+
+#datepicker-history-menu6 {
+  border-radius: 8px;
+  width: 40%;
+  margin-left: 10px;
+}
+
+#datepicker-history-menu2 {
+    border-radius: 8px;
+    width: 40%;
+}
+
+#datepicker-history-menu4 {
+  border-radius: 8px;
+  width: 40%;
+}
+
+#datepicker-history-menu5 {
+  border-radius: 8px;
+  width: 40%;
+}
+
+/* History Boks Tekst */
+
+.history-boks-tekst {
+  color: #333;
+}
+
+/* Historie Søgefunktion */
+
+.history-søgefunktion {
+  height: 25px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.history-listeantal .history-default-option li{
+    padding: 1px 10px;
+}
+
+.history-listeantal .history-default-option:before{
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid;
+    border-color: transparent transparent #555555 #555555;
+    transform: rotate(-45deg);
+}
+
+.history-listeantal .history-listeantal-ul{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+.næste-side-knapper {
+  display: flex;
+  justify-content: center;
+}
+
+.næste-side-knapper .previous-knap {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 90px;
+  border-radius: 10px;
+  border-style: none;
+  background: #fff;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+  margin-right: 20px;
+}
+
+.næste-side-knapper .next-knap {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 70px;
+  border-radius: 10px;
+  border-style: none;
+  background: #fff;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+.næste-side-knapper i {
+  padding-top: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+/* HER SLUTTER HISTORY MENU DELEN */
+
+/* HER STARTER HISTORY LISTE DELEN */
+
+.history-list {
+  background: #f1f1f1;
+}
+
+.history-list .history-list-boks {
+  background-color: #f1f1f1;
+}
+
+/* HER STARTER LISTEN */
+
+.history-list .history-list-boks .history-list-id .history-list-element-id ul li {
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name ul li {
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 0px 0px 5px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 10px 0px 5px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+}
+
+/* HER SLUTTER LISTE FILTER DELEN */
+
+/* HER STARTER LISTEN */
+
+.history-list .history-list-boks .history-list-id .history-list-element-id {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-id .history-list-element-id ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-id .history-list-element-id ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 0px 0px 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-name .history-list-element-name ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 0px 0px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-date .history-list-element-date ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 0px 0px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value {
+  display: flex;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.history-list .history-list-boks .history-list-value .history-list-element-value ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  color: #222;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 5px 10px 0px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+/* HER SLUTTER HISTORY LISTE DELEN */
+
+/* Settings Add to Checklist starter her */
+
+.web-checklist-main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  background-color: #fff;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  margin-top: 20px;
+}
+
+.web-document-main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  background-color: #fff;
+  height: 280px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  margin-top: 20px;
+}
+
+.web-checklist-main-div-tekst {
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 60px;
+  font-weight: bold;
+}
+
+.web-checklist-main-div-elementer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 10px;
+}
+
+.web-settings-checklist-element1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+  width: 95%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.web-settings-resource-todo-tekst {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.web-settings-resource-todo-ikoner {
+  display: flex;
+  flex-direction: row;
+}
+
+.web-settings-resource-todo-ikoner i {
+  margin: 10px 10px;
+  font-size: 20px;
+}
+
+.add-to-checklist-web-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #0f0;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+/* Settings Add to Checklist slutter her */
+
+/*-----------------------------STYLEGUIDE-SLUT-------------------------------------*/
+
+
+
+@media only screen and (max-width: 1200px) {
+  .navelement1 .navmenu {
+    display: none;
+  }
+  .navelement2 .navikoner {
+
+  }
+  .navelement2 .plugandlog {
+    display: none;
+  }
+  .navelement2 .navprofildropdown {
+    display: none;
+  }
+  .navelement2 .burger a {
+    display: block;
+  }
+}
+
+
+
+.subscribe-section button{
+  margin: 20px;
+  padding: 10px 30px;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.addnew-rs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+
+.modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin: 10px;
+  background-color:  #32CD32;;
+  border-radius: 12px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+.modal-btn p{
+  font-weight: bold;
+}
+
+
+/**/
+
+#modal {
+  display: none;
+}
+
+
+.modal-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*pop up*/
+#newresource {
+  width: 500px;
+  overflow: hidden;
+  background: #f1f1f1;
+  box-shadow: 1px 2px 11px 2px #0000007d;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  height: auto;
+  overflow-y: scroll;
+}
+#newresource2 {
+  width: 500px;
+  overflow: hidden;
+  background: #f1f1f1;
+  box-shadow: 1px 2px 11px 2px #0000007d;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  height: auto;
+  overflow-y: scroll;
+}
+#newresource3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  overflow: hidden;
+  background: #f1f1f1;
+  box-shadow: 1px 2px 11px 2px #0000007d;
+  border-radius: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  height: auto;
+  overflow-y: scroll;
+}
+
+.header-popup{
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom:30px;
+}
+
+.name-newresource {
+  margin-top: 20px;
+  width: 90%;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  flex-direction: row;
+  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
+  align-items: center;
+}
+.name-newresource-3 {
+  width: 90%;
+  margin-bottom: 20px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  flex-direction: column;
+  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.name-newresource-3 h4 {
+  font-size: 20px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  color: black;
+  margin: 10px;
+}
+
+.name-newresource-em {
+  margin-top: 20px;
+  width: 90%;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  flex-direction: row;
+  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
+  align-items: center;
+}
+
+.type-newresource{
+width: 90%;
+height: 50px;
+background-color: #fff;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+border-radius: 15px;
+flex-direction: row;
+margin-top: 15px;
+align-items: center;
+box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
+}
+
+.group-newresource{
+width: 90%;
+height: 50px;
+background-color: #fff;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+border-radius: 15px;
+flex-direction: row;
+margin-top: 10px;
+align-items: center;
+box-shadow: 1px 2px 11px 0px rgba(183, 183, 183, 0.5);
+}
+
+#name-placeholder[type=text]{
+width:100%;
+border:1px solid #aaa;
+margin-left: 25px;
+outline:none;
+padding:8px;
+box-sizing:border-box;
+border-radius: 8px;
+transition:.3s;
+}
+
+#name-placeholder[type=text]:focus{
+border-color:dodgerBlue;
+box-shadow:0 0 6px 0 dodgerBlue;
+}
+
+#name-placeholder-rwp[type=text]{
+  width:100%;
+  border:1px solid #aaa;
+  margin-left: 25px;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 8px;
+  transition:.3s;
+  }
+
+  #name-placeholder-rwp[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 6px 0 dodgerBlue;
+  }
+
+#name-placeholder1[type=text]{
+  width:100%;
+  border:1px solid #aaa;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 8px;
+  transition:.3s;
+  }
+
+  #name-placeholder1[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 6px 0 dodgerBlue;
+  }
+
+.name-placeholder{
+  font-weight: bold;
+}
+
+.service-interval1 {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  margin-bottom: 0px;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 15px;
+  width: 20%;
+  height: 60px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 12px;
+  text-align-last: center;
+}
+
+#service-interval-nr[type=text]{
+  width:22%;
+  border:1px solid #aaa;
+  margin:8px 0;
+  margin-left: 100px;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 8px;
+  transition:.3s;
+}
+
+#service-interval-nr3[type=text]{
+  width:22%;
+  border:1px solid #aaa;
+  margin:8px 0;
+  margin-left: 100px;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 8px;
+  transition:.3s;
+}
+
+#service-interval-nr2[type=text] {
+  width: 19%;
+  border: 1px solid #aaa;
+  margin: 8px 0;
+  margin-left: 100px;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+#service-interval[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 6px 0 dodgerBlue;
+
+}
+#service-interval-nr1[type=text]{
+  width:22%;
+  border:1px solid #aaa;
+  margin:8px 0;
+  margin-left: 90px;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  border-radius: 8px;
+  transition:.3s;
+}
+
+#service-interval1[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 6px 0 dodgerBlue;
+}
+.service-interval-nr{
+    margin-right: 20px;
+}
+
+
+.type-placeholder{
+  font-weight: bold;
+}
+
+#name-placeholder-em[type=text] {
+  width: 59%;
+  border: 1px solid #aaa;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+#name-placeholder-em1[type=text] {
+  width: 59%;
+  border: 1px solid #aaa;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+.add-group-button-div1 {
+  margin-right: 0px;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #32CD32;
+  text-decoration: none;
+  border: none;
+}
+
+.add-group-button-div1::before {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  content: "+";
+  font-size: 25px;
+  color:#fff;
+  height: 30px;
+  width: 30px;
+  }
+
+.add-group-button-div2 {
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #337AB7;
+  text-decoration: none;
+  border: none;
+}
+
+.add-group-button-div2::before {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  content: "i";
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  color:#fff;
+  height: 30px;
+  width: 30px;
+  }
+
+
+
+.type-select-newresource {
+width: 100%;
+height: 30px;
+user-select: none;
+cursor: pointer;
+margin-left: 32px;
+}
+
+.service-interval {
+  width: 20%;
+  height: 36px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+.addtochecklist-div {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 4px 1px 13px 0px rgba(0, 0, 0, 0.31);
+  border-radius: 15px;
+  height: 40px;
+}
+
+.add-knap-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.imidlertid-addknap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 50px;
+  background-color: #00ff00;
+  border-radius: 8px;
+
+}
+
+.select-and-button-contianer-web {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 84%;
+  height: 30px;
+}
+
+
+
+/*CSS MARCUS */
+.slide-container{
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slide-container-wrapper{
+  display: flex;
+  width: 35%;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.slide{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 226, 226);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,0.5);
+}
+
+.slide-aktiv{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #337AB7;
+  color: rgb(255, 255, 255);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,0.5);
+}
+
+.sliderp-aktiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sliderp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.next-btn-popup {
+  width: 105px;
+  height: 52px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #337AB7;
+  color: rgb(255, 255, 255);
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,.5);
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.create-btn-popup {
+  width: 105px;
+  height: 52px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #32CD32;
+  color: rgb(255, 255, 255);
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,.5);
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+.group-newresource-dc{
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  flex-direction: row;
+  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
+}
+
+.group-newresource-dc-comment{
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
+}
+
+.close{
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+  width: 98%;
+  font-size: 25px;
+  margin-right: 20px;
+  color: #3F3844;
+}
+
+.x-close{
+  border: none;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.resource-wrapper-placeholder1{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.service-interval-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-weight: bold;
+}
+
+
+  .resource-wrapper-placeholder{
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+  }
+
+  .resource-wrapper-placeholder-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0px 20px;
+}
+
+.resource-wrapper-placeholder-3 {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-weight: bold;
+}
+
+  .resource-wrapper-placeholder p{
+      margin-left: -18px;
+  }
+
+  .resource-wrapper-placeholder-description{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+  }
+
+  .description-wrapper{
+      padding-top: 15px;
+      display: flex;
+      width: 90%;
+      justify-content: start;
+      align-items: center;
+      margin: auto;
+      font-weight: bold;
+  }
+
+  .comment-checklist-wrapper h4 {
+      font-size: 20px;
+      font-family: 'Segoe UI';
+      font-weight: bold;
+      color: #fff;
+      }
+
+      .comment-container {
+      display: flex;
+      height: 100px;
+      background: #fff;
+      border-radius: 15px;
+      margin: 15px;
+      }
+
+      .comment-container textarea {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+      border-radius: 15px;
+      padding: 7px;
+      resize: none;
+      }
+
+.nedre-knapcontainer-content1{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+  .name-group-web1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      justify-content: space-around;
+      height: auto;
+      }
+
+      .name-group-wrapper-web {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          height: 45px;
+          width: 100%;
+          background: rgb(54, 42, 42);
+          border-radius: 5px;
+      }
+
+      .name-group-proxi-web {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          border-radius: 5px;
+      }
+
+      .name-group-container-web {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          height: 50px;
+          width: 90%;
+          box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
+          background: #fff;
+          border-radius: 15px;
+          margin-top: 15px;
+      }
+      .name-group-container-web1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        width: 90%;
+        box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.31);
+        background: #fff;
+        border-radius: 15px;
+        margin-top: 15px;
+        margin-left: 5%;
+    }
+
+
+      .center-div-web {
+          position: absolute;
+          margin-top: 40vh;
+          display: flex;
+          justify-content: center;
+          right: 0;
+          left: 0;
+          }
+
+  .center-div-indhold-web {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      width: 70%;
+      height: 190px;
+      line-height: 40px;
+      background-color: #F1F1F1;
+      border-radius: 6px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .center-div-indhold-web1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 56%;
+    height: 200px;
+    line-height: 40px;
+    background-color: #F1F1F1;
+    border-radius: 6px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
+  .grouptext{
+      font-size: 15px;
+      font-weight: bold;
+      margin-right: 25px;
+  }
+
+  #center-div-shadow-web {
+      display: none;
+      position: absolute;
+      margin: auto;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 0px;
+  }
+
+  #center-div-shadow2 {
+      display: none;
+      position: absolute;
+      margin: auto;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 89vh;
+      background-color: rgba(0, 0, 0, 0.3);;
+      border-radius: 0px;
+      }
+
+
+  #center-div-shadow3 {
+    display: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.3);;
+    border-radius: 0px;
+    }
+
+  /*MEDIA QUERY: FRA WEB TIL MOBIL*/
+  @media screen and (max-width: 860px){
+    .wrapper-webversion{
+      display: none;
+    }
+  #newresource {
+    width: 100%;
+    background: #f1f1f1;
+    box-shadow: none;
+    border-radius: 0px;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding: 0px;
+    text-align: center;
+    height: 100vh;
+    overflow-y: scroll;
+    }
+
+    .close{
+      margin-top:100px;
+      font-size: 40px;
+      margin-bottom:30px;
+    }
+
+  #newresource2 {
+    width: 100%;
+    overflow-x: hidden;
+    background: #f1f1f1;
+    box-shadow: none;
+    border-radius: 0px;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding: 0px;
+    text-align: center;
+    height: 100vh;
+    }
+    #newresource3 {
+      width: 100%;
+      overflow-x: hidden;
+      background: #f1f1f1;
+      box-shadow: none;
+      border-radius: 0px;
+      position: fixed;
+      z-index: 9;
+      top: 0;
+      left: 0;
+      transform: none;
+      padding: 0px;
+      text-align: center;
+      height: 100vh;
+      }
+      body{
+        overflow-y: scroll;
+        top: 0;
+    }
+  }
+
+  @media only screen and (max-width: 1201px) {
+    .flex-knapper3{
+      margin-top: 80px;
+      }
+
+    #wrapper-inhold-contentflexbox-1{
+      margin-top: 80px;
+    }
+
+    #wrapper-inhold-contentflexbox-2{
+      margin-top: 80px;
+    }
+
+    #wrapper-inhold-contentflexbox-3{
+      margin-top: 80px;
+    }
+  }
+
+
+
+
+  /* ------------------------------ NEW RESSOURCE ---------------------------------- */
+#slide-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#slide-two {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#slide-three {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ------------------------------ SLUT NEW RESSOURCE ---------------------------------- */
+  /* ------------------------------ SETTINGS ---------------------------------- */
+  #general-settings-web {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #service-check-settings-web {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #add-to-checklist-web {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  /* ------------------------------ SLUT SETTINGS ---------------------------------- */
+
+/* WEB RESOURCE */
+.checkboxes-web {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 90%;
+  border-radius: 5px;
+  padding-top: 12px;
+  }
+
+.todo-list-wrapper-web {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 90%;
+  background:#fff;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  box-shadow: 0px 5px 8px rgba(0,0,0,.2);
+  }
+
+  .add-todo-wrapper-web {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    width: 90%;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 8px rgba(0,0,0,.2);
+    }
+
+    .add-todo-wrapper-web label {
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: #3F3844;
+    margin-left: 15px;
+    }
+
+  .procentagebar-box-web-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    }
+
+  .procentagebar-box-web {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 40.1%;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0,0,0,.5);
+    }
+
+    /* .ui-progressbar-value {
+    background: #337AB7;
+    } */
+
+    /* .ui-widget.ui-widget-content {
+      border-style: none;
+    } */
+
+    /* .progressbar-bar {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+    width: auto;
+    border-radius: 230px;
+    z-index: 5;
+    background: #EBEBEB;
+    } */
+
+    /* .progressbar-label {
+    position: absolute;
+    margin-top: 10px;
+    top: 15%;
+    left: 50%;
+    z-index: 2;
+    color: #3F3844;
+    } */
+    /* SLUT WEB RESOURCE */
+
+    #print {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 861px) {
+      .mobil-wrapper {
+        display: none;
+      }
+      .navigation-buttons {
+        display: none;
+      }
+      .header-mobile {
+        display: none;
+      }
+      .procentagebar-box {
+        display: none;
+      }
+
+    }
