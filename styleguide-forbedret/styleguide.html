@@ -9,8 +9,167 @@
 <body>
 
     <div class="wrapper-webversion-guide">
-    <div class="contentflexbox-guide-nav-1"></div>
-    <div class="contentflexbox-guide-nav-2"></div>
+        <div class="button-guide-nav-box">
+            <div class="contentflexbox-guide-nav-1">
+                <button class="button-guide-nav-selct">Knapper</button>
+                <button class="button-guide-nav">Farver</button>
+                <button class="button-guide-nav">UI Patterns</button>
+                <button class="button-guide-nav">Ikoner</button>
+            </div>
+        </div>
+
+        <div class="contentflexbox-guide-nav-2">
+
+            <div class="sg-box">
+                <div class="sg-knap-box">
+                  <button class="active" type="button" onclick="click">Overdue Service<br>Check</button>
+                </div>
+                <div class="sg-tekst-box">
+                  <p class="forklaring">
+                    < button class="active" type="button" onclick="click">Overdue Service< br >Check< /button >
+                   </p>
+                </div>
+              </div>
+              <div class="sg-box">
+                <div class="sg-knap-box">
+                  <select class="service-interval1">
+                    <option class="default_option">Sort by</option>
+                    <option>ID </option>
+                    <option>NAME</option>
+                    <option>ENABLE</option>
+                    <option>TYPE</option>
+                    <option>NEXT SERVICE</option>
+                    <option>LAST SERVICE</option>
+                    <option>DATA ADDED</option>
+                    <option>GROUP</option>
+                    </select>  </div>
+                <div class="sg-tekst-box">
+                  <p class="forklaring">
+                    < select class="service-interval1" >
+                      <option class="default_option">Sort by</option>
+                      < option>ID < /option>
+                      <br>
+                      < option>NAME< /option>
+                      <br>
+                      < option>ENABLE< /option>
+                      <br>
+                      < option>TYPE< /option>
+                      <br>
+                      < option>NEXT SERVICE< /option>
+                      <br>
+                      < option>LAST SERVICE </option>
+                      <br>
+                      < option>DATA ADDED< /option>
+                      <br>
+                      < option>GROUP< /option>
+                      <br>
+                      < /select > 
+                   </p>
+                </div>
+              </div>
+              <div class="sg-box">
+                <div class="sg-knap-box">
+                  <div class="addnew-rs">
+                    <button class="modal-btn" onclick="selectionAppear('modal');">ADD RESOURCE</button>
+                  </div>
+                </div>
+                <div class="sg-tekst-box ">
+                  <p class="forklaring">
+                    < button class="modal-btn" onclick="selectionAppear('modal');">ADD RESOURCE< /button>
+                   </p>
+                </div>
+              </div>
+              <div class="sg-box">
+                <div class="sg-knap-box">
+                  <button class="deactive1" type="submit">Awaiting</button>
+                </div>
+                <div class="sg-tekst-box ">
+                  <p class="forklaring">
+                    < button class="deactive1" type="submit">Awaiting< /button>
+                   </p>
+                </div>
+              </div>
+              <div class="sg-box">
+                <div class="sg-knap-box">
+                  <div class="toggle">
+                    <input class="toggle-pc" type="checkbox">
+                    <div class="onbtn"></div>
+                    <div class="ofbtn"></div>
+                  </div>
+                </div>
+                <div class="sg-tekst-box ">
+                  <p class="forklaring">
+                    < div class="toggle">
+                    <br>
+                      < input class="toggle-pc" type="checkbox">
+                      <br>
+                      < div class="onbtn">< /div>
+                      <br>
+                      < div class="ofbtn">< /div>
+                      <br>
+                    < /div>
+                   </p>
+                </div>
+              </div>
+              <div class="sg-box">
+                <div class="sg-knap-box">
+                  <button class="activevenstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-1');">Checklist</button>
+                </div>
+                <div class="sg-tekst-box ">
+                  <p class="forklaring">
+                    < button class="activevenstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-1');">Checklist< /button>
+                   </p>
+                </div>
+              </div>
+              <div class="sg-box">
+                <div class="sg-knap-box">
+                  <button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-2');">Settings</button>
+                </div>
+                <div class="sg-tekst-box ">
+                  <p class="forklaring">
+                    < button class="venstre-btn" onclick="toggleVisibilityResWeb('wrapper-inhold-contentflexbox-2');">Settings< /button>
+                   </p>
+                </div>
+              </div>
+              <div class="sg-box">
+                <div class="sg-knap-box">
+                  <button class="active2" onclick="toggleVisibilityResSetWeb('general-settings-web');">General settings</button>
+                </div>
+                <div class="sg-tekst-box ">
+                  <p class="forklaring">
+                    < button class="active2" onclick="toggleVisibilityResSetWeb('general-settings-web');">General settings< /button>
+                   </p>
+                </div>
+              </div>
+              <div class="sg-box">
+                <div class="sg-knap-box">
+                  <button class="deactive2" onclick="toggleVisibilityResSetWeb('service-check-settings-web');">Service check settings</button>
+                </div>
+                <div class="sg-tekst-box ">
+                  <p class="forklaring">
+                    < button class="deactive2" onclick="toggleVisibilityResSetWeb('service-check-settings-web');">Service check settings< /button>
+                   </p>
+                </div>
+              </div>
+              <div class="sg-box">
+                <div class="sg-knap-box">
+                  <button class="save" onclick="saveAlert()">Save</button>
+                </div>
+                <pre>
+                    &lt;button class="save" onclick="saveAlert()">Save&lt;/button&gt;
+                </pre>
+              </div>
+              <div class="sg-box">
+                <div class="sg-knap-box">
+                  <button class="add-group-button-div1" value="+" onclick="selectionAppear('center-div-shadow3');"></button>
+                </div>
+                    <pre>
+                      &lt;button class="add-group-button-div1" value="+" onclick=
+                      "selectionAppear ('center-div-shadow3');"&gt;&lt;/button&gt;
+                    </pre>
+              </div>
+
+        </div>
     </div>
 
 </body>
