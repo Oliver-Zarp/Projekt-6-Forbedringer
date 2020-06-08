@@ -5435,3 +5435,17 @@ margin-left: 32px;
         width: 160px;
         justify-content: space-around ;
       }
+
+      .document{
+        width: 200px;
+        height: 200px;
+      }
+      .cloud{
+        width: 200px;
+        height: 200px;
+      }
+
+      .kalender{
+        width: 150px;
+        height: 150px;
+      }
