@@ -5192,3 +5192,133 @@ margin-left: 32px;
       }
 
     }
+
+
+
+    /*Styleguide*/
+    .contentflexbox-guide-nav-3{
+      width: 80vw;
+      background-color:#2c3e50;
+      height:100vh;
+      overflow-y: scroll;
+    }
+
+    .farver-wrapper-items{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .wrapper-farver{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .farve-padlet{
+      width: 100px;
+      height: 100px;
+      background-color: #337AB7;
+      border-radius: 12px;
+    }
+
+    .farve-padlet1{
+      width: 100px;
+      height: 100px;
+      background-color: #2c3e50;
+      border-radius: 12px;
+    }
+
+    .farve-padlet3{
+      width: 100px;
+      height: 100px;
+      border: 2px solid #333;
+      border-radius: 12px;
+    }
+
+    .farve-padlet4{
+      width: 100px;
+      height: 100px;
+      background-color: #00ff00;
+      border-radius: 12px;
+    }
+
+
+    .farve-padlet5{
+      width: 100px;
+      height: 100px;
+      background-color: #32CD32;
+      border-radius: 12px;
+    }
+
+    .farve-padlet6{
+      width: 100px;
+      height: 100px;
+      background-color: #DF403C;
+      border-radius: 12px;
+    }
+
+    .farve-padlet7{
+      width: 100px;
+      height: 100px;
+      background-color: #333;
+      border-radius: 12px;
+    }
+
+    .farve-padlet8{
+      width: 100px;
+      height: 100px;
+      background-color: #aaaaaa;
+      border-radius: 12px;
+    }
+    .farve-padlet9{
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+      border-radius: 12px;
+    }
+
+    .farve-padlet10{
+      width: 100px;
+      height: 100px;
+      background-color: #222;
+      border-radius: 12px;
+    }
+    
+    .farve-padlet11{
+      width: 100px;
+      height: 100px;
+      background-color: #FFB347;
+      border-radius: 12px;
+    }
+
+    .farve-padlet12{
+      width: 100px;
+      height: 100px;
+      background-color: #FF4300;
+      border-radius: 12px;
+    }
+    
+    
+    .farve-container{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-around;
+      width: 500px;
+      height: 120px;
+      background-color: #f1f1f1f1;
+      box-shadow: 0 5px 25px rgba(0,0,0,.5);
+      margin: 20px;
+      border-radius: 12px;
+      transition: 0.5s;
+    }
+    .farve-container:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,.5);
+      transition: 0.5s;
+      }
