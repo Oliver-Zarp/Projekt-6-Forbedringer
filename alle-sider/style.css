@@ -1644,6 +1644,14 @@ align-items: center;
   text-transform: uppercase;
 }
 
+.button-guide-nav-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+width: 100%;
+}
+
 .button-guide-nav-selct {
   background-color: #32CD32;
   width: 90%;
