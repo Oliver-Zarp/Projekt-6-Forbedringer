@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../alle-sider/style.css">
-    <link rel="stylesheet" href="../alle-sider/navbar.css">
 </head>
 <body>
 
@@ -26,59 +25,36 @@
                 &lt;input type="text" placeholder="Name..." class="name-placeholder"&gt;
             </div>
         </div>
-        <div class="sg-box">
-            <input type="text" placeholder="Name..." class="name-placeholder">
-            <div class="kode-placeholder">
-                &lt;input type="text" placeholder="Name..." class="name-placeholder"&gt;
-            </div>
+        
+        <!-- DATE PICKER-->
+        <div class="history-menu-nedre-kasse-2">
+            <input type="text" id="datepicker-history-menu5" class="hasDatepicker">
+            <img src="../img/calendar.png" alt="kalender" title="Select date">
         </div>
+
+         <!-- DATE PICKER-->
+
         <div class="sg-box">
-            <input type="text" placeholder="Name..." class="name-placeholder">
-            <div class="kode-placeholder">
-                &lt;input type="text" placeholder="Name..." class="name-placeholder"&gt;
-            </div>
-        </div>
-        <div class="sg-box">
-            <div class="header-fixed">
-                <nav>
-                  <div class="navelement1">
-                    <div class="logo">
-                      <a href="index.html">
-                      <img src="../img/trendlog-io-white-thin4.png" alt="Trendlog.io logo">
-                      </a>
-                    </div>
-                    <ul class="navmenu">
-                      <li><a href="login.html"><i class="fas fa-home"></i></a></li>
-                      <li><a href="#">Trendboards</a></li>
-                      <li><a href="#">Reports</a></li>
-                      <li><a href="#">Views</a></li>
-                      <li><a href="#">Feeds</a></li>
-                      <li><a href="#">Settings</a></li>
-                      <li><a href="#">Shares</a></li>
-                    </ul>
-                  </div>
-                  <div class="navelement2">
-                    <ul class="navikoner">
-                      <li><a href="#"><i class="fas fa-wrench"></i></a></li>
-                      <li><a href="#"><i class="fas fa-eye-slash"></i></a></li>
-                      <li><a href="#"><i class="fas fa-bell"></i></a></li>
-                    </ul>
-                    <input class="plugandlog" type="text" name="plug&log" value="">
-                    <div class="navprofildropdown" id="navprofildropdown">
-                      <div class="navprofil"><a href="#">
-                        Navn
-                        <i class="fas fa-user"></i>
-                      </a>
-                    </div>
-                    </div>
-                  </div>
-                  <div class="burgerdropdownmenu" id="burgerdropdownmenu">
-                    <div class="burger" id="burger">
-                      <a href="#"><i class="fas fa-bars"></i></a>
-                    </div>
-                  </div>
-              </nav>
-            </div>
+            <div class="single-chart-sg">
+                <svg viewBox="0 0 36 36" class="circular-chart red">
+                  <path class="circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                  <!--stroke-dasharray er den stoke med farve, der viser hvor mange dage der er tilbage. de første tal er % den skal ligge på ift cirklen. 100 er ift hele cirklen-->
+                  <path class="circle"
+                    stroke-dasharray="100, 100"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                  />
+                    <!-- Next service er det øvereste test i cirkeldiagrammet-->
+                  <text x="18" y="17" class="next-service">NEXT SERVICE</text>
+                    <!-- precentage er de dage der er tilbage/- eller overskredet af service-->
+                  <text x="18" y="23" class="percentage-red">0 DAYS</text>
+                </svg>
+              </div>
             <div class="kode-placeholder">
                 &lt;input type="text" placeholder="Name..." class="name-placeholder"&gt;
             </div>

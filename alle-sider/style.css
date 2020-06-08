@@ -5418,7 +5418,6 @@ margin-left: 32px;
         height: 40px;
         border:2px solid #aaa;
         border-radius:4px;
-        margin-top: 40px;
         outline:none;
         padding:8px;
         box-sizing:border-box;
@@ -5430,4 +5429,9 @@ margin-left: 32px;
       .name-placeholder[type=text]:focus{
         border-color:dodgerBlue;
         box-shadow:0 0 8px 0 dodgerBlue;
+      }
+
+      .single-chart-sg {
+        width: 160px;
+        justify-content: space-around ;
       }
