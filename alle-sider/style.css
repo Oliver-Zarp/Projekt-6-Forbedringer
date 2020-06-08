@@ -5404,6 +5404,28 @@ margin-left: 32px;
       transition: 0.5s;
       }
 
+      .farve-container1{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 500px;
+        height: 200px;
+        background-color: #f1f1f1f1;
+        box-shadow: 0 5px 25px rgba(0,0,0,.5);
+        margin: 20px;
+        
+        border-radius: 12px;
+        transition: 0.5s;
+      }
+      .farve-container1:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0,0,0,.5);
+        transition: 0.5s;
+        }
+
       /*UI*/
       .ui-wrapper-items{
         display: flex;
@@ -5437,15 +5459,20 @@ margin-left: 32px;
       }
 
       .document{
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
       }
       .cloud{
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
       }
 
       .kalender{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
+      }
+
+      .bruger-menu-sg{
+        width: 70px;
+        height: 110px;
       }
