@@ -5526,7 +5526,7 @@ margin-left: 32px;
         width: 91.75%;
         margin: 20px;
         margin-top: 30px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
         padding: 30px;
         background: #337AB7;
         border-radius: 12px;
@@ -5535,21 +5535,21 @@ margin-left: 32px;
 
       .bokse-wrapper{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: row;
-        width: 100%;
+        width: 91.75%;
+        align-items: center;
+        margin: 0 auto;
       }
 
       .fontbox {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: auto;
+        height: 150px;
         flex-direction: column;
-        width: 30%;
+        width: 25%;
         text-align: center;
-        margin: 20px;
-        margin-top: 30px;
         margin-bottom: 0px;
         padding: 30px;
         background: rgb(252, 252, 252);
@@ -5565,4 +5565,16 @@ margin-left: 32px;
 
       .px40{
         font-size: 40px;
+      }
+
+      .tekst-hvid{
+        color: #ffffff;
+      }
+
+      .wrapper-fonts{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
       }
