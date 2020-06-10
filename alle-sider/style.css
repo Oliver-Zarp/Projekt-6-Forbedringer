@@ -116,7 +116,7 @@ body{
   border: 1px solid #999;
 }
 
-.login-wrapper .login-content-boks .login-content-boks-inputs .login-knap button {
+.login-knap button {
   padding: 5px 100px 10px 100px;
   font-size: 30px;
   font-family: 'Segoe UI';
@@ -144,7 +144,7 @@ body{
   font-weight: 500;
 }
 
-.login-wrapper .login-content-boks .login-content-boks-inputs .login-knap button:focus {
+.login-knap button:focus {
   outline-style: none;
 }
 
@@ -154,7 +154,7 @@ body{
   box-shadow:0 0 8px 0 dodgerBlue;
 }
 
-.login-wrapper .login-content-boks .login-content-boks-inputs .login-knap button:hover {
+.login-knap button:hover {
   background-color: #7ed06b;
 }
 
@@ -191,7 +191,7 @@ body{
     font-weight: 500;
     margin-bottom: 30px;
   }
-  .login-wrapper .login-content-boks .login-content-boks-inputs .login-knap button {
+.login-knap button {
     padding: 8px 70px 10px 70px;
     font-size: 15px;
     font-weight: 500;
@@ -1795,9 +1795,7 @@ font-size: 50px;
   align-items: center;
   height: auto;
   width: 91.75%;
-  margin: 20px;
-  margin-top: 30px;
-  margin-bottom: 0px;
+  margin: 10px;
   padding: 30px;
   background: #f1f1f1f1;
   border-radius: 12px;
@@ -3867,6 +3865,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 .næste-side-knapper .previous-knap {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 30px;
   width: 90px;
   border-radius: 10px;
@@ -3879,6 +3878,7 @@ box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 .næste-side-knapper .next-knap {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 30px;
   width: 70px;
   border-radius: 10px;

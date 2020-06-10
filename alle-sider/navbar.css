@@ -173,6 +173,46 @@ nav {
   text-decoration: none;
 }
 
+.burger1 {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.burger1 a {
+  color: #fff;
+  margin: 0px 20px 0px 20px;
+  text-decoration: none;
+}
+
+.burgerdropdownmenu1 {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 420px; */
+}
+
+.burgerdropdownmenu1 a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.burgerdropdownmenu1 ul li {
+  list-style: none;
+  color: white;
+  width: 100%;
+  height: 30px;
+  background: #333;
+  padding-top: 10px;
+}
+
+.burgerdropdownmenu1 li:hover {
+  background-color: #666;
+}
+
 @media only screen and (max-width: 1200px) {
   .navelement1 .navmenu {
     display: none;
@@ -241,4 +281,5 @@ nav {
   .navelement2 .burger {
     display: block;
   }
+  
 }

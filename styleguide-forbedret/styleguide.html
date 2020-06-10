@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../alle-sider/style.css">
+  	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
 </head>
 <body>
 
@@ -52,7 +54,8 @@
                   </div>
                 </div>
                 <div class="sg-tekst-box ">
-                    &lt;button class="modal-btn" onclick="selectionAppear('modal');"&gt;DEFAULTE&lt;/button&gt;
+                    &lt;button class="modal-btn" onclick="selectionAppear('modal');"&gt;
+                    DEFAULTE&lt;/button&gt;
                 </div>
               </div>
               <div class="sg-box">
@@ -129,14 +132,83 @@
               </div>
               <div class="sg-box">
                 <div class="sg-knap-box">
-                  <button class="add-group-button-div1" value="+" onclick="selectionAppear('center-div-shadow3');"></button>
+                    <div class="næste-side-knapper">
+                        <button class="previous-knap" type="button" name="nextpage">
+                          <i class="fas fa-arrow-left"></i>
+                          Previous
+                        </button>
+                        <button class="next-knap" type="button" name="nextpage">
+                          Next
+                          <i class="fas fa-arrow-right"></i>
+                        </button>
+                      </div>
                 </div>
                 <div class="sg-tekst-box ">
-                      &lt;button class="add-group-button-div1" value="+" onclick="selectionAppear('center-div-shadow3');"&gt;&lt;/button&gt;
+                    &lt;div class="næste-side-knapper"&gt;
+                    &lt;button class="previous-knap" type="button" name="nextpage"&gt;
+                            &lt;i class="fas fa-arrow-left"&gt;&lt;/i&gt;
+                          Previous
+                          &lt;/button&gt;
+                          &lt;button class="next-knap" type="button" name="nextpage&gt;
+                          Next
+                          &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;
+                          &lt;/button&gt;
+                          &lt;/div&gt;
                 </div>
               </div>
-
+              <div class="sg-box">
+                <div class="sg-knap-box">
+                    <button class="button-nav-blue" onclick="toggleVisibility('mobile-settings-container');">Default</button>
+                </div>
+                <div class="sg-tekst-box ">
+                    &lt;button class="button-nav-blue" onclick="toggleVisibility('mobile-settings-container');"&gt;Default&lt;/button&gt;
+              </div>
         </div>
+        <div class="sg-box">
+            <div class="sg-knap-box">
+                <button class="button-nav" onclick="toggleVisibility('mobile-settings-container');">Default</button>
+            </div>
+            <div class="sg-tekst-box ">
+                &lt;button class="button-nav" onclick="toggleVisibility('mobile-settings-container');"&gt;Default&lt;/button&gt;
+          </div>
+    </div>
+    <div class="sg-box">
+        <div class="sg-knap-box">
+            <button class="save-mobil" onclick="saveAlert()">Default</button>
+        </div>
+        <div class="sg-tekst-box ">
+            &lt;button class="button-nav" onclick="toggleVisibility('mobile-settings-container');"&gt;Default&lt;/button&gt;
+      </div>
+    </div>
+    <div class="sg-box">
+        <div class="sg-knap-box">
+            <div class="login-knap">
+                <button type="submit" name="button">Default</button>
+              </div>
+        </div>
+        <div class="sg-tekst-box ">
+            &lt;div class="login-knap"&gt;
+            &lt;button type="submit" name="button"&gt;Default&lt;/button&gt;
+            &lt;/div&gt;
+      </div>
+    </div>
+    <div class="sg-box">
+        <div class="sg-knap-box">
+            <button class="button-nav-settings-blue" onclick="toggleVisibility('mobile-settings-container');">Default</button>
+        </div>
+        <div class="sg-tekst-box ">
+            &lt;button class="button-nav-settings-blue" onclick="toggleVisibility('mobile-settings-container');"&gt;Default&lt;/button&gt;
+      </div>
+    </div>
+    <div class="sg-box">
+        <div class="sg-knap-box">
+            <button class="button-nav-settings" onclick="toggleVisibility('mobile-service-settings-container');">Default</button>
+        </div>
+        <div class="sg-tekst-box ">
+            &lt;button class="button-nav-settings" onclick="toggleVisibility('mobile-service-settings-container');"&gt;Default&lt;/button&gt;
+      </div>
+    </div>
+
     </div>
 
 </body>
